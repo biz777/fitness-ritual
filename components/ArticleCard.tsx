@@ -29,7 +29,7 @@ export default function ArticleCard({
       }}>
         {title}
       </h3>
-      <p style={{ fontSize: "17px", lineHeight: 1.75, color: "#6B6B8A", marginBottom: "18px" }}>
+      <p style={{ fontSize: "17px", lineHeight: 1.75, color: "#1A1A2E", marginBottom: "18px" }}>
         {description}
       </p>
       <Link

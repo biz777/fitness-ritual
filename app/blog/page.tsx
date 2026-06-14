@@ -20,7 +20,7 @@ export default function BlogPage() {
         <h1 style={{ fontFamily: "Georgia, serif", fontSize: "36px", fontWeight: 700, color: "#1A1A2E", marginBottom: "10px" }}>
           The fitness-ritual.com blog
         </h1>
-        <p style={{ fontSize: "18px", color: "#6B6B8A", lineHeight: 1.75, marginBottom: "48px" }}>
+        <p style={{ fontSize: "18px", color: "#1A1A2E", lineHeight: 1.75, marginBottom: "48px" }}>
           Practical advice for staying strong, healthy, and energized after 50.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px" }}>

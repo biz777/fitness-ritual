@@ -74,7 +74,7 @@ export default function HomePage() {
             borderLeft: i > 0 ? "0.5px solid rgba(91,79,200,0.15)" : "none",
           }}>
             <div style={{ fontSize: "26px", fontWeight: 700, color: "#5B4FC8" }}>{stat.num}</div>
-            <div style={{ fontSize: "14px", color: "#6B6B8A", marginTop: "3px" }}>{stat.label}</div>
+            <div style={{ fontSize: "14px", color: "#1A1A2E", marginTop: "3px" }}>{stat.label}</div>
           </div>
         ))}
       </div>
@@ -87,7 +87,7 @@ export default function HomePage() {
         <h2 style={{ fontFamily: "Georgia, serif", fontSize: "32px", fontWeight: 700, color: "#1A1A2E", marginBottom: "10px" }}>
           What we cover
         </h2>
-        <p style={{ fontSize: "18px", color: "#6B6B8A", lineHeight: 1.75, marginBottom: "36px" }}>
+        <p style={{ fontSize: "18px", color: "#1A1A2E", lineHeight: 1.75, marginBottom: "36px" }}>
           Three categories built around what matters most after 50.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px" }}>
@@ -113,7 +113,7 @@ export default function HomePage() {
           <h2 style={{ fontFamily: "Georgia, serif", fontSize: "32px", fontWeight: 700, color: "#1A1A2E", marginBottom: "10px" }}>
             Stories from our community
           </h2>
-          <p style={{ fontSize: "18px", color: "#6B6B8A", lineHeight: 1.75, marginBottom: "36px" }}>
+          <p style={{ fontSize: "18px", color: "#1A1A2E", lineHeight: 1.75, marginBottom: "36px" }}>
             Real people, real results — no before/after gimmicks.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "16px" }}>
@@ -126,7 +126,7 @@ export default function HomePage() {
                 background: "#fff", fontFamily: "Arial, sans-serif",
               }}>
                 <div style={{ color: "#F59E0B", fontSize: "16px", marginBottom: "12px" }}>★★★★★</div>
-                <p style={{ fontSize: "15px", lineHeight: 1.75, fontStyle: "italic", color: "#6B6B8A", marginBottom: "16px" }}>
+                <p style={{ fontSize: "15px", lineHeight: 1.75, fontStyle: "italic", color: "#1A1A2E", marginBottom: "16px" }}>
                   &ldquo;{t.text}&rdquo;
                 </p>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
@@ -138,7 +138,7 @@ export default function HomePage() {
                   }}>{t.initials}</div>
                   <div>
                     <div style={{ fontSize: "15px", fontWeight: 600, color: "#1A1A2E" }}>{t.name}</div>
-                    <div style={{ fontSize: "13px", color: "#6B6B8A" }}>{t.age}</div>
+                    <div style={{ fontSize: "13px", color: "#1A1A2E" }}>{t.age}</div>
                   </div>
                 </div>
               </div>
@@ -183,7 +183,7 @@ export default function HomePage() {
         <h2 style={{ fontFamily: "Georgia, serif", fontSize: "32px", fontWeight: 700, color: "#1A1A2E", marginBottom: "10px" }}>
           Find what you need
         </h2>
-        <p style={{ fontSize: "18px", color: "#6B6B8A", lineHeight: 1.75, marginBottom: "36px" }}>
+        <p style={{ fontSize: "18px", color: "#1A1A2E", lineHeight: 1.75, marginBottom: "36px" }}>
           All our content, organized by category.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px" }}>
@@ -202,7 +202,7 @@ export default function HomePage() {
                 {cat.label}
               </div>
               <div style={{ fontSize: "17px", fontWeight: 600, color: "#1A1A2E", marginBottom: "8px" }}>{cat.count}</div>
-              <p style={{ fontSize: "14px", lineHeight: 1.7, color: "#6B6B8A", marginBottom: "14px" }}>{cat.desc}</p>
+              <p style={{ fontSize: "14px", lineHeight: 1.7, color: "#1A1A2E", marginBottom: "14px" }}>{cat.desc}</p>
               <Link href={cat.href} style={{ fontSize: "15px", color: cat.color, fontWeight: 500, textDecoration: "none" }}>
                 Browse →
               </Link>
