@@ -1,68 +1,93 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ArticleCard from "@/components/ArticleCard";
 import Link from "next/link";
-import { articles, categoryColors } from "@/lib/articles";
+import { articles } from "@/lib/articles";
 
 export default function HomePage() {
   const featured = articles.slice(0, 3);
 
   return (
-    <div style={{ background: "#F8F8FF", minHeight: "100vh" }}>
+    <div style={{ background: "#F8F8F4", minHeight: "100vh" }}>
       <Navbar />
 
-      {/* HERO */}
-      <section style={{
-        background: "linear-gradient(135deg, #4B3FC0 0%, #7B5EA7 100%)",
-        padding: "80px 32px 88px", textAlign: "center",
-      }}>
+      {/* ── HERO ── */}
+      <section style={{ position: "relative", height: "600px", overflow: "hidden" }}>
+        <img
+          src="/2-people-running-together.jpg"
+          alt="Active couple running together over 50"
+          style={{
+            position: "absolute", inset: 0,
+            width: "100%", height: "100%",
+            objectFit: "cover", objectPosition: "center 30%",
+          }}
+        />
         <div style={{
-          display: "inline-block", background: "rgba(255,255,255,0.15)",
-          color: "#fff", fontFamily: "Arial, sans-serif", fontSize: "14px",
-          padding: "6px 18px", borderRadius: "20px", marginBottom: "24px",
-          border: "0.5px solid rgba(255,255,255,0.3)",
+          position: "absolute", inset: 0,
+          background: "linear-gradient(to right, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.30) 65%, rgba(0,0,0,0.05) 100%)",
+        }} />
+        <div style={{
+          position: "relative", zIndex: 2,
+          height: "100%", display: "flex", alignItems: "center",
+          padding: "0 64px", maxWidth: "1100px", margin: "0 auto",
         }}>
-          For adults 50+ who take their health seriously
-        </div>
-        <h1 style={{
-          fontFamily: "Georgia, serif", fontSize: "44px", fontWeight: 700,
-          color: "#fff", lineHeight: 1.25, marginBottom: "20px",
-          maxWidth: "640px", margin: "0 auto 20px",
-        }}>
-          Real fitness advice for real people over 50
-        </h1>
-        <p style={{
-          fontFamily: "Arial, sans-serif", fontSize: "19px",
-          color: "rgba(255,255,255,0.88)", lineHeight: 1.75,
-          maxWidth: "520px", margin: "0 auto 36px",
-        }}>
-          No fads. No extreme diets. Just practical, science-backed guidance
-          for staying strong, healthy, and energized as you age.
-        </p>
-        <div style={{ display: "flex", gap: "14px", justifyContent: "center", flexWrap: "wrap" }}>
-          <Link href="/blog" style={{
-            background: "#fff", color: "#5B4FC8", border: "none",
-            padding: "15px 32px", borderRadius: "8px", fontSize: "17px",
-            fontFamily: "Arial, sans-serif", fontWeight: 600, textDecoration: "none",
-          }}>
-            Start reading
-          </Link>
-          <Link href="/blog" style={{
-            background: "transparent", color: "#fff",
-            border: "1.5px solid rgba(255,255,255,0.6)",
-            padding: "15px 32px", borderRadius: "8px", fontSize: "17px",
-            fontFamily: "Arial, sans-serif", textDecoration: "none",
-          }}>
-            Browse articles
-          </Link>
+          <div style={{ maxWidth: "560px" }}>
+            <div style={{
+              display: "inline-block",
+              background: "rgba(76,175,80,0.25)",
+              backdropFilter: "blur(6px)",
+              color: "#fff",
+              fontFamily: "Arial, sans-serif", fontSize: "13px", fontWeight: 600,
+              letterSpacing: "1.2px", textTransform: "uppercase",
+              padding: "6px 18px", borderRadius: "20px", marginBottom: "22px",
+              border: "1px solid rgba(76,175,80,0.5)",
+            }}>
+              For adults 50+ who take their health seriously
+            </div>
+            <h1 style={{
+              fontFamily: "Georgia, serif", fontSize: "48px", fontWeight: 700,
+              color: "#fff", lineHeight: 1.18, marginBottom: "20px",
+              textShadow: "0 2px 16px rgba(0,0,0,0.35)",
+            }}>
+              Real fitness advice<br />for real people<br />over 50
+            </h1>
+            <p style={{
+              fontFamily: "Arial, sans-serif", fontSize: "18px",
+              color: "rgba(255,255,255,0.92)", lineHeight: 1.75,
+              marginBottom: "34px",
+            }}>
+              No fads. No extreme diets. Just practical, science-backed guidance
+              for staying strong, healthy, and energized as you age.
+            </p>
+            <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
+              <Link href="/blog" style={{
+                background: "#4CAF50", color: "#fff",
+                padding: "15px 32px", borderRadius: "8px", fontSize: "16px",
+                fontFamily: "Arial, sans-serif", fontWeight: 700, textDecoration: "none",
+                boxShadow: "0 4px 16px rgba(76,175,80,0.45)",
+              }}>
+                Start reading →
+              </Link>
+              <Link href="/blog" style={{
+                background: "rgba(255,255,255,0.12)",
+                backdropFilter: "blur(6px)",
+                color: "#fff",
+                border: "1.5px solid rgba(255,255,255,0.55)",
+                padding: "15px 32px", borderRadius: "8px", fontSize: "16px",
+                fontFamily: "Arial, sans-serif", textDecoration: "none",
+              }}>
+                Browse articles
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* STATS BAND */}
+      {/* ── STATS BAND ── */}
       <div style={{
         display: "flex", justifyContent: "center",
-        background: "#fff", borderBottom: "0.5px solid rgba(91,79,200,0.15)",
-        padding: "24px 32px", fontFamily: "Arial, sans-serif",
+        background: "#fff", borderBottom: "1px solid #E8E8E0",
+        padding: "22px 32px",
+        boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
       }}>
         {[
           { num: "17", label: "Expert articles" },
@@ -70,76 +95,172 @@ export default function HomePage() {
           { num: "50+", label: "Target audience" },
         ].map((stat, i) => (
           <div key={i} style={{
-            textAlign: "center", padding: "0 36px",
-            borderLeft: i > 0 ? "0.5px solid rgba(91,79,200,0.15)" : "none",
+            textAlign: "center", padding: "0 52px",
+            borderLeft: i > 0 ? "1px solid #E8E8E0" : "none",
+            fontFamily: "Arial, sans-serif",
           }}>
-            <div style={{ fontSize: "26px", fontWeight: 700, color: "#5B4FC8" }}>{stat.num}</div>
-            <div style={{ fontSize: "14px", color: "#1A1A2E", marginTop: "3px" }}>{stat.label}</div>
+            <div style={{ fontSize: "28px", fontWeight: 700, color: "#4CAF50" }}>{stat.num}</div>
+            <div style={{ fontSize: "13px", color: "#666", marginTop: "3px" }}>{stat.label}</div>
           </div>
         ))}
       </div>
 
-      {/* FEATURED ARTICLES */}
-      <section style={{ padding: "56px 32px", maxWidth: "1100px", margin: "0 auto" }}>
-        <div style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "1.5px", textTransform: "uppercase", color: "#5B4FC8", marginBottom: "10px" }}>
+      {/* ── FEATURED ARTICLES ── */}
+      <section style={{ padding: "64px 32px", maxWidth: "1100px", margin: "0 auto" }}>
+        <div style={{
+          fontSize: "12px", fontWeight: 600, letterSpacing: "1.5px",
+          textTransform: "uppercase", color: "#4CAF50", marginBottom: "8px",
+          fontFamily: "Arial, sans-serif",
+        }}>
           Latest articles
         </div>
-        <h2 style={{ fontFamily: "Georgia, serif", fontSize: "32px", fontWeight: 700, color: "#1A1A2E", marginBottom: "10px" }}>
+        <h2 style={{
+          fontFamily: "Georgia, serif", fontSize: "32px", fontWeight: 700,
+          color: "#1A1A1A", marginBottom: "8px",
+        }}>
           What we cover
         </h2>
-        <p style={{ fontSize: "18px", color: "#1A1A2E", lineHeight: 1.75, marginBottom: "36px" }}>
+        <p style={{
+          fontSize: "17px", color: "#555", lineHeight: 1.75,
+          marginBottom: "40px", fontFamily: "Arial, sans-serif",
+        }}>
           Three categories built around what matters most after 50.
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px" }}>
-          {featured.map((article) => (
-            <ArticleCard
-              key={article.slug}
-              slug={article.slug}
-              category={article.categoryLabel}
-              title={article.title}
-              description={article.description}
-              categoryColor={categoryColors[article.category]}
-            />
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "22px" }}>
+          {[
+            {
+              img: "/7f900962ec8c45b2671fe4c35e34a31c.jpg",
+              category: "Nutrition & Diet",
+              categoryColor: "#5B4FC8",
+              title: "Best protein sources for muscle retention after 50",
+              desc: "Why protein needs increase with age and which foods deliver the most without excess calories.",
+              href: "/blog/best-protein-sources-after-50",
+            },
+            {
+              img: "/a-photograph-of-a-confident-woman-in-her_g8q4vWOGQFudzZ7GD6X5xg_44a890hETUeIhDdDPyX6aw.jpeg",
+              category: "Exercise & Fitness",
+              categoryColor: "#22C55E",
+              title: "The 20-minute morning routine that actually works",
+              desc: "A low-impact daily routine designed for joints, balance, and energy — no gym required.",
+              href: "/blog/20-minute-morning-routine",
+            },
+            {
+              img: "/ceca2d80c89e964e8522d96420ef638b.jpg",
+              category: "Healthy Recipes",
+              categoryColor: "#F59E0B",
+              title: "5 high-fiber dinner recipes under 500 calories",
+              desc: "Quick, satisfying meals that support digestion and help manage weight without feeling deprived.",
+              href: "/blog/high-fiber-dinner-recipes",
+            },
+          ].map((card, i) => (
+            <Link key={i} href={card.href} style={{ textDecoration: "none" }}>
+              <div style={{
+                borderRadius: "14px", overflow: "hidden",
+                background: "#fff", border: "1px solid #E8E8E0",
+                boxShadow: "0 2px 10px rgba(0,0,0,0.05)",
+              }}>
+                <div style={{ height: "190px", overflow: "hidden" }}>
+                  <img
+                    src={card.img}
+                    alt={card.title}
+                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  />
+                </div>
+                <div style={{ padding: "20px" }}>
+                  <div style={{
+                    fontSize: "11px", fontWeight: 600, letterSpacing: "1px",
+                    textTransform: "uppercase", color: card.categoryColor,
+                    fontFamily: "Arial, sans-serif", marginBottom: "8px",
+                  }}>
+                    {card.category}
+                  </div>
+                  <h3 style={{
+                    fontFamily: "Georgia, serif", fontSize: "17px", fontWeight: 700,
+                    color: "#1A1A1A", lineHeight: 1.4, marginBottom: "10px",
+                  }}>
+                    {card.title}
+                  </h3>
+                  <p style={{
+                    fontFamily: "Arial, sans-serif", fontSize: "14px",
+                    color: "#555", lineHeight: 1.65, marginBottom: "14px",
+                  }}>
+                    {card.desc}
+                  </p>
+                  <span style={{
+                    fontSize: "14px", fontWeight: 600,
+                    color: card.categoryColor, fontFamily: "Arial, sans-serif",
+                  }}>
+                    Read article →
+                  </span>
+                </div>
+              </div>
+            </Link>
           ))}
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section style={{ padding: "56px 32px", background: "#F0EFFC" }}>
+      {/* ── TESTIMONIALS WITH PHOTOS ── */}
+      <section style={{ padding: "64px 32px", background: "#F0F7F0" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-          <div style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "1.5px", textTransform: "uppercase", color: "#5B4FC8", marginBottom: "10px" }}>
+          <div style={{
+            fontSize: "12px", fontWeight: 600, letterSpacing: "1.5px",
+            textTransform: "uppercase", color: "#4CAF50", marginBottom: "8px",
+            fontFamily: "Arial, sans-serif",
+          }}>
             What readers say
           </div>
-          <h2 style={{ fontFamily: "Georgia, serif", fontSize: "32px", fontWeight: 700, color: "#1A1A2E", marginBottom: "10px" }}>
+          <h2 style={{
+            fontFamily: "Georgia, serif", fontSize: "32px", fontWeight: 700,
+            color: "#1A1A1A", marginBottom: "8px",
+          }}>
             Stories from our community
           </h2>
-          <p style={{ fontSize: "18px", color: "#1A1A2E", lineHeight: 1.75, marginBottom: "36px" }}>
+          <p style={{
+            fontSize: "17px", color: "#555", lineHeight: 1.75,
+            marginBottom: "40px", fontFamily: "Arial, sans-serif",
+          }}>
             Real people, real results — no before/after gimmicks.
           </p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "16px" }}>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "22px" }}>
             {[
-              { initials: "DM", name: "Donna M.", age: "Age 58, Texas", text: "Finally a fitness site that talks to me like an adult. No extreme workouts, no impossible diets — just honest, useful advice." },
-              { initials: "RK", name: "Robert K.", age: "Age 63, Florida", text: "The recipes are simple and actually taste good. I've lost 12 pounds in 3 months just by following the nutrition articles." },
+              {
+                img: "/1000_F_158733526_IWRmY8qMEkcrE9dltCgEBqwJvBGuxqG6.jpg",
+                name: "Donna M.",
+                age: "Age 58, Texas",
+                text: "Finally a fitness site that talks to me like an adult. No extreme workouts, no impossible diets — just honest, useful advice.",
+              },
+              {
+                img: "/2-people-running-together.jpg",
+                name: "Robert K.",
+                age: "Age 63, Florida",
+                text: "The recipes are simple and actually taste good. I've lost 12 pounds in 3 months just by following the nutrition articles.",
+              },
             ].map((t, i) => (
               <div key={i} style={{
-                borderRadius: "12px", padding: "22px", border: "0.5px solid rgba(91,79,200,0.15)",
-                background: "#fff", fontFamily: "Arial, sans-serif",
+                borderRadius: "14px", overflow: "hidden",
+                background: "#fff", border: "1px solid #D4E8D4",
+                boxShadow: "0 2px 10px rgba(0,0,0,0.05)",
+                fontFamily: "Arial, sans-serif",
               }}>
-                <div style={{ color: "#F59E0B", fontSize: "16px", marginBottom: "12px" }}>★★★★★</div>
-                <p style={{ fontSize: "15px", lineHeight: 1.75, fontStyle: "italic", color: "#1A1A2E", marginBottom: "16px" }}>
-                  &ldquo;{t.text}&rdquo;
-                </p>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                  <div style={{
-                    width: "40px", height: "40px", borderRadius: "50%",
-                    background: "linear-gradient(135deg, #4B3FC0, #7B5EA7)",
-                    display: "flex", alignItems: "center", justifyContent: "center",
-                    fontSize: "14px", color: "#fff", fontWeight: 600,
-                  }}>{t.initials}</div>
-                  <div>
-                    <div style={{ fontSize: "15px", fontWeight: 600, color: "#1A1A2E" }}>{t.name}</div>
-                    <div style={{ fontSize: "13px", color: "#1A1A2E" }}>{t.age}</div>
-                  </div>
+                <div style={{ height: "170px", overflow: "hidden" }}>
+                  <img
+                    src={t.img}
+                    alt={t.name}
+                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 25%" }}
+                  />
+                </div>
+                <div style={{ padding: "22px" }}>
+                  <div style={{ color: "#F59E0B", fontSize: "18px", marginBottom: "12px" }}>★★★★★</div>
+                  <p style={{
+                    fontSize: "15px", lineHeight: 1.75, fontStyle: "italic",
+                    color: "#333", marginBottom: "16px",
+                  }}>
+                    &ldquo;{t.text}&rdquo;
+                  </p>
+                  <div style={{ fontSize: "15px", fontWeight: 700, color: "#1A1A1A" }}>{t.name}</div>
+                  <div style={{ fontSize: "13px", color: "#888", marginTop: "2px" }}>{t.age}</div>
                 </div>
               </div>
             ))}
@@ -147,68 +268,129 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* KALORIX BAND */}
+      {/* ── CATEGORIES WITH IMAGES ── */}
+      <section style={{ padding: "64px 32px", maxWidth: "1100px", margin: "0 auto" }}>
+        <div style={{
+          fontSize: "12px", fontWeight: 600, letterSpacing: "1.5px",
+          textTransform: "uppercase", color: "#4CAF50", marginBottom: "8px",
+          fontFamily: "Arial, sans-serif",
+        }}>
+          Browse by topic
+        </div>
+        <h2 style={{
+          fontFamily: "Georgia, serif", fontSize: "32px", fontWeight: 700,
+          color: "#1A1A1A", marginBottom: "8px",
+        }}>
+          Find what you need
+        </h2>
+        <p style={{
+          fontSize: "17px", color: "#555", lineHeight: 1.75,
+          marginBottom: "40px", fontFamily: "Arial, sans-serif",
+        }}>
+          All our content, organized by category.
+        </p>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "22px" }}>
+          {[
+            {
+              href: "/nutrition",
+              color: "#5B4FC8",
+              label: "Nutrition & Diet",
+              count: "7 articles",
+              desc: "Protein, fiber, hydration, supplements — everything about eating well after 50.",
+              img: "/7f900962ec8c45b2671fe4c35e34a31c.jpg",
+            },
+            {
+              href: "/exercise",
+              color: "#22C55E",
+              label: "Exercise & Fitness",
+              count: "6 articles",
+              desc: "Low-impact routines, strength training, balance, and flexibility for the 50+ body.",
+              img: "/1000_F_158733526_IWRmY8qMEkcrE9dltCgEBqwJvBGuxqG6.jpg",
+            },
+            {
+              href: "/recipes",
+              color: "#F59E0B",
+              label: "Healthy Recipes",
+              count: "4 articles",
+              desc: "Quick, nutritious meals with full macro breakdowns — designed for real kitchens.",
+              img: "/ceca2d80c89e964e8522d96420ef638b.jpg",
+            },
+          ].map((cat) => (
+            <Link key={cat.href} href={cat.href} style={{ textDecoration: "none" }}>
+              <div style={{
+                borderRadius: "14px", overflow: "hidden",
+                background: "#fff", border: "1px solid #E8E8E0",
+                boxShadow: "0 2px 10px rgba(0,0,0,0.05)",
+              }}>
+                <div style={{ height: "155px", overflow: "hidden", position: "relative" }}>
+                  <img
+                    src={cat.img}
+                    alt={cat.label}
+                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  />
+                  <div style={{
+                    position: "absolute", inset: 0,
+                    background: "linear-gradient(to top, rgba(0,0,0,0.30) 0%, transparent 55%)",
+                  }} />
+                </div>
+                <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
+                  <div style={{
+                    fontSize: "11px", fontWeight: 600, letterSpacing: "1px",
+                    textTransform: "uppercase", color: cat.color, marginBottom: "6px",
+                  }}>
+                    {cat.label}
+                  </div>
+                  <div style={{ fontSize: "17px", fontWeight: 700, color: "#1A1A1A", marginBottom: "6px" }}>
+                    {cat.count}
+                  </div>
+                  <p style={{ fontSize: "14px", lineHeight: 1.65, color: "#555", marginBottom: "14px" }}>
+                    {cat.desc}
+                  </p>
+                  <span style={{ fontSize: "14px", color: cat.color, fontWeight: 600 }}>
+                    Browse →
+                  </span>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* ── KALORIX CTA BAND ── */}
       <section style={{
-        background: "linear-gradient(135deg, #4B3FC0 0%, #7B5EA7 100%)",
-        padding: "48px 32px", display: "flex", alignItems: "center",
+        background: "linear-gradient(135deg, #2D5A27 0%, #4CAF50 100%)",
+        padding: "52px 64px",
+        display: "flex", alignItems: "center",
         justifyContent: "space-between", gap: "24px", flexWrap: "wrap",
       }}>
         <div>
-          <h3 style={{ fontFamily: "Georgia, serif", fontSize: "26px", color: "#fff", marginBottom: "10px" }}>
+          <h3 style={{
+            fontFamily: "Georgia, serif", fontSize: "26px", color: "#fff", marginBottom: "10px",
+          }}>
             Track your calories with Kalorix
           </h3>
-          <p style={{ fontFamily: "Arial, sans-serif", fontSize: "16px", color: "rgba(255,255,255,0.82)", lineHeight: 1.7, maxWidth: "420px" }}>
-            The calorie and macro tracker built for adults 40+. Simple, clear, and available in English, French, and Spanish.
+          <p style={{
+            fontFamily: "Arial, sans-serif", fontSize: "16px",
+            color: "rgba(255,255,255,0.88)", lineHeight: 1.7, maxWidth: "420px",
+          }}>
+            The calorie and macro tracker built for adults 40+. Simple, clear, and available
+            in English, French, and Spanish.
           </p>
         </div>
         <Link
           href="https://kalorix-nine.vercel.app"
           target="_blank"
           style={{
-            background: "#F59E0B", color: "#fff", border: "none",
-            padding: "14px 28px", borderRadius: "8px", fontSize: "16px",
-            fontFamily: "Arial, sans-serif", fontWeight: 600, textDecoration: "none",
+            background: "#fff", color: "#2D5A27",
+            padding: "15px 32px", borderRadius: "8px", fontSize: "16px",
+            fontFamily: "Arial, sans-serif", fontWeight: 700, textDecoration: "none",
+            boxShadow: "0 4px 14px rgba(0,0,0,0.15)",
             whiteSpace: "nowrap",
           }}
         >
           Try Kalorix free →
         </Link>
-      </section>
-
-      {/* CATEGORIES */}
-      <section style={{ padding: "56px 32px", maxWidth: "1100px", margin: "0 auto" }}>
-        <div style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "1.5px", textTransform: "uppercase", color: "#5B4FC8", marginBottom: "10px" }}>
-          Browse by topic
-        </div>
-        <h2 style={{ fontFamily: "Georgia, serif", fontSize: "32px", fontWeight: 700, color: "#1A1A2E", marginBottom: "10px" }}>
-          Find what you need
-        </h2>
-        <p style={{ fontSize: "18px", color: "#1A1A2E", lineHeight: 1.75, marginBottom: "36px" }}>
-          All our content, organized by category.
-        </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px" }}>
-          {[
-            { href: "/nutrition", color: "#5B4FC8", label: "Nutrition & Diet", count: "7 articles", desc: "Protein, fiber, hydration, supplements — everything about eating well after 50." },
-            { href: "/exercise", color: "#22C55E", label: "Exercise & Fitness", count: "6 articles", desc: "Low-impact routines, strength training, balance, and flexibility for the 50+ body." },
-            { href: "/recipes", color: "#F59E0B", label: "Healthy Recipes", count: "4 articles", desc: "Quick, nutritious meals with full macro breakdowns — designed for real kitchens." },
-          ].map((cat) => (
-            <div key={cat.href} style={{
-              borderRadius: "12px", padding: "24px 20px",
-              border: "0.5px solid rgba(91,79,200,0.15)",
-              borderTop: `3px solid ${cat.color}`,
-              background: "#fff", fontFamily: "Arial, sans-serif",
-            }}>
-              <div style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "1px", textTransform: "uppercase", color: cat.color, marginBottom: "8px" }}>
-                {cat.label}
-              </div>
-              <div style={{ fontSize: "17px", fontWeight: 600, color: "#1A1A2E", marginBottom: "8px" }}>{cat.count}</div>
-              <p style={{ fontSize: "14px", lineHeight: 1.7, color: "#1A1A2E", marginBottom: "14px" }}>{cat.desc}</p>
-              <Link href={cat.href} style={{ fontSize: "15px", color: cat.color, fontWeight: 500, textDecoration: "none" }}>
-                Browse →
-              </Link>
-            </div>
-          ))}
-        </div>
       </section>
 
       <Footer />
