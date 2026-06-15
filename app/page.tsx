@@ -7,12 +7,12 @@ export default function HomePage() {
     <div style={{ background: "#F8F8F4", minHeight: "100vh" }}>
       <Navbar />
 
-      {/* ── HERO — Image pure, zéro texte dessus ── */}
-      <section style={{ width: "100%", height: "480px", overflow: "hidden" }}>
+      {/* ── HERO — taille naturelle, pas étirée ── */}
+      <section style={{ width: "100%", overflow: "hidden", lineHeight: 0 }}>
         <img
           src="/banniere.webp"
           alt="Eat Good Feel Good — Fitness Ritual"
-          style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
+          style={{ width: "100%", height: "auto", display: "block" }}
         />
       </section>
 
@@ -34,7 +34,7 @@ export default function HomePage() {
         </div>
         <h1 style={{
           fontFamily: "Georgia, serif", fontSize: "44px", fontWeight: 700,
-          color: "#1A1A1A", lineHeight: 1.2, marginBottom: "18px", maxWidth: "680px",
+          color: "#1A1A1A", lineHeight: 1.2, maxWidth: "680px",
           margin: "0 auto 18px",
         }}>
           Real fitness advice for real people over 50
@@ -42,7 +42,7 @@ export default function HomePage() {
         <p style={{
           fontFamily: "Arial, sans-serif", fontSize: "18px",
           color: "#555", lineHeight: 1.75,
-          marginBottom: "32px", maxWidth: "520px", margin: "0 auto 32px",
+          maxWidth: "520px", margin: "0 auto 32px",
         }}>
           No fads. No extreme diets. Just practical, science-backed guidance
           for staying strong, healthy, and energized as you age.
