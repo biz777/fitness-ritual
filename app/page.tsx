@@ -7,12 +7,12 @@ export default function HomePage() {
     <div style={{ background: "#F8F8F4", minHeight: "100vh" }}>
       <Navbar />
 
-      {/* ── HERO — taille naturelle, pas étirée ── */}
-      <section style={{ width: "100%", overflow: "hidden", lineHeight: 0 }}>
+      {/* ── HERO — hauteur fixe 380px, pas étirée ── */}
+      <section style={{ width: "100%", height: "380px", overflow: "hidden", lineHeight: 0 }}>
         <img
           src="/banniere.webp"
           alt="Eat Good Feel Good — Fitness Ritual"
-          style={{ width: "100%", height: "auto", display: "block" }}
+          style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
         />
       </section>
 
