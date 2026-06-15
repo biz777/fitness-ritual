@@ -10,7 +10,7 @@ export default function HomePage() {
       {/* ── HERO — Bannière plein écran ── */}
       <section style={{ position: "relative", height: "480px", overflow: "hidden" }}>
         <img
-          src="/Banniére.webp"
+          src="/banniere.webp"
           alt="Eat Good Feel Good — Fitness Ritual"
           style={{
             position: "absolute", inset: 0,
@@ -113,21 +113,21 @@ export default function HomePage() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "22px" }}>
           {[
             {
-              img: "/7f900962ec8c45b2671fe4c35e34a31c.jpg",
+              img: "/nutrition-bowl.jpg",
               category: "Nutrition & Diet", categoryColor: "#5B4FC8",
               title: "Best protein sources for muscle retention after 50",
               desc: "Why protein needs increase with age and which foods deliver the most without excess calories.",
               href: "/blog/best-protein-sources-after-50",
             },
             {
-              img: "/a-photograph-of-a-confident-woman-in-her_g8q4vWOGQFudzZ7GD6X5xg_44a890hETUeIhDdDPyX6aw.jpeg",
+              img: "/hero-running.jpg",
               category: "Exercise & Fitness", categoryColor: "#22C55E",
               title: "The 20-minute morning routine that actually works",
               desc: "A low-impact daily routine designed for joints, balance, and energy — no gym required.",
               href: "/blog/20-minute-morning-routine",
             },
             {
-              img: "/ceca2d80c89e964e8522d96420ef638b.jpg",
+              img: "/recipes-salad.jpg",
               category: "Healthy Recipes", categoryColor: "#F59E0B",
               title: "5 high-fiber dinner recipes under 500 calories",
               desc: "Quick, satisfying meals that support digestion and help manage weight without feeling deprived.",
@@ -171,8 +171,8 @@ export default function HomePage() {
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "22px" }}>
             {[
-              { img: "/1000_F_158733526_IWRmY8qMEkcrE9dltCgEBqwJvBGuxqG6.jpg", name: "Donna M.", age: "Age 58, Texas", text: "Finally a fitness site that talks to me like an adult. No extreme workouts, no impossible diets — just honest, useful advice." },
-              { img: "/2-people-running-together.jpg", name: "Robert K.", age: "Age 63, Florida", text: "The recipes are simple and actually taste good. I've lost 12 pounds in 3 months just by following the nutrition articles." },
+              { img: "/yoga-garden.jpg", name: "Donna M.", age: "Age 58, Texas", text: "Finally a fitness site that talks to me like an adult. No extreme workouts, no impossible diets — just honest, useful advice." },
+              { img: "/exercise-nordic.jpg", name: "Robert K.", age: "Age 63, Florida", text: "The recipes are simple and actually taste good. I've lost 12 pounds in 3 months just by following the nutrition articles." },
             ].map((t, i) => (
               <div key={i} style={{ borderRadius: "14px", overflow: "hidden", background: "#fff", border: "1px solid #D4E8D4", boxShadow: "0 2px 10px rgba(0,0,0,0.05)", fontFamily: "Arial, sans-serif" }}>
                 <div style={{ height: "170px", overflow: "hidden" }}>
@@ -199,9 +199,9 @@ export default function HomePage() {
         <p style={{ fontSize: "17px", color: "#555", lineHeight: 1.75, marginBottom: "40px", fontFamily: "Arial, sans-serif" }}>All our content, organized by category.</p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "22px" }}>
           {[
-            { href: "/nutrition", color: "#5B4FC8", label: "Nutrition & Diet", count: "7 articles", desc: "Protein, fiber, hydration, supplements — everything about eating well after 50.", img: "/7f900962ec8c45b2671fe4c35e34a31c.jpg" },
-            { href: "/exercise", color: "#22C55E", label: "Exercise & Fitness", count: "6 articles", desc: "Low-impact routines, strength training, balance, and flexibility for the 50+ body.", img: "/1000_F_158733526_IWRmY8qMEkcrE9dltCgEBqwJvBGuxqG6.jpg" },
-            { href: "/recipes", color: "#F59E0B", label: "Healthy Recipes", count: "4 articles", desc: "Quick, nutritious meals with full macro breakdowns — designed for real kitchens.", img: "/ceca2d80c89e964e8522d96420ef638b.jpg" },
+            { href: "/nutrition", color: "#5B4FC8", label: "Nutrition & Diet", count: "7 articles", desc: "Protein, fiber, hydration, supplements — everything about eating well after 50.", img: "/nutrition-bowl.jpg" },
+            { href: "/exercise", color: "#22C55E", label: "Exercise & Fitness", count: "6 articles", desc: "Low-impact routines, strength training, balance, and flexibility for the 50+ body.", img: "/hero-nordic.jpg" },
+            { href: "/recipes", color: "#F59E0B", label: "Healthy Recipes", count: "4 articles", desc: "Quick, nutritious meals with full macro breakdowns — designed for real kitchens.", img: "/recipes-salad.jpg" },
           ].map((cat) => (
             <Link key={cat.href} href={cat.href} style={{ textDecoration: "none" }}>
               <div style={{ borderRadius: "14px", overflow: "hidden", background: "#fff", border: "1px solid #E8E8E0", boxShadow: "0 2px 10px rgba(0,0,0,0.05)" }}>
