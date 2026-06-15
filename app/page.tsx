@@ -7,81 +7,71 @@ export default function HomePage() {
     <div style={{ background: "#F8F8F4", minHeight: "100vh" }}>
       <Navbar />
 
-      {/* ── HERO — Bannière plein écran ── */} 
-      <section style={{ position: "relative", height: "480px", overflow: "hidden" }}>
+      {/* ── HERO — Image pure, zéro texte dessus ── */}
+      <section style={{ width: "100%", height: "480px", overflow: "hidden" }}>
         <img
           src="/banniere.webp"
           alt="Eat Good Feel Good — Fitness Ritual"
-          style={{
-            position: "absolute", inset: 0,
-            width: "100%", height: "100%",
-            objectFit: "cover", objectPosition: "center",
-          }}
+          style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
         />
+      </section>
+
+      {/* ── TEXTE + BOUTONS sous la bannière ── */}
+      <section style={{
+        background: "#fff", textAlign: "center",
+        padding: "52px 32px 48px", borderBottom: "1px solid #E8E8E0",
+      }}>
         <div style={{
-          position: "absolute", inset: 0,
-          background: "rgba(0,0,0,0.38)",
-        }} />
-        <div style={{
-          position: "relative", zIndex: 2,
-          height: "100%", display: "flex", alignItems: "center", justifyContent: "center",
-          flexDirection: "column", textAlign: "center", padding: "0 32px",
+          display: "inline-block",
+          background: "rgba(76,175,80,0.10)",
+          color: "#4CAF50",
+          fontFamily: "Arial, sans-serif", fontSize: "13px", fontWeight: 600,
+          letterSpacing: "1.2px", textTransform: "uppercase",
+          padding: "6px 18px", borderRadius: "20px", marginBottom: "20px",
+          border: "1px solid rgba(76,175,80,0.3)",
         }}>
-          <div style={{
-            display: "inline-block",
-            background: "rgba(76,175,80,0.25)",
-            backdropFilter: "blur(6px)",
-            color: "#fff",
-            fontFamily: "Arial, sans-serif", fontSize: "13px", fontWeight: 600,
-            letterSpacing: "1.2px", textTransform: "uppercase",
-            padding: "6px 18px", borderRadius: "20px", marginBottom: "20px",
-            border: "1px solid rgba(76,175,80,0.5)",
+          For adults 50+ who take their health seriously
+        </div>
+        <h1 style={{
+          fontFamily: "Georgia, serif", fontSize: "44px", fontWeight: 700,
+          color: "#1A1A1A", lineHeight: 1.2, marginBottom: "18px", maxWidth: "680px",
+          margin: "0 auto 18px",
+        }}>
+          Real fitness advice for real people over 50
+        </h1>
+        <p style={{
+          fontFamily: "Arial, sans-serif", fontSize: "18px",
+          color: "#555", lineHeight: 1.75,
+          marginBottom: "32px", maxWidth: "520px", margin: "0 auto 32px",
+        }}>
+          No fads. No extreme diets. Just practical, science-backed guidance
+          for staying strong, healthy, and energized as you age.
+        </p>
+        <div style={{ display: "flex", gap: "14px", flexWrap: "wrap", justifyContent: "center" }}>
+          <Link href="/blog" style={{
+            background: "#4CAF50", color: "#fff",
+            padding: "15px 32px", borderRadius: "8px", fontSize: "16px",
+            fontFamily: "Arial, sans-serif", fontWeight: 700, textDecoration: "none",
+            boxShadow: "0 4px 16px rgba(76,175,80,0.35)",
           }}>
-            For adults 50+ who take their health seriously
-          </div>
-          <h1 style={{
-            fontFamily: "Georgia, serif", fontSize: "48px", fontWeight: 700,
-            color: "#fff", lineHeight: 1.2, marginBottom: "18px",
-            textShadow: "0 2px 16px rgba(0,0,0,0.4)", maxWidth: "700px",
+            Start reading →
+          </Link>
+          <Link href="/blog" style={{
+            background: "#fff", color: "#1A1A1A",
+            border: "1.5px solid #D0D0C8",
+            padding: "15px 32px", borderRadius: "8px", fontSize: "16px",
+            fontFamily: "Arial, sans-serif", textDecoration: "none",
           }}>
-            Real fitness advice for real people over 50
-          </h1>
-          <p style={{
-            fontFamily: "Arial, sans-serif", fontSize: "18px",
-            color: "rgba(255,255,255,0.92)", lineHeight: 1.7,
-            marginBottom: "32px", maxWidth: "520px",
-          }}>
-            No fads. No extreme diets. Just practical, science-backed guidance
-            for staying strong, healthy, and energized as you age.
-          </p>
-          <div style={{ display: "flex", gap: "14px", flexWrap: "wrap", justifyContent: "center" }}>
-            <Link href="/blog" style={{
-              background: "#4CAF50", color: "#fff",
-              padding: "15px 32px", borderRadius: "8px", fontSize: "16px",
-              fontFamily: "Arial, sans-serif", fontWeight: 700, textDecoration: "none",
-              boxShadow: "0 4px 16px rgba(76,175,80,0.45)",
-            }}>
-              Start reading →
-            </Link>
-            <Link href="/blog" style={{
-              background: "rgba(255,255,255,0.12)",
-              backdropFilter: "blur(6px)",
-              color: "#fff",
-              border: "1.5px solid rgba(255,255,255,0.55)",
-              padding: "15px 32px", borderRadius: "8px", fontSize: "16px",
-              fontFamily: "Arial, sans-serif", textDecoration: "none",
-            }}>
-              Browse articles
-            </Link>
-          </div>
+            Browse articles
+          </Link>
         </div>
       </section>
 
       {/* ── STATS BAND ── */}
       <div style={{
         display: "flex", justifyContent: "center",
-        background: "#fff", borderBottom: "1px solid #E8E8E0",
-        padding: "22px 32px", boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
+        background: "#F8F8F4", borderBottom: "1px solid #E8E8E0",
+        padding: "22px 32px",
       }}>
         {[
           { num: "17", label: "Expert articles" },
