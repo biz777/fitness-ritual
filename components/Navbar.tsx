@@ -8,20 +8,21 @@ export default function Navbar() {
   return (
     <nav style={{
       display: "flex", alignItems: "center", justifyContent: "space-between",
-      padding: "18px 32px", background: "#fff",
-      borderBottom: "0.5px solid rgba(91,79,200,0.15)",
+      padding: "12px 32px", background: "#fff",
+      borderBottom: "0.5px solid #E8E8E0",
       position: "sticky", top: 0, zIndex: 100,
     }}>
-      <Link href="/" style={{ textDecoration: "none" }}>
-        <span style={{
-          fontFamily: "Georgia, serif", fontSize: "22px", fontWeight: 700,
-          color: "#5B4FC8",
-        }}>
-          fitness-<span style={{ color: "#22C55E" }}>ritual</span>.com
-        </span>
+      {/* LOGO */}
+      <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
+        <img
+          src="/fitness-ritual_LOGO.jpg"
+          alt="Fitness Ritual"
+          style={{ height: "52px", width: "auto", objectFit: "contain" }}
+        />
       </Link>
 
-      <div style={{ display: "flex", gap: "6px", alignItems: "center" }} className="nav-links">
+      {/* NAV LINKS */}
+      <div style={{ display: "flex", gap: "6px", alignItems: "center" }}>
         {["Blog", "Nutrition", "Exercise", "Recipes"].map((item) => (
           <Link
             key={item}
@@ -38,10 +39,9 @@ export default function Navbar() {
           href="https://kalorix-nine.vercel.app"
           target="_blank"
           style={{
-            background: "#5B4FC8", color: "#fff", border: "none",
+            background: "#4CAF50", color: "#fff",
             padding: "11px 22px", borderRadius: "8px", fontSize: "15px",
-            fontWeight: 600, cursor: "pointer", textDecoration: "none",
-            marginLeft: "8px",
+            fontWeight: 600, textDecoration: "none", marginLeft: "8px",
           }}
         >
           Try Kalorix Free
