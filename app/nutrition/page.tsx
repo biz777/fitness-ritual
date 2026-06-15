@@ -8,11 +8,10 @@ export default function NutritionPage() {
   return (
     <div style={{ background: "#F8F8F4", minHeight: "100vh" }}>
       <Navbar />
-
       {/* HERO */}
       <section style={{ position: "relative", height: "320px", overflow: "hidden" }}>
         <img
-          src="/7f900962ec8c45b2671fe4c35e34a31c.jpg"
+          src="/nutrition-bowl.jpg"
           alt="Healthy nutrition bowl with fruits"
           style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }}
         />
@@ -33,7 +32,6 @@ export default function NutritionPage() {
           </p>
         </div>
       </section>
-
       {/* ARTICLES GRID */}
       <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "56px 32px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }}>
