@@ -4,7 +4,6 @@ import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <nav style={{
       display: "flex", alignItems: "center", justifyContent: "space-between",
@@ -15,12 +14,11 @@ export default function Navbar() {
       {/* LOGO */}
       <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
         <img
-          src="/fitness-ritual_LOGO.jpg"
+          src="/logo.jpg"
           alt="Fitness Ritual"
           style={{ height: "52px", width: "auto", objectFit: "contain" }}
         />
       </Link>
-
       {/* NAV LINKS */}
       <div style={{ display: "flex", gap: "6px", alignItems: "center" }}>
         {["Blog", "Nutrition", "Exercise", "Recipes"].map((item) => (
