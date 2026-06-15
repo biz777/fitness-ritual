@@ -8,11 +8,10 @@ export default function ExercisePage() {
   return (
     <div style={{ background: "#F8F8F4", minHeight: "100vh" }}>
       <Navbar />
-
       {/* HERO */}
       <section style={{ position: "relative", height: "320px", overflow: "hidden" }}>
         <img
-          src="/1000_F_158733526_IWRmY8qMEkcrE9dltCgEBqwJvBGuxqG6.jpg"
+          src="/hero-nordic.jpg"
           alt="Active couple nordic walking over 50"
           style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%" }}
         />
@@ -33,7 +32,6 @@ export default function ExercisePage() {
           </p>
         </div>
       </section>
-
       {/* ARTICLES GRID */}
       <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "56px 32px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }}>
