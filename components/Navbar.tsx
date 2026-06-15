@@ -1,24 +1,24 @@
 "use client";
-import { useState } from "react";
 import Link from "next/link";
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav style={{
       display: "flex", alignItems: "center", justifyContent: "space-between",
-      padding: "12px 32px", background: "#fff",
+      padding: "0 32px", background: "#fff",
       borderBottom: "0.5px solid #E8E8E0",
-      position: "sticky", top: 0, zIndex: 100,
+      position: "sticky", top: 0, zIndex: 100, height: "64px",
     }}>
-      {/* LOGO */}
-      <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
-        <img
-          src="/logo.jpg"
-          alt="Fitness Ritual"
-          style={{ height: "52px", width: "auto", objectFit: "contain" }}
-        />
+      {/* BRAND NAME */}
+      <Link href="/" style={{ textDecoration: "none" }}>
+        <span style={{
+          fontFamily: "Georgia, serif", fontSize: "22px", fontWeight: 700,
+          color: "#1A1A2E", letterSpacing: "0.5px",
+        }}>
+          FITNESS RITUAL
+        </span>
       </Link>
+
       {/* NAV LINKS */}
       <div style={{ display: "flex", gap: "6px", alignItems: "center" }}>
         {["Blog", "Nutrition", "Exercise", "Recipes"].map((item) => (
