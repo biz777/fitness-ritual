@@ -7,7 +7,7 @@ export default function HomePage() {
     <div style={{ background: "#F8F8F4", minHeight: "100vh" }}>
       <Navbar />
 
-      {/* ── HERO — Bannière plein écran ── */}
+      {/* ── HERO — Bannière plein écran ── */} 
       <section style={{ position: "relative", height: "480px", overflow: "hidden" }}>
         <img
           src="/banniere.webp"
