@@ -20,17 +20,23 @@ export default function Navbar() {
       </Link>
 
       {/* NAV LINKS */}
-      <div style={{ display: "flex", gap: "6px", alignItems: "center" }}>
-        {["Blog", "Nutrition", "Exercise", "Recipes"].map((item) => (
+      <div style={{ display: "flex", gap: "4px", alignItems: "center" }}>
+        {[
+          { label: "Home", href: "/" },
+          { label: "Blog", href: "/blog" },
+          { label: "Nutrition", href: "/nutrition" },
+          { label: "Exercise", href: "/exercise" },
+          { label: "Recipes", href: "/recipes" },
+        ].map((item) => (
           <Link
-            key={item}
-            href={`/${item.toLowerCase()}`}
+            key={item.label}
+            href={item.href}
             style={{
-              textDecoration: "none", fontSize: "16px", fontWeight: 500,
+              textDecoration: "none", fontSize: "17px", fontWeight: 700,
               color: "#1A1A2E", padding: "9px 16px", borderRadius: "8px",
             }}
           >
-            {item}
+            {item.label}
           </Link>
         ))}
         <Link
@@ -39,7 +45,7 @@ export default function Navbar() {
           style={{
             background: "#4CAF50", color: "#fff",
             padding: "11px 22px", borderRadius: "8px", fontSize: "15px",
-            fontWeight: 600, textDecoration: "none", marginLeft: "8px",
+            fontWeight: 700, textDecoration: "none", marginLeft: "8px",
           }}
         >
           Try Kalorix Free
