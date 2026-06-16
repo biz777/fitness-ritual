@@ -4,19 +4,15 @@
    À placer dans : app/globals.css
    ============================================================ */
 
-/* Tailwind v4 — syntaxe correcte (pas @tailwind base/components/utilities) */
 @import "tailwindcss";
 
-/* Google Font Inter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
 /* ============================================================
-   TOKENS FOREST VITALITY — syntaxe Tailwind v4
-   Ces tokens génèrent automatiquement les classes Tailwind :
-   bg-primary, text-accent, border-border-light, etc.
+   TOKENS FOREST VITALITY — @theme Tailwind v4
+   Génère automatiquement : bg-primary, text-accent, etc.
    ============================================================ */
 @theme {
-  /* --- Couleurs principales --- */
   --color-primary:           #2D6A4F;
   --color-primary-dark:      #1B4332;
   --color-primary-light:     #74C69D;
@@ -26,13 +22,11 @@
   --color-accent-light:      #FAE3D0;
   --color-accent-hover:      #C5632A;
 
-  /* --- Surfaces & fonds --- */
   --color-surface-page:      #F8FAF9;
   --color-surface-white:     #FFFFFF;
   --color-surface-tip:       #F0FAF5;
   --color-surface-affiliate: #FDF6F0;
 
-  /* --- Texte --- */
   --color-text-heading:      #2D3436;
   --color-text-body:         #3D4F58;
   --color-text-muted:        #4A6572;
@@ -40,43 +34,21 @@
   --color-text-accent:       #E07A3A;
   --color-text-green:        #2D6A4F;
 
-  /* --- Bordures --- */
   --color-border-light:      #C8E6D8;
   --color-border-accent:     #74C69D;
   --color-border-affiliate:  #F4C49A;
 
-  /* --- Typographie --- */
   --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
 
-  --font-size-xs:   0.75rem;    /* 12px */
-  --font-size-sm:   0.875rem;   /* 14px */
-  --font-size-base: 1rem;       /* 16px — minimum absolu 50+ */
-  --font-size-lg:   1.125rem;   /* 18px */
-  --font-size-xl:   1.25rem;    /* 20px */
-  --font-size-2xl:  1.5rem;     /* 24px */
-  --font-size-3xl:  1.875rem;   /* 30px */
-
-  /* --- Line heights --- */
-  --line-height-body:    1.85;
-  --line-height-heading: 1.25;
-  --line-height-ui:      1.5;
-
-  /* --- Border radius --- */
   --radius-sm:   6px;
   --radius-md:   8px;
   --radius-lg:   10px;
   --radius-xl:   14px;
   --radius-pill: 9999px;
 
-  /* --- Ombres --- */
   --shadow-card:       0 1px 3px rgba(45, 106, 79, 0.08);
   --shadow-card-hover: 0 4px 12px rgba(45, 106, 79, 0.12);
 
-  /* --- Largeurs max --- */
-  --width-content: 1100px;
-  --width-article: 720px;
-
-  /* --- Breakpoints --- */
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
@@ -84,8 +56,7 @@
 }
 
 /* ============================================================
-   CSS CUSTOM PROPERTIES — pour usage direct via var()
-   dans les composants JSX inline styles
+   CSS CUSTOM PROPERTIES — pour var() dans les inline styles JSX
    ============================================================ */
 :root {
   --color-primary:           #2D6A4F;
@@ -155,20 +126,18 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
 }
 
-/* Règle d'or 50+ : jamais en dessous de 16px pour le corps */
+/* Règle d'or 50+ : jamais en dessous de 16px */
 p {
   font-size: 1rem;
   line-height: 1.85;
   color: var(--color-text-body);
 }
 
-/* Accessibilité */
 :focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
 
-/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -177,11 +146,10 @@ p {
 }
 
 /* ============================================================
-   CLASSES UTILITAIRES TAILWIND v4
-   Utilisables directement dans className=""
+   UTILITAIRES — @utility (noms alphanumériques uniquement)
+   Les hover states sont gérés séparément en CSS classique
    ============================================================ */
 
-/* --- Boutons --- */
 @utility btn-primary {
   background-color: var(--color-accent);
   color: #fff;
@@ -196,10 +164,6 @@ p {
   transition: background-color 0.2s;
 }
 
-@utility btn-primary:hover {
-  background-color: var(--color-accent-hover);
-}
-
 @utility btn-secondary {
   background-color: transparent;
   color: var(--color-primary);
@@ -211,6 +175,7 @@ p {
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
+  transition: background-color 0.2s;
 }
 
 @utility btn-green {
@@ -224,9 +189,9 @@ p {
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
+  transition: background-color 0.2s;
 }
 
-/* --- Cartes articles --- */
 @utility card-article {
   background-color: var(--color-bg-page);
   border: 0.5px solid var(--color-border-accent);
@@ -235,12 +200,6 @@ p {
   transition: box-shadow 0.2s, transform 0.2s;
 }
 
-@utility card-article:hover {
-  box-shadow: var(--shadow-card-hover);
-  transform: translateY(-2px);
-}
-
-/* --- Intro article encadrée --- */
 @utility article-intro {
   background-color: var(--color-bg-page);
   border-left: 3px solid var(--color-primary);
@@ -253,7 +212,6 @@ p {
   line-height: 1.75;
 }
 
-/* --- Tip box --- */
 @utility tip-box {
   background-color: var(--color-bg-tip);
   border: 0.5px solid var(--color-border-accent);
@@ -262,7 +220,6 @@ p {
   margin: 1.25rem 0;
 }
 
-/* --- Bloc affilié --- */
 @utility affiliate-box {
   background-color: var(--color-bg-affiliate);
   border: 0.5px solid var(--color-border-affiliate);
@@ -271,7 +228,6 @@ p {
   margin: 1.25rem 0;
 }
 
-/* --- Badge catégorie --- */
 @utility category-badge {
   display: inline-block;
   background-color: var(--color-accent);
@@ -284,7 +240,6 @@ p {
   border-radius: var(--radius-pill);
 }
 
-/* --- Tag article --- */
 @utility article-tag {
   background-color: var(--color-bg-tip);
   border: 0.5px solid var(--color-border-accent);
@@ -294,7 +249,6 @@ p {
   border-radius: var(--radius-pill);
 }
 
-/* --- Nav CTA pill --- */
 @utility nav-cta {
   background-color: var(--color-accent);
   color: #fff;
@@ -306,9 +260,9 @@ p {
   cursor: pointer;
   text-decoration: none;
   white-space: nowrap;
+  transition: background-color 0.2s;
 }
 
-/* --- Widget sidebar Kalorix --- */
 @utility kalorix-widget {
   background-color: var(--color-primary);
   border-radius: var(--radius-lg);
@@ -317,7 +271,6 @@ p {
   top: 72px;
 }
 
-/* --- Container principal --- */
 @utility container-content {
   max-width: 1100px;
   margin-left: auto;
@@ -326,14 +279,31 @@ p {
   padding-right: 2rem;
 }
 
-/* --- Layout article + sidebar --- */
 @utility article-layout {
   display: grid;
   grid-template-columns: 1fr 260px;
 }
 
+/* ============================================================
+   HOVER STATES — en CSS classique (pas dans @utility)
+   ============================================================ */
+
+.btn-primary:hover  { background-color: var(--color-accent-hover); text-decoration: none; color: #fff; }
+.btn-secondary:hover { background-color: var(--color-primary-bg); text-decoration: none; }
+.btn-green:hover    { background-color: var(--color-primary-dark); text-decoration: none; color: #fff; }
+.nav-cta:hover      { background-color: var(--color-accent-hover); text-decoration: none; color: #fff; }
+.card-article:hover { box-shadow: var(--shadow-card-hover); transform: translateY(-2px); }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
 @media (max-width: 768px) {
-  @utility article-layout {
+  .article-layout {
     grid-template-columns: 1fr;
+  }
+  .container-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
