@@ -7,19 +7,27 @@ export default function HomePage() {
     <div style={{ background: "#F8F8F4", minHeight: "100vh" }}>
       <Navbar />
 
-      {/* ── HERO — hauteur fixe 380px, pas étirée ── */}
-      <section style={{ width: "100%", height: "380px", overflow: "hidden", lineHeight: 0 }}>
+      {/* ── HERO — centrée, demi-largeur ── */}
+      <section style={{
+        width: "100%", background: "#fff",
+        display: "flex", justifyContent: "center",
+        padding: "32px 0", borderBottom: "1px solid #E8E8E0",
+      }}>
         <img
           src="/banniere.webp"
           alt="Eat Good Feel Good — Fitness Ritual"
-          style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
+          style={{
+            width: "50%", height: "auto",
+            display: "block", borderRadius: "12px",
+            boxShadow: "0 4px 24px rgba(0,0,0,0.10)",
+          }}
         />
       </section>
 
       {/* ── TEXTE + BOUTONS sous la bannière ── */}
       <section style={{
         background: "#fff", textAlign: "center",
-        padding: "52px 32px 48px", borderBottom: "1px solid #E8E8E0",
+        padding: "48px 32px 48px", borderBottom: "1px solid #E8E8E0",
       }}>
         <div style={{
           display: "inline-block",
