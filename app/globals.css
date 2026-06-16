@@ -1,37 +1,99 @@
-@import "tailwindcss";
+/* ============================================================
+   FITNESS-RITUAL.COM — globals.css
+   À placer dans : app/globals.css
+   Importer dans  : app/layout.js → import './globals.css'
+   ============================================================ */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Import Google Font Inter --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+/* --- Variables CSS Forest Vitality --- */
 :root {
-  --kr-purple: #5B4FC8;
-  --kr-purple-dark: #4B3FC0;
-  --kr-purple-light: #7B6FD8;
-  --kr-green: #22C55E;
-  --kr-amber: #F59E0B;
-  --kr-bg-light: #F8F8FF;
-  --kr-bg-dark: #0F0F1A;
-  --kr-bg-card-dark: #1A1A2E;
-  --kr-text-light: #1A1A2E;
-  --kr-text-muted-light: #6B6B8A;
-  --kr-text-dark: #EDEDED;
-  --kr-text-muted-dark: #9999BB;
-  --background: var(--kr-bg-light);
-  --foreground: var(--kr-text-light);
+  --color-primary:          #2D6A4F;
+  --color-primary-dark:     #1B4332;
+  --color-primary-light:    #74C69D;
+  --color-primary-bg:       #C8E6D8;
+  --color-accent:           #E07A3A;
+  --color-accent-light:     #FAE3D0;
+  --color-accent-hover:     #C5632A;
+  --color-bg-page:          #F8FAF9;
+  --color-bg-white:         #FFFFFF;
+  --color-bg-tip:           #F0FAF5;
+  --color-bg-affiliate:     #FDF6F0;
+  --color-text-heading:     #2D3436;
+  --color-text-body:        #3D4F58;
+  --color-text-muted:       #4A6572;
+  --color-text-on-dark:     #FFFFFF;
+  --color-text-accent:      #E07A3A;
+  --color-text-primary:     #2D6A4F;
+  --color-border-light:     #C8E6D8;
+  --color-border-accent:    #74C69D;
+  --color-border-affiliate: #F4C49A;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--kr-bg-dark);
-    --foreground: var(--kr-text-dark);
-  }
+/* --- Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 1.75;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 1rem;
+  color: var(--color-text-body);
+  background-color: var(--color-bg-page);
+  line-height: 1.85;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4 {
-  font-family: Georgia, serif;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text-heading);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+/* Règle d'or 50+ : jamais en dessous de 16px pour le corps */
+p {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--color-text-body);
+}
+
+/* Accessibilité — focus visible */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
