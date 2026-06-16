@@ -41,7 +41,7 @@ export default function HomePage() {
           background: "rgba(45,106,79,0.08)",
           color: "#2D6A4F",
           fontFamily: "Inter, sans-serif",
-          fontSize: "11px",
+          fontSize: "12px",
           fontWeight: 600,
           letterSpacing: "1.2px",
           textTransform: "uppercase",
@@ -128,7 +128,7 @@ export default function HomePage() {
             <div style={{ fontSize: "28px", fontWeight: 500, color: "#2D6A4F" }}>
               {stat.num}
             </div>
-            <div style={{ fontSize: "13px", color: "#4A6572", marginTop: "3px" }}>
+            <div style={{ fontSize: "16px", color: "#4A6572", marginTop: "3px" }}>
               {stat.label}
             </div>
           </div>
@@ -155,7 +155,7 @@ export default function HomePage() {
             display: "flex",
             alignItems: "center",
             gap: "6px",
-            fontSize: "13px",
+            fontSize: "16px",
             color: "#4A6572",
             fontFamily: "Inter, sans-serif",
           }}>
@@ -168,7 +168,7 @@ export default function HomePage() {
       {/* ── FEATURED ARTICLES ── */}
       <section style={{ padding: "64px 32px", maxWidth: "1100px", margin: "0 auto" }}>
         <div style={{
-          fontSize: "11px", fontWeight: 600, letterSpacing: "1.5px",
+          fontSize: "12px", fontWeight: 600, letterSpacing: "1.5px",
           textTransform: "uppercase", color: "#2D6A4F",
           marginBottom: "8px", fontFamily: "Inter, sans-serif",
         }}>
@@ -231,7 +231,7 @@ export default function HomePage() {
                 </div>
                 <div style={{ padding: "18px 20px 20px" }}>
                   <div style={{
-                    fontSize: "10px", fontWeight: 600, letterSpacing: "1px",
+                    fontSize: "12px", fontWeight: 600, letterSpacing: "1px",
                     textTransform: "uppercase", color: card.categoryColor,
                     fontFamily: "Inter, sans-serif", marginBottom: "8px",
                   }}>
@@ -244,13 +244,13 @@ export default function HomePage() {
                     {card.title}
                   </h3>
                   <p style={{
-                    fontFamily: "Inter, sans-serif", fontSize: "14px",
+                    fontFamily: "Inter, sans-serif", fontSize: "16px",
                     color: "#4A6572", lineHeight: 1.65, marginBottom: "14px",
                   }}>
                     {card.desc}
                   </p>
                   <span style={{
-                    fontSize: "13px", fontWeight: 500,
+                    fontSize: "16px", fontWeight: 500,
                     color: card.categoryColor, fontFamily: "Inter, sans-serif",
                   }}>
                     Read article →
@@ -266,7 +266,7 @@ export default function HomePage() {
       <section style={{ padding: "64px 32px", background: "#F0FAF5" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
           <div style={{
-            fontSize: "11px", fontWeight: 600, letterSpacing: "1.5px",
+            fontSize: "12px", fontWeight: 600, letterSpacing: "1.5px",
             textTransform: "uppercase", color: "#2D6A4F",
             marginBottom: "8px", fontFamily: "Inter, sans-serif",
           }}>
@@ -316,8 +316,8 @@ export default function HomePage() {
                   }}>
                     &ldquo;{t.text}&rdquo;
                   </p>
-                  <div style={{ fontSize: "15px", fontWeight: 500, color: "#2D3436" }}>{t.name}</div>
-                  <div style={{ fontSize: "13px", color: "#4A6572", marginTop: "2px" }}>{t.age}</div>
+                  <div style={{ fontSize: "16px", fontWeight: 500, color: "#2D3436" }}>{t.name}</div>
+                  <div style={{ fontSize: "16px", color: "#4A6572", marginTop: "2px" }}>{t.age}</div>
                 </div>
               </div>
             ))}
@@ -328,7 +328,7 @@ export default function HomePage() {
       {/* ── CATEGORIES ── */}
       <section style={{ padding: "64px 32px", maxWidth: "1100px", margin: "0 auto" }}>
         <div style={{
-          fontSize: "11px", fontWeight: 600, letterSpacing: "1.5px",
+          fontSize: "12px", fontWeight: 600, letterSpacing: "1.5px",
           textTransform: "uppercase", color: "#2D6A4F",
           marginBottom: "8px", fontFamily: "Inter, sans-serif",
         }}>
@@ -365,7 +365,7 @@ export default function HomePage() {
                 </div>
                 <div style={{ padding: "20px", fontFamily: "Inter, sans-serif" }}>
                   <div style={{
-                    fontSize: "10px", fontWeight: 600, letterSpacing: "1px",
+                    fontSize: "12px", fontWeight: 600, letterSpacing: "1px",
                     textTransform: "uppercase", color: cat.color, marginBottom: "6px",
                   }}>
                     {cat.label}
@@ -373,10 +373,10 @@ export default function HomePage() {
                   <div style={{ fontSize: "17px", fontWeight: 500, color: "#2D3436", marginBottom: "6px" }}>
                     {cat.count}
                   </div>
-                  <p style={{ fontSize: "14px", lineHeight: 1.65, color: "#4A6572", marginBottom: "14px" }}>
+                  <p style={{ fontSize: "16px", lineHeight: 1.65, color: "#4A6572", marginBottom: "14px" }}>
                     {cat.desc}
                   </p>
-                  <span style={{ fontSize: "14px", color: cat.color, fontWeight: 500 }}>Browse →</span>
+                  <span style={{ fontSize: "16px", color: cat.color, fontWeight: 500 }}>Browse →</span>
                 </div>
               </div>
             </Link>
