@@ -199,7 +199,7 @@ export default function HomePage() {
           Three categories built around what matters most after 50.
         </p>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "22px" }}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "22px", alignItems: "stretch" }}
           className="cards-grid"
         >
           {[
@@ -228,12 +228,13 @@ export default function HomePage() {
               href: "/blog/high-fiber-dinner-recipes",
             },
           ].map((card, i) => (
-            <Link key={i} href={card.href} style={{ textDecoration: "none" }}>
+            <Link key={i} href={card.href} style={{ textDecoration: "none", display: "flex" }}>
               <div style={{
                 borderRadius: "10px", overflow: "hidden",
                 background: "#fff",
                 border: "0.5px solid #74C69D",
                 boxShadow: "0 1px 3px rgba(45,106,79,0.08)",
+                display: "flex", flexDirection: "column", width: "100%",
               }}>
                 <div style={{ height: "180px", overflow: "hidden", background: "#C8E6D8" }}>
                   <img
@@ -242,7 +243,7 @@ export default function HomePage() {
                     style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   />
                 </div>
-                <div style={{ padding: "18px 20px 20px" }}>
+                <div style={{ padding: "18px 20px 20px", display: "flex", flexDirection: "column", flex: 1 }}>
                   <div style={{
                     fontSize: "12px", fontWeight: 600, letterSpacing: "1px",
                     textTransform: "uppercase", color: card.categoryColor,
@@ -258,7 +259,7 @@ export default function HomePage() {
                   </h3>
                   <p style={{
                     fontFamily: "Inter, sans-serif", fontSize: "16px",
-                    color: "#4A6572", lineHeight: 1.65, marginBottom: "14px",
+                    color: "#4A6572", lineHeight: 1.65, marginBottom: "14px", flex: 1,
                   }}>
                     {card.desc}
                   </p>
