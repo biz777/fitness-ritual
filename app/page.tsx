@@ -370,18 +370,19 @@ export default function HomePage() {
             { href: "/exercise",  color: "#E07A3A", label: "Exercise & Fitness", count: "6 articles", desc: "Low-impact routines, strength training, balance, and flexibility for the 50+ body.", img: "/hero-nordic.jpg" },
             { href: "/recipes",   color: "#2D6A4F", label: "Healthy Recipes",    count: "4 articles", desc: "Quick, nutritious meals with full macro breakdowns — designed for real kitchens.", img: "/recipes-salad.jpg" },
           ].map((cat) => (
-            <Link key={cat.href} href={cat.href} style={{ textDecoration: "none" }}>
+            <Link key={cat.href} href={cat.href} style={{ textDecoration: "none", display: "flex" }}>
               <div style={{
                 borderRadius: "10px", overflow: "hidden",
                 background: "#fff",
                 border: "0.5px solid #74C69D",
                 boxShadow: "0 1px 3px rgba(45,106,79,0.08)",
+                display: "flex", flexDirection: "column", width: "100%",
               }}>
                 <div style={{ height: "155px", overflow: "hidden", position: "relative" }}>
                   <img src={cat.img} alt={cat.label} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(27,67,50,0.35) 0%, transparent 55%)" }} />
                 </div>
-                <div style={{ padding: "20px", fontFamily: "Inter, sans-serif" }}>
+                <div style={{ padding: "20px", fontFamily: "Inter, sans-serif", display: "flex", flexDirection: "column", flex: 1 }}>
                   <div style={{
                     fontSize: "12px", fontWeight: 600, letterSpacing: "1px",
                     textTransform: "uppercase", color: cat.color, marginBottom: "6px",
@@ -391,7 +392,7 @@ export default function HomePage() {
                   <div style={{ fontSize: "17px", fontWeight: 600, color: "#2D3436", marginBottom: "6px" }}>
                     {cat.count}
                   </div>
-                  <p style={{ fontSize: "16px", lineHeight: 1.65, color: "#4A6572", marginBottom: "14px" }}>
+                  <p style={{ fontSize: "16px", lineHeight: 1.65, color: "#4A6572", marginBottom: "14px", flex: 1 }}>
                     {cat.desc}
                   </p>
                   <span style={{ fontSize: "16px", color: cat.color, fontWeight: 600 }}>Browse →</span>
