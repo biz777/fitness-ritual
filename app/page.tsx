@@ -19,7 +19,8 @@ export default function HomePage() {
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           gap: "56px",
-          alignItems: "center",
+          alignItems: "stretch",
+          minHeight: "340px",
         }}
           className="hero-grid"
         >
@@ -102,6 +103,7 @@ export default function HomePage() {
             overflow: "hidden",
             boxShadow: "0 8px 32px rgba(45,106,79,0.18)",
             alignSelf: "stretch",
+            minHeight: "320px",
           }}>
             <img
               src="/banniere.webp"
