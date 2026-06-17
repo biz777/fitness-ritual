@@ -46,7 +46,7 @@ export default function Navbar() {
             href={item.href}
             style={{
               textDecoration: "none",
-              fontSize: "15px",
+              fontSize: "17px",
               fontWeight: 600,
               color: "#fff",
               opacity: 0.92,
