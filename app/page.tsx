@@ -101,15 +101,17 @@ export default function HomePage() {
             borderRadius: "16px",
             overflow: "hidden",
             boxShadow: "0 8px 32px rgba(45,106,79,0.18)",
-            lineHeight: 0,
+            alignSelf: "stretch",
           }}>
             <img
               src="/banniere.webp"
               alt="Eat Good Feel Good — Fitness Ritual"
               style={{
                 width: "100%",
-                height: "auto",
+                height: "100%",
                 display: "block",
+                objectFit: "cover",
+                objectPosition: "center center",
               }}
             />
           </div>
