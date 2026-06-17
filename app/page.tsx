@@ -11,21 +11,18 @@ export default function HomePage() {
       <section style={{
         background: "#fff",
         borderBottom: "1px solid #C8E6D8",
-        padding: "56px 48px",
+        overflow: "hidden",
       }}>
         <div style={{
-          maxWidth: "1100px",
-          margin: "0 auto",
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
-          gap: "56px",
           alignItems: "stretch",
-          minHeight: "340px",
+          minHeight: "380px",
         }}
           className="hero-grid"
         >
           {/* GAUCHE : texte */}
-          <div>
+          <div style={{ padding: "56px 48px 56px 64px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
             <div style={{
               display: "inline-block",
               background: "rgba(45,106,79,0.08)",
@@ -99,11 +96,9 @@ export default function HomePage() {
 
           {/* DROITE : bannière */}
           <div style={{
-            borderRadius: "16px",
             overflow: "hidden",
-            boxShadow: "0 8px 32px rgba(45,106,79,0.18)",
             alignSelf: "stretch",
-            minHeight: "320px",
+            lineHeight: 0,
           }}>
             <img
               src="/banniere.webp"
