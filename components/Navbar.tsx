@@ -2,6 +2,13 @@
 import Link from "next/link";
 import { useState } from "react";
 
+const NAV_LINKS = [
+  { label: "Home",              href: "/"          },
+  { label: "Exercise & Fitness", href: "/exercise" },
+  { label: "Nutrition & Diet",   href: "/nutrition" },
+  { label: "Healthy Recipes",    href: "/recipes"   },
+];
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -11,19 +18,19 @@ export default function Navbar() {
       alignItems: "center",
       justifyContent: "space-between",
       padding: "0 32px",
-      background: "#2D6A4F",          /* Forest Vitality — vert forêt */
+      background: "#2D6A4F",
       position: "sticky",
       top: 0,
       zIndex: 100,
-      height: "56px",
+      height: "60px",
     }}>
 
       {/* LOGO */}
       <Link href="/" style={{ textDecoration: "none" }}>
         <span style={{
           fontFamily: "Inter, ui-sans-serif, sans-serif",
-          fontSize: "16px",
-          fontWeight: 500,
+          fontSize: "17px",
+          fontWeight: 600,
           color: "#fff",
           letterSpacing: "-0.02em",
         }}>
@@ -33,24 +40,18 @@ export default function Navbar() {
 
       {/* NAV LINKS — desktop */}
       <div style={{ display: "flex", gap: "4px", alignItems: "center" }} className="nav-desktop">
-        {[
-          { label: "Exercise & Fitness", href: "/exercise" },
-          { label: "Nutrition & Diet",   href: "/nutrition" },
-          { label: "Healthy Recipes",    href: "/recipes"   },
-          { label: "About",              href: "/about"     },
-        ].map((item) => (
+        {NAV_LINKS.map((item) => (
           <Link
             key={item.label}
             href={item.href}
             style={{
               textDecoration: "none",
-              fontSize: "12px",
-              fontWeight: 400,
+              fontSize: "15px",
+              fontWeight: 600,
               color: "#fff",
-              opacity: 0.85,
-              padding: "6px 12px",
+              opacity: 0.92,
+              padding: "6px 14px",
               borderRadius: "6px",
-              transition: "opacity 0.2s",
             }}
           >
             {item.label}
@@ -63,16 +64,15 @@ export default function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
           style={{
-            background: "#E07A3A",     /* Orange accent */
+            background: "#E07A3A",
             color: "#fff",
-            padding: "6px 14px",
+            padding: "8px 18px",
             borderRadius: "9999px",
-            fontSize: "11px",
-            fontWeight: 500,
+            fontSize: "14px",
+            fontWeight: 600,
             textDecoration: "none",
-            marginLeft: "8px",
+            marginLeft: "12px",
             whiteSpace: "nowrap",
-            transition: "background-color 0.2s",
           }}
         >
           Try Kalorix free
@@ -88,7 +88,7 @@ export default function Navbar() {
           border: "none",
           cursor: "pointer",
           color: "#fff",
-          fontSize: "20px",
+          fontSize: "22px",
           padding: "4px",
           display: "none",
         }}
@@ -101,19 +101,14 @@ export default function Navbar() {
       {menuOpen && (
         <div style={{
           position: "absolute",
-          top: "56px",
+          top: "60px",
           left: 0,
           right: 0,
           backgroundColor: "#1B4332",
           padding: "1rem 2rem",
           zIndex: 99,
         }}>
-          {[
-            { label: "Exercise & Fitness", href: "/exercise" },
-            { label: "Nutrition & Diet",   href: "/nutrition" },
-            { label: "Healthy Recipes",    href: "/recipes"   },
-            { label: "About",              href: "/about"     },
-          ].map((item) => (
+          {NAV_LINKS.map((item) => (
             <Link
               key={item.label}
               href={item.href}
@@ -121,11 +116,11 @@ export default function Navbar() {
               style={{
                 display: "block",
                 color: "#fff",
-                fontSize: "15px",
-                padding: "10px 0",
+                fontSize: "16px",
+                fontWeight: 600,
+                padding: "12px 0",
                 borderBottom: "1px solid rgba(255,255,255,0.08)",
                 textDecoration: "none",
-                opacity: 0.85,
               }}
             >
               {item.label}
@@ -136,12 +131,12 @@ export default function Navbar() {
             target="_blank"
             style={{
               display: "inline-block",
-              marginTop: "12px",
+              marginTop: "14px",
               backgroundColor: "#E07A3A",
               color: "#fff",
-              fontSize: "14px",
-              fontWeight: 500,
-              padding: "8px 16px",
+              fontSize: "15px",
+              fontWeight: 600,
+              padding: "10px 20px",
               borderRadius: "9999px",
               textDecoration: "none",
             }}
