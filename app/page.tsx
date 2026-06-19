@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import { articles, getArticlesByCategory } from "@/lib/articles";
 
 export default function HomePage() {
   return (
@@ -15,7 +16,7 @@ export default function HomePage() {
       }}>
         <div style={{
           display: "grid",
-          gridTemplateColumns: "1fr 1fr",
+          gridTemplateColumns: "58fr 42fr",
           alignItems: "stretch",
           minHeight: "380px",
         }}
@@ -42,7 +43,7 @@ export default function HomePage() {
 
             <h1 style={{
               fontFamily: "Inter, ui-sans-serif, sans-serif",
-              fontSize: "clamp(28px, 3.5vw, 46px)",
+              fontSize: "clamp(30px, 3.8vw, 50px)",
               fontWeight: 600,
               color: "#2D3436",
               lineHeight: 1.2,
@@ -57,7 +58,7 @@ export default function HomePage() {
               fontSize: "18px",
               color: "#4A6572",
               lineHeight: 1.75,
-              marginBottom: "36px",
+              marginBottom: "20px",
               maxWidth: "460px",
             }}>
               No fads. No extreme diets. Just practical, science-backed guidance
@@ -124,9 +125,9 @@ export default function HomePage() {
         padding: "22px 32px",
       }}>
         {[
-          { num: "17",  label: "Expert articles"  },
-          { num: "3",   label: "Topic categories" },
-          { num: "50+", label: "Target audience"  },
+          { num: articles.length.toString(), label: "Expert articles"  },
+          { num: "3",                         label: "Topic categories" },
+          { num: "50+",                        label: "Target audience"  },
         ].map((stat, i) => (
           <div key={i} style={{
             textAlign: "center",
@@ -363,9 +364,9 @@ export default function HomePage() {
           className="cards-grid"
         >
           {[
-            { href: "/nutrition", color: "#2D6A4F", label: "Nutrition & Diet",   count: "7 articles", desc: "Protein, fiber, hydration, supplements — everything about eating well after 50.", img: "/nutrition-bowl.jpg" },
-            { href: "/exercise",  color: "#E07A3A", label: "Exercise & Fitness", count: "6 articles", desc: "Low-impact routines, strength training, balance, and flexibility for the 50+ body.", img: "/hero-nordic.jpg" },
-            { href: "/recipes",   color: "#2D6A4F", label: "Healthy Recipes",    count: "4 articles", desc: "Quick, nutritious meals with full macro breakdowns — designed for real kitchens.", img: "/recipes-salad.jpg" },
+            { href: "/nutrition", color: "#2D6A4F", label: "Nutrition & Diet",   count: `${getArticlesByCategory("nutrition").length} articles`, desc: "Protein, fiber, hydration, supplements — everything about eating well after 50.", img: "/nutrition-bowl.jpg" },
+            { href: "/exercise",  color: "#E07A3A", label: "Exercise & Fitness", count: `${getArticlesByCategory("exercise").length} articles`,  desc: "Low-impact routines, strength training, balance, and flexibility for the 50+ body.", img: "/hero-nordic.jpg" },
+            { href: "/recipes",   color: "#2D6A4F", label: "Healthy Recipes",    count: `${getArticlesByCategory("recipes").length} articles`,   desc: "Quick, nutritious meals with full macro breakdowns — designed for real kitchens.", img: "/recipes-salad.jpg" },
           ].map((cat) => (
             <Link key={cat.href} href={cat.href} style={{ textDecoration: "none", display: "flex" }}>
               <div style={{
