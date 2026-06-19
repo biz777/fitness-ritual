@@ -122,7 +122,7 @@ export default function HomePage() {
         justifyContent: "center",
         background: "#F8FAF9",
         borderBottom: "1px solid #C8E6D8",
-        padding: "14px 32px",
+        padding: "10px 32px",
       }}>
         {[
           { num: articles.length.toString(), label: "Expert articles"  },
@@ -131,14 +131,14 @@ export default function HomePage() {
         ].map((stat, i) => (
           <div key={i} style={{
             textAlign: "center",
-            padding: "0 36px",
+            padding: "0 24px",
             borderLeft: i > 0 ? "1px solid #C8E6D8" : "none",
             fontFamily: "Inter, sans-serif",
           }}>
-            <div style={{ fontSize: "24px", fontWeight: 600, color: "#2D6A4F" }}>
+            <div style={{ fontSize: "20px", fontWeight: 600, color: "#2D6A4F" }}>
               {stat.num}
             </div>
-            <div style={{ fontSize: "16px", color: "#4A6572", marginTop: "3px" }}>
+            <div style={{ fontSize: "15px", color: "#4A6572", marginTop: "2px" }}>
               {stat.label}
             </div>
           </div>
@@ -176,7 +176,7 @@ export default function HomePage() {
       </div>
 
       {/* ── FEATURED ARTICLES ── */}
-      <section style={{ padding: "64px 32px", maxWidth: "1100px", margin: "0 auto" }}>
+      <section style={{ padding: "32px 32px 64px 32px", maxWidth: "1100px", margin: "0 auto" }}>
         <div style={{
           fontSize: "12px", fontWeight: 600, letterSpacing: "1.5px",
           textTransform: "uppercase", color: "#2D6A4F",
