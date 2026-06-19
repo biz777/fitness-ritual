@@ -43,7 +43,7 @@ export default function HomePage() {
 
             <h1 style={{
               fontFamily: "Inter, ui-sans-serif, sans-serif",
-              fontSize: "clamp(30px, 3.8vw, 50px)",
+              fontSize: "clamp(24px, 2.8vw, 38px)",
               fontWeight: 600,
               color: "#2D3436",
               lineHeight: 1.2,
