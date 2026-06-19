@@ -29,7 +29,7 @@ export default function HomePage() {
               background: "rgba(45,106,79,0.08)",
               color: "#2D6A4F",
               fontFamily: "Inter, sans-serif",
-              fontSize: "13px",
+              fontSize: "15px",
               fontWeight: 600,
               letterSpacing: "1.2px",
               textTransform: "uppercase",
