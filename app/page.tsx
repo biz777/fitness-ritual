@@ -49,8 +49,7 @@ export default function HomePage() {
               lineHeight: 1.2,
               marginBottom: "20px",
             }}>
-              Real fitness advice for real people{" "}
-              <span style={{ color: "#2D6A4F" }}>over 50</span>
+              Real fitness advice for real people <span style={{ color: "#2D6A4F" }}>over 50</span>
             </h1>
 
             <p style={{
