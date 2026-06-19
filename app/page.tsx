@@ -23,7 +23,7 @@ export default function HomePage() {
           className="hero-grid"
         >
           {/* GAUCHE : texte */}
-          <div style={{ padding: "56px 48px 56px 64px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+<div style={{ padding: "40px 48px 32px 64px", display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
             <div style={{
               display: "inline-block",
               background: "rgba(45,106,79,0.08)",
