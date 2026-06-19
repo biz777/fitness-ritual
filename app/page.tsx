@@ -23,9 +23,10 @@ export default function HomePage() {
           className="hero-grid"
         >
           {/* GAUCHE : texte */}
-<div style={{ padding: "40px 48px 32px 64px", display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
+          <div style={{ padding: "40px 48px 32px 64px", display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
             <div style={{
               display: "inline-block",
+              alignSelf: "flex-start",
               background: "rgba(45,106,79,0.08)",
               color: "#2D6A4F",
               fontFamily: "Inter, sans-serif",
@@ -121,7 +122,7 @@ export default function HomePage() {
         justifyContent: "center",
         background: "#F8FAF9",
         borderBottom: "1px solid #C8E6D8",
-        padding: "22px 32px",
+        padding: "14px 32px",
       }}>
         {[
           { num: articles.length.toString(), label: "Expert articles"  },
@@ -130,11 +131,11 @@ export default function HomePage() {
         ].map((stat, i) => (
           <div key={i} style={{
             textAlign: "center",
-            padding: "0 52px",
+            padding: "0 36px",
             borderLeft: i > 0 ? "1px solid #C8E6D8" : "none",
             fontFamily: "Inter, sans-serif",
           }}>
-            <div style={{ fontSize: "28px", fontWeight: 600, color: "#2D6A4F" }}>
+            <div style={{ fontSize: "24px", fontWeight: 600, color: "#2D6A4F" }}>
               {stat.num}
             </div>
             <div style={{ fontSize: "16px", color: "#4A6572", marginTop: "3px" }}>
