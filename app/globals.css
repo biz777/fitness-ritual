@@ -83,65 +83,71 @@
 
 /* ============================================================
    BASE STYLES
+   ⚠️ Enveloppé dans @layer base pour que les classes Tailwind
+   (@layer utilities) puissent correctement les surcharger.
+   Sans ce @layer, ce CSS "non-layered" bat TOUJOURS Tailwind,
+   peu importe la spécificité.
    ============================================================ */
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  font-size: 1rem;
-  color: var(--color-text-body);
-  background-color: var(--color-bg-page);
-  line-height: 1.85;
-  -webkit-font-smoothing: antialiased;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-a {
-  color: var(--color-text-primary);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--color-text-heading);
-  font-weight: 500;
-  line-height: 1.25;
-}
-
-/* Règle d'or 50+ : jamais en dessous de 16px */
-p {
-  font-size: 1rem;
-  line-height: 1.85;
-  color: var(--color-text-body);
-}
-
-:focus-visible {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
-}
-
-@media (prefers-reduced-motion: reduce) {
+@layer base {
   *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    font-size: 1rem;
+    color: var(--color-text-body);
+    background-color: var(--color-bg-page);
+    line-height: 1.85;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text-heading);
+    font-weight: 500;
+    line-height: 1.25;
+  }
+
+  /* Règle d'or 50+ : jamais en dessous de 16px */
+  p {
+    font-size: 1rem;
+    line-height: 1.85;
+    color: var(--color-text-body);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }
 
