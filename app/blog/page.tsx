@@ -26,7 +26,7 @@ export default function BlogPage() {
           The fitness-ritual.com blog
         </h1>
         <p style={{ fontFamily: "Arial, sans-serif", fontSize: "18px", color: "rgba(255,255,255,0.75)", lineHeight: 1.7, maxWidth: "520px", margin: "0 auto" }}>
-          Practical advice for staying strong, healthy, and energized after 50.
+          Practical advice for staying strong, healthy, and energized after&nbsp;50.
         </p>
       </section>
 
