@@ -14,9 +14,9 @@ export default function BlogPage() {
     <div style={{ background: "#F8F8F4", minHeight: "100vh" }}>
       <Navbar />
 
-      {/* HEADER — fond violet foncé, pas d'image */}
+     {/* HEADER — fond vert forêt foncé, thème Forest Vitality */}
       <section style={{
-        background: "linear-gradient(135deg, #1a1040 0%, #2d1b69 50%, #1e1245 100%)",
+        background: "linear-gradient(135deg, #081C15 0%, #1B4332 50%, #2D6A4F 100%)",
         padding: "64px 32px", textAlign: "center",
       }}>
         <div style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "1.5px", textTransform: "uppercase", color: "rgba(255,255,255,0.55)", marginBottom: "14px", fontFamily: "Arial, sans-serif" }}>
