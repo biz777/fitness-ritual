@@ -16,7 +16,7 @@ export async function POST(request: Request) {
       },
       body: JSON.stringify({
         from: "fitness-ritual.com <onboarding@resend.dev>",
-        to: "contact@fitness-ritual.com",
+        to: "daousa777@gmail.com",
         reply_to: email,
         subject: `New contact form message from ${firstName}`,
         text: `From: ${firstName} (${email})\n\n${message}`,
