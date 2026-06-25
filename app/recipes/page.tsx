@@ -26,14 +26,25 @@ export default function RecipesPage() {
         </p>
       </section>
 
+      {/* H2 SEO */}
+      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "40px 32px 0" }}>
+        <h2 style={{ fontFamily: "Inter, sans-serif", fontSize: "26px", fontWeight: 700, color: "#1B4332", marginBottom: "8px" }}>
+          Healthy Recipes with Full Macro Breakdowns
+        </h2>
+        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", color: "#4A5568", lineHeight: 1.6 }}>
+          Simple, nutritious meals designed for adults over 50 — high in protein, easy to prepare, and tracked to the last macro.
+        </p>
+      </div>
+
       {/* ARTICLES GRID */}
-      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "56px 32px" }}>
+      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "24px 32px 56px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }}>
           {articles.map((a) => (
             <ArticleCard key={a.slug} slug={a.slug} category={a.categoryLabel} title={a.title} description={a.description} categoryColor={categoryColors[a.category]} />
           ))}
         </div>
       </div>
+
       <Footer />
     </div>
   );
