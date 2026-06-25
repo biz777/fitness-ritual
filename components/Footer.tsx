@@ -1,13 +1,13 @@
 import Link from "next/link";
 
-const navLinks = ["Blog", "Contact"];
+const navLinks = ["Blog", "About", "Contact"];
 
 const legalLinks = [
-  { label: "Privacy Policy", href: "/privacy" },
-  { label: "Terms of Service", href: "/terms" },
-  { label: "Affiliate Disclosure", href: "/affiliate-disclosure" },
-  { label: "Medical Disclaimer", href: "/disclaimer" },
-  { label: "Cookie Policy", href: "/cookies" },
+  { label: "Privacy Policy",       href: "/privacy"               },
+  { label: "Terms of Service",     href: "/terms"                 },
+  { label: "Affiliate Disclosure", href: "/affiliate-disclosure"  },
+  { label: "Medical Disclaimer",   href: "/disclaimer"            },
+  { label: "Cookie Policy",        href: "/cookies"               },
 ];
 
 export default function Footer() {
@@ -43,7 +43,6 @@ export default function Footer() {
         >
           fitness-<span style={{ color: "#E07A3A" }}>ritual</span>.com
         </span>
-
         <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
           {navLinks.map((item) => (
             <Link
@@ -91,7 +90,6 @@ export default function Footer() {
             </Link>
           ))}
         </div>
-
         <span style={{ fontSize: "16px", color: "#5C6B66" }}>
           © {new Date().getFullYear()} CLICKANDDEALONLINE LLC
         </span>
