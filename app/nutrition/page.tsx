@@ -21,19 +21,30 @@ export default function NutritionPage() {
         <h1 style={{ fontFamily: "Inter, ui-sans-serif, sans-serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 600, color: "#fff", marginBottom: "16px", lineHeight: 1.2 }}>
           Nutrition & Diet
         </h1>
-        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "18px", color: "rgba(255,255,255,0.80)", lineHeight: 1.7, maxWidth: "520px", margin: "0 auto" }}>
+        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", color: "rgba(255,255,255,0.80)", lineHeight: 1.7, maxWidth: "520px", margin: "0 auto" }}>
           Protein, fiber, hydration, supplements — everything about eating well after 50.
         </p>
       </section>
 
+      {/* H2 SEO */}
+      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "40px 32px 0" }}>
+        <h2 style={{ fontFamily: "Inter, sans-serif", fontSize: "26px", fontWeight: 700, color: "#1B4332", marginBottom: "8px" }}>
+          Nutrition Tips & Diet Advice for the 50+ Body
+        </h2>
+        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", color: "#4A5568", lineHeight: 1.6 }}>
+          Evidence-based guidance on protein intake, hydration, fiber, and supplements to support healthy aging.
+        </p>
+      </div>
+
       {/* ARTICLES GRID */}
-      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "56px 32px" }}>
+      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "24px 32px 56px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }}>
           {articles.map((a) => (
             <ArticleCard key={a.slug} slug={a.slug} category={a.categoryLabel} title={a.title} description={a.description} categoryColor={categoryColors[a.category]} />
           ))}
         </div>
       </div>
+
       <Footer />
     </div>
   );
