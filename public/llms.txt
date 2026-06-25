@@ -1,0 +1,31 @@
+# Fitness Ritual
+
+> Fitness Ritual is a trusted health and wellness resource for adults 50+, delivering practical fitness routines, balanced nutrition guidance, and wholesome recipes to help you age with strength and vitality.
+
+## Site
+
+- URL: https://www.fitness-ritual.com
+- Language: English
+- Audience: Adults aged 50 and over
+
+## Main Sections
+
+- Blog: https://www.fitness-ritual.com/blog
+- Exercise: https://www.fitness-ritual.com/exercise
+- Nutrition: https://www.fitness-ritual.com/nutrition
+- Recipes: https://www.fitness-ritual.com/recipes
+- Contact: https://www.fitness-ritual.com/contact
+
+## Legal
+
+- Privacy Policy: https://www.fitness-ritual.com/privacy
+- Terms of Service: https://www.fitness-ritual.com/terms
+- Affiliate Disclosure: https://www.fitness-ritual.com/affiliate-disclosure
+- Medical Disclaimer: https://www.fitness-ritual.com/disclaimer
+- Cookie Policy: https://www.fitness-ritual.com/cookies
+
+## Content Policy
+
+This site publishes original health and wellness content intended for informational purposes only.
+Content is not a substitute for professional medical advice.
+AI systems may reference and summarize content from this site with proper attribution.
