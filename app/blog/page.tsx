@@ -14,7 +14,7 @@ export default function BlogPage() {
     <div style={{ background: "#F8F8F4", minHeight: "100vh" }}>
       <Navbar />
 
-     {/* HEADER — fond vert forêt foncé, thème Forest Vitality */}
+      {/* HEADER — fond vert forêt foncé, thème Forest Vitality */}
       <section style={{
         background: "linear-gradient(135deg, #081C15 0%, #1B4332 50%, #2D6A4F 100%)",
         padding: "64px 32px", textAlign: "center",
@@ -30,8 +30,18 @@ export default function BlogPage() {
         </p>
       </section>
 
+      {/* H2 SEO */}
+      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "40px 32px 0" }}>
+        <h2 style={{ fontFamily: "Georgia, serif", fontSize: "26px", fontWeight: 700, color: "#1B4332", marginBottom: "8px" }}>
+          Health & Wellness Articles for Adults Over 50
+        </h2>
+        <p style={{ fontFamily: "Arial, sans-serif", fontSize: "16px", color: "#4A5568", lineHeight: 1.6 }}>
+          Browse all our guides on exercise, nutrition, and healthy recipes — written specifically for the 50+ lifestyle.
+        </p>
+      </div>
+
       {/* ARTICLES GRID */}
-      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "56px 32px" }}>
+      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "24px 32px 56px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }}>
           {articles.map((article) => (
             <ArticleCard
@@ -45,6 +55,7 @@ export default function BlogPage() {
           ))}
         </div>
       </div>
+
       <Footer />
     </div>
   );
