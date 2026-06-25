@@ -26,14 +26,25 @@ export default function ExercisePage() {
         </p>
       </section>
 
+      {/* H2 SEO */}
+      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "40px 32px 0" }}>
+        <h2 style={{ fontFamily: "Inter, sans-serif", fontSize: "26px", fontWeight: 700, color: "#1B4332", marginBottom: "8px" }}>
+          Exercise Guides for Adults Over 50
+        </h2>
+        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", color: "#4A5568", lineHeight: 1.6 }}>
+          Low-impact workouts, strength routines, and mobility tips tailored to the 50+ body — safe, effective, and beginner-friendly.
+        </p>
+      </div>
+
       {/* ARTICLES GRID */}
-      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "56px 32px" }}>
+      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "24px 32px 56px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }}>
           {articles.map((a) => (
             <ArticleCard key={a.slug} slug={a.slug} category={a.categoryLabel} title={a.title} description={a.description} categoryColor={categoryColors[a.category]} />
           ))}
         </div>
       </div>
+
       <Footer />
     </div>
   );
