@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface AuthorBylineProps {
-  compact?: boolean; // true = version courte pour les articles, false = version complète
+  compact?: boolean;
 }
 
 export default function AuthorByline({ compact = false }: AuthorBylineProps) {
@@ -19,8 +19,8 @@ export default function AuthorByline({ compact = false }: AuthorBylineProps) {
         borderRadius: "0 8px 8px 0",
       }}>
         <Image
-          src="/images/david-lewis.jpg"
-          alt="David Lewis — Health & Wellness Coach"
+          src="/logo.jpg"
+          alt="fitness-ritual.com"
           width={48}
           height={48}
           style={{ borderRadius: "50%", objectFit: "cover", flexShrink: 0 }}
@@ -31,10 +31,7 @@ export default function AuthorByline({ compact = false }: AuthorBylineProps) {
           </div>
           <Link href="/about" style={{ textDecoration: "none" }}>
             <span style={{ fontFamily: "Inter, sans-serif", fontSize: "15px", fontWeight: 700, color: "#1B4332" }}>
-              David Lewis
-            </span>
-            <span style={{ fontFamily: "Inter, sans-serif", fontSize: "14px", color: "#4A5568", marginLeft: "8px" }}>
-              · Health & Wellness Coach
+              fitness-ritual.com Editorial Team
             </span>
           </Link>
         </div>
@@ -54,8 +51,8 @@ export default function AuthorByline({ compact = false }: AuthorBylineProps) {
       border: "1px solid #D1E8DC",
     }}>
       <Image
-        src="/images/david-lewis.jpg"
-        alt="David Lewis — Health & Wellness Coach"
+        src="/logo.jpg"
+        alt="fitness-ritual.com Editorial Team"
         width={80}
         height={80}
         style={{ borderRadius: "50%", objectFit: "cover", flexShrink: 0 }}
@@ -66,16 +63,16 @@ export default function AuthorByline({ compact = false }: AuthorBylineProps) {
         </div>
         <Link href="/about" style={{ textDecoration: "none" }}>
           <div style={{ fontFamily: "Georgia, serif", fontSize: "20px", fontWeight: 700, color: "#1B4332", marginBottom: "4px" }}>
-            David Lewis
+            fitness-ritual.com Editorial Team
           </div>
         </Link>
         <div style={{ fontFamily: "Inter, sans-serif", fontSize: "14px", color: "#E07A3A", fontWeight: 600, marginBottom: "12px" }}>
-          Certified Health & Wellness Coach · Denver, CO
+          Health & Wellness Content for Adults 50+
         </div>
         <p style={{ fontFamily: "Inter, sans-serif", fontSize: "15px", color: "#4A5568", lineHeight: 1.7, margin: 0 }}>
-          David has spent over 15 years helping adults over 50 reclaim their energy, strength, and confidence
-          through sustainable lifestyle changes. A former physical education teacher turned wellness coach,
-          he specializes in low-impact fitness, anti-inflammatory nutrition, and building habits that actually stick.
+          Every article on fitness-ritual.com is researched, written, and reviewed by our editorial team
+          with one goal: giving adults over 50 honest, practical, evidence-based guidance to live
+          stronger and healthier lives — no gimmicks, no extreme diets.
         </p>
         <Link href="/about" style={{
           display: "inline-block",
@@ -87,7 +84,7 @@ export default function AuthorByline({ compact = false }: AuthorBylineProps) {
           textDecoration: "underline",
           textUnderlineOffset: "3px",
         }}>
-          Read full bio →
+          Our editorial mission →
         </Link>
       </div>
     </div>
