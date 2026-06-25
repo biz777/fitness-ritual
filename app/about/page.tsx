@@ -4,47 +4,41 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About David Lewis — Health & Wellness Coach | fitness-ritual.com",
+  title: "About Us — fitness-ritual.com Editorial Team",
   description:
-    "Meet David Lewis, certified Health & Wellness Coach with 15+ years helping adults over 50 build sustainable fitness and nutrition habits.",
+    "Meet the fitness-ritual.com editorial team — dedicated to providing honest, evidence-based health and wellness guidance for adults over 50.",
 };
 
 export default function AboutPage() {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    name: "David Lewis",
-    jobTitle: "Health & Wellness Coach",
+    "@type": "Organization",
+    name: "fitness-ritual.com",
+    url: "https://fitness-ritual.com",
+    logo: "https://fitness-ritual.com/logo.jpg",
     description:
-      "Certified Health & Wellness Coach with 15+ years of experience helping adults over 50 build sustainable fitness and nutrition habits.",
-    image: "https://fitness-ritual.com/images/david-lewis.jpg",
-    url: "https://fitness-ritual.com/about",
-    worksFor: {
-      "@type": "Organization",
-      name: "fitness-ritual.com",
-      url: "https://fitness-ritual.com",
-    },
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Denver",
-      addressRegion: "CO",
-      addressCountry: "US",
-    },
+      "Evidence-based health and wellness content for adults over 50 — exercise, nutrition, and healthy recipes.",
+    foundingDate: "2025",
     knowsAbout: [
-      "Health & Wellness Coaching",
       "Fitness for Adults Over 50",
       "Anti-Inflammatory Nutrition",
       "Low-Impact Exercise",
       "Healthy Aging",
       "Weight Management",
+      "Healthy Recipes",
     ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "Editorial",
+      email: "contact@fitness-ritual.com",
+    },
   };
 
   return (
     <div style={{ background: "#F8FAF9", minHeight: "100vh" }}>
       <Navbar />
 
-      {/* JSON-LD Person Schema */}
+      {/* JSON-LD Organization Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -60,72 +54,67 @@ export default function AboutPage() {
           About
         </div>
         <h1 style={{ fontFamily: "Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 700, color: "#fff", marginBottom: "16px" }}>
-          Meet David Lewis
+          Our Editorial Team
         </h1>
-        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "18px", color: "rgba(255,255,255,0.80)", lineHeight: 1.7, maxWidth: "520px", margin: "0 auto" }}>
-          Health & Wellness Coach helping adults over 50 live stronger, healthier, and more energized lives.
+        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "18px", color: "rgba(255,255,255,0.80)", lineHeight: 1.7, maxWidth: "560px", margin: "0 auto" }}>
+          Dedicated to giving adults over 50 honest, practical, evidence-based guidance — no gimmicks, no shortcuts.
         </p>
       </section>
 
       {/* MAIN CONTENT */}
       <div style={{ maxWidth: "800px", margin: "0 auto", padding: "64px 32px" }}>
 
-        {/* Photo + Intro */}
-        <div style={{ display: "flex", gap: "36px", alignItems: "flex-start", marginBottom: "48px", flexWrap: "wrap" }}>
+        {/* Logo + Intro */}
+        <div style={{ display: "flex", gap: "36px", alignItems: "center", marginBottom: "48px", flexWrap: "wrap" }}>
           <Image
-            src="/images/david-lewis.jpg"
-            alt="David Lewis — Health & Wellness Coach"
-            width={180}
-            height={180}
-            style={{ borderRadius: "50%", objectFit: "cover", flexShrink: 0, border: "4px solid #D1E8DC" }}
+            src="/logo.jpg"
+            alt="fitness-ritual.com"
+            width={140}
+            height={140}
+            style={{ borderRadius: "16px", objectFit: "cover", flexShrink: 0, border: "3px solid #D1E8DC" }}
           />
           <div style={{ flex: 1, minWidth: "260px" }}>
-            <h2 style={{ fontFamily: "Georgia, serif", fontSize: "28px", fontWeight: 700, color: "#1B4332", marginBottom: "6px" }}>
-              David Lewis
+            <h2 style={{ fontFamily: "Georgia, serif", fontSize: "26px", fontWeight: 700, color: "#1B4332", marginBottom: "6px" }}>
+              fitness-ritual.com
             </h2>
-            <div style={{ fontFamily: "Inter, sans-serif", fontSize: "15px", color: "#E07A3A", fontWeight: 600, marginBottom: "20px" }}>
-              Certified Health & Wellness Coach · Denver, CO
+            <div style={{ fontFamily: "Inter, sans-serif", fontSize: "15px", color: "#E07A3A", fontWeight: 600, marginBottom: "16px" }}>
+              Health & Wellness Content for Adults 50+
             </div>
             <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", color: "#374151", lineHeight: 1.8, margin: 0 }}>
-              I spent 20 years as a physical education teacher before discovering my true calling: helping
-              people in their 50s and 60s rediscover what their bodies are capable of. After my own health
-              wake-up call at 52, I retrained as a certified wellness coach and never looked back.
+              fitness-ritual.com was created with a single purpose: to be the most trustworthy,
+              practical health resource for adults navigating life after 50. We believe this stage
+              of life deserves real answers — not generic advice written for 30-year-olds.
             </p>
           </div>
         </div>
 
-        {/* My Story */}
+        {/* Our Mission */}
         <section style={{ marginBottom: "40px" }}>
           <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24px", fontWeight: 700, color: "#1B4332", marginBottom: "16px" }}>
-            My Story
+            Our Mission
           </h2>
           <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", color: "#374151", lineHeight: 1.8, marginBottom: "16px" }}>
-            At 52, I found myself exhausted, carrying extra weight, and struggling with joint pain I thought
-            was just "part of getting older." My doctor handed me a prescription and sent me on my way — but
-            I knew there had to be a better path.
-          </p>
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", color: "#374151", lineHeight: 1.8, marginBottom: "16px" }}>
-            I spent two years studying nutrition, exercise physiology, and behavioral coaching, and what I
-            discovered changed everything. The standard advice — hit the gym hard, cut calories drastically —
-            is often wrong for bodies over 50. Our needs are different, and our approach should be too.
+            Too much health content online is vague, extreme, or simply wrong for bodies over 50.
+            Standard advice — high-intensity workouts, crash diets, endless supplements — often
+            backfires for adults whose needs have evolved.
           </p>
           <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", color: "#374151", lineHeight: 1.8 }}>
-            Today, at 57, I feel stronger and more energetic than I did at 40. And through fitness-ritual.com,
-            I share everything I've learned — no gimmicks, no extreme diets, just practical strategies that
-            work for real people with real lives.
+            Our mission is to bridge that gap: combining the latest research in exercise science,
+            nutrition, and healthy aging with content that is genuinely readable, actionable, and
+            respectful of real lives with real schedules.
           </p>
         </section>
 
-        {/* What I Believe */}
+        {/* What We Believe */}
         <section style={{ marginBottom: "40px", padding: "32px", background: "#F0F7F4", borderRadius: "12px", border: "1px solid #D1E8DC" }}>
           <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24px", fontWeight: 700, color: "#1B4332", marginBottom: "20px" }}>
-            What I Believe
+            What We Believe
           </h2>
           {[
-            { title: "It's never too late.", text: "The research is clear: adults over 50 can build muscle, improve cardiovascular health, and dramatically increase quality of life. Age is not a barrier — it's just context." },
-            { title: "Sustainability over intensity.", text: "Extreme programs that work for 30-year-olds often backfire after 50. I focus on habits you can maintain for life, not 30-day challenges." },
-            { title: "Food is medicine.", text: "Anti-inflammatory eating, adequate protein, and proper hydration are among the most powerful tools we have — and they're available to everyone." },
-            { title: "Small wins compound.", text: "A 20-minute walk, an extra serving of vegetables, eight hours of sleep — these small choices, repeated consistently, transform lives." },
+            { title: "It's never too late.", text: "Research consistently shows that adults over 50 can build muscle, improve heart health, and dramatically increase quality of life. Age is context, not a barrier." },
+            { title: "Sustainability over intensity.", text: "Programs designed for 25-year-olds often backfire after 50. We focus on habits you can maintain for life." },
+            { title: "Food is medicine.", text: "Anti-inflammatory eating, adequate protein, and hydration are among the most powerful tools available — and accessible to everyone." },
+            { title: "Small wins compound.", text: "A 20-minute walk, an extra serving of vegetables, quality sleep — these small consistent choices transform lives over time." },
           ].map((item) => (
             <div key={item.title} style={{ marginBottom: "20px", display: "flex", gap: "14px" }}>
               <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#E07A3A", flexShrink: 0, marginTop: "9px" }} />
@@ -137,10 +126,10 @@ export default function AboutPage() {
           ))}
         </section>
 
-        {/* Expertise */}
+        {/* Topics We Cover */}
         <section style={{ marginBottom: "40px" }}>
           <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24px", fontWeight: 700, color: "#1B4332", marginBottom: "20px" }}>
-            Areas of Expertise
+            Topics We Cover
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "12px" }}>
             {[
@@ -150,8 +139,8 @@ export default function AboutPage() {
               "Protein & macro optimization",
               "Weight management after 50",
               "Sleep & recovery strategies",
-              "Habit building & behavior change",
               "Healthy meal planning",
+              "Habit building & lifestyle change",
             ].map((item) => (
               <div key={item} style={{
                 display: "flex", alignItems: "center", gap: "10px",
@@ -165,16 +154,17 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Editorial Note */}
+        {/* Editorial Integrity */}
         <section style={{ padding: "24px 28px", background: "#FFF8F0", borderRadius: "10px", border: "1px solid #F5DFC5" }}>
           <h2 style={{ fontFamily: "Georgia, serif", fontSize: "18px", fontWeight: 700, color: "#92400E", marginBottom: "10px" }}>
-            Editorial Integrity
+            Our Editorial Integrity
           </h2>
           <p style={{ fontFamily: "Inter, sans-serif", fontSize: "15px", color: "#78350F", lineHeight: 1.7, margin: 0 }}>
-            Every article on fitness-ritual.com is written with one goal: to give you honest, evidence-based
-            information that actually helps. When we recommend a product, it's because we genuinely believe
-            it's useful for our audience — not because of commission rates. We only partner with brands that
-            meet our standards for quality and transparency.
+            Every article on fitness-ritual.com is written with one goal: to give you honest,
+            evidence-based information that actually helps. When we recommend a product, it's
+            because we genuinely believe it offers value for our audience — not because of
+            commission rates. We only partner with brands that meet our standards for quality
+            and transparency.
           </p>
         </section>
 
