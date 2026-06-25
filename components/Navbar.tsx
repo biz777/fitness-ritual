@@ -3,10 +3,11 @@ import Link from "next/link";
 import { useState } from "react";
 
 const NAV_LINKS = [
-  { label: "Home",              href: "/"          },
-  { label: "Exercise & Fitness", href: "/exercise" },
+  { label: "Home",               href: "/"          },
+  { label: "Exercise & Fitness", href: "/exercise"  },
   { label: "Nutrition & Diet",   href: "/nutrition" },
   { label: "Healthy Recipes",    href: "/recipes"   },
+  { label: "About",              href: "/about"     },
 ];
 
 export default function Navbar() {
