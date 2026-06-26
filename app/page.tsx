@@ -42,15 +42,16 @@ export default function HomePage() {
               For adults 50+ who take their health seriously
             </div>
 
-            <h1 style={{
-              fontFamily: "Inter, ui-sans-serif, sans-serif",
-              fontSize: "clamp(24px, 2.8vw, 38px)",
-              fontWeight: 600,
-              color: "#2D3436",
-              lineHeight: 1.2,
-              marginBottom: "20px",
+           <h1 style={{
+             fontFamily: "Inter, ui-sans-serif, sans-serif",
+             fontSize: "clamp(28px, 3vw, 44px)",
+             fontWeight: 700,
+             color: "#2D3436",
+             lineHeight: 1.25,
+             marginBottom: "20px",
             }}>
-              Real fitness advice for real people <span style={{ color: "#2D6A4F" }}>over 50</span>
+             Real fitness advice for<br />
+             real people <span style={{ color: "#2D6A4F" }}>over 50</span>
             </h1>
 
             <p style={{
