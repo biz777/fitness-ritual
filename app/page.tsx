@@ -16,7 +16,7 @@ export default function HomePage() {
       }}>
         <div style={{
           display: "grid",
-          gridTemplateColumns: "58fr 42fr",
+          gridTemplateColumns: "1fr 1fr",
           alignItems: "stretch",
           minHeight: "320px",
         }}
