@@ -23,7 +23,7 @@ export default function HomePage() {
           className="hero-grid"
         >
           {/* GAUCHE : texte */}
-          <div style={{ padding: "40px 48px 32px 64px", display: "flex", flexDirection: "column", justifyContent: "center", }}>
+          <div style={{ padding: "56px 48px 56px 64px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
             <div style={{
               display: "inline-block",
               alignSelf: "flex-start",
@@ -36,30 +36,30 @@ export default function HomePage() {
               textTransform: "uppercase",
               padding: "6px 18px",
               borderRadius: "20px",
-              marginBottom: "22px",
+              marginBottom: "28px",
               border: "1px solid rgba(45,106,79,0.2)",
             }}>
               For adults 50+ who take their health seriously
             </div>
 
-           <h1 style={{
-             fontFamily: "Inter, ui-sans-serif, sans-serif",
-             fontSize: "clamp(28px, 3vw, 44px)",
-             fontWeight: 700,
-             color: "#2D3436",
-             lineHeight: 1.25,
-             marginBottom: "20px",
+            <h1 style={{
+              fontFamily: "Inter, ui-sans-serif, sans-serif",
+              fontSize: "clamp(28px, 3vw, 44px)",
+              fontWeight: 700,
+              color: "#2D3436",
+              lineHeight: 1.25,
+              marginBottom: "24px",
             }}>
-             Real fitness advice for<br />
-             real people <span style={{ color: "#2D6A4F" }}>over 50</span>
+              Real fitness advice for<br />
+              real people <span style={{ color: "#2D6A4F" }}>over 50</span>
             </h1>
 
             <p style={{
               fontFamily: "Inter, ui-sans-serif, sans-serif",
-              fontSize: "18px",
+              fontSize: "19px",
               color: "#4A6572",
               lineHeight: 1.75,
-              marginBottom: "20px",
+              marginBottom: "28px",
               maxWidth: "460px",
             }}>
               No fads. No extreme diets. Just practical, science-backed guidance
