@@ -11,9 +11,9 @@ export interface Article {
 }
 
 export const categoryColors: Record<Category, string> = {
-  nutrition: "#5B4FC8",
-  exercise: "#22C55E",
-  recipes: "#F59E0B",
+  nutrition: "#1B6B3A",  // vert foncé — ratio ~5.8:1 sur blanc ✅
+  exercise:  "#B85C1A",  // orange foncé — ratio ~4.6:1 sur blanc ✅
+  recipes:   "#1B6B3A",  // vert foncé — ratio ~5.8:1 sur blanc ✅
 };
 
 export const articles: Article[] = [
