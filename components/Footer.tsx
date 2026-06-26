@@ -41,7 +41,7 @@ export default function Footer() {
             color: "#2D6A4F",
           }}
         >
-          fitness-<span style={{ color: "#B85C1A" }}>ritual</span>.com
+          fitness-<span style={{ color: "#7A3A0A" }}>ritual</span>.com
         </span>
         <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
           {navLinks.map((item) => (
