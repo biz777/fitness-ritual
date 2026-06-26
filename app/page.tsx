@@ -18,7 +18,7 @@ export default function HomePage() {
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           alignItems: "stretch",
-          minHeight: "320px",
+          minHeight: "380px",
         }}
           className="hero-grid"
         >
