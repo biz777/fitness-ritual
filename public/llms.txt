@@ -1,6 +1,6 @@
 # Fitness Ritual
 
-> Fitness Ritual is a health and wellness blog for adults 50+, published by CLICKANDDEALONLINE LLC. We cover practical advice on exercise, nutrition, healthy aging, mental wellness, and weight management — written in plain, friendly English with no jargon.
+> Fitness Ritual is a health and wellness blog for adults 50+, published by CLICKANDDEALONLINE LLC. We cover practical advice on exercise, nutrition, healthy aging, and healthy recipes — written in plain, friendly English with no jargon.
 
 ## About
 
@@ -13,18 +13,18 @@
 
 ## Categories
 
-- [Exercise & Fitness](https://www.fitness-ritual.com/exercise): Low-impact routines, strength training, balance, and mobility for older adults.
-- [Nutrition & Diet](https://www.fitness-ritual.com/nutrition): Practical eating advice, calorie awareness, and healthy food choices after 50.
-- [Healthy Recipes](https://www.fitness-ritual.com/recipes): Simple, nutritious recipes designed for adults 50+.
+- [Exercise & Fitness](https://www.fitness-ritual.com/exercise): Low-impact routines, strength training, balance, and flexibility for the 50+ body.
+- [Nutrition & Diet](https://www.fitness-ritual.com/nutrition): Protein, fiber, hydration, supplements — everything about eating well after 50.
+- [Healthy Recipes](https://www.fitness-ritual.com/recipes): Quick, nutritious meals with full macro breakdowns, designed for real kitchens.
 
 ## Legal
 
-- [Privacy Policy](https://www.fitness-ritual.com/privacy): How we collect and use data.
-- [Terms of Service](https://www.fitness-ritual.com/terms): Terms governing use of this site.
+- [Privacy Policy](https://www.fitness-ritual.com/privacy-policy): How we collect and use data.
+- [Terms of Service](https://www.fitness-ritual.com/terms-of-service): Terms governing use of this site.
 - [Affiliate Disclosure](https://www.fitness-ritual.com/affiliate-disclosure): We may earn commissions on some links at no cost to you.
-- [Health Disclaimer](https://www.fitness-ritual.com/disclaimer): Our content is informational only, not medical advice.
-- [Cookie Policy](https://www.fitness-ritual.com/cookies): How we use cookies on this site.
+- [Medical Disclaimer](https://www.fitness-ritual.com/medical-disclaimer): Our content is informational only, not medical advice.
+- [Cookie Policy](https://www.fitness-ritual.com/cookie-policy): How we use cookies on this site.
 
 ## Tools
 
-- [Kalorix — Calorie & Macro Tracker](https://kalorix-nine.vercel.app): Our free companion app for tracking calories and macros, available in English, French, and Spanish.
+- [Kalorix — Calorie & Macro Tracker](https://kalorix-nine.vercel.app): Free companion app for tracking calories and macros, available in English, French, and Spanish.
