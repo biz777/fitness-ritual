@@ -35,7 +35,7 @@ export default function Navbar() {
           color: "#fff",
           letterSpacing: "-0.02em",
         }}>
-          fitness<span style={{ color: "#A8D5B5", fontWeight: 400 }}>-ritual</span>
+          fitness<span style={{ color: "#fff", fontWeight: 300 }}>-ritual</span>
         </span>
       </Link>
 
