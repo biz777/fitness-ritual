@@ -35,7 +35,7 @@ export default function Navbar() {
           color: "#fff",
           letterSpacing: "-0.02em",
         }}>
-          fitness<span style={{ opacity: 0.65, fontWeight: 400 }}>-ritual</span>
+          fitness<span style={{ color: "#A8D5B5", fontWeight: 400 }}>-ritual</span>
         </span>
       </Link>
 
@@ -59,18 +59,18 @@ export default function Navbar() {
           </Link>
         ))}
 
-        {/* CTA Kalorix */}
+        {/* CTA Kalorix — fond blanc, texte orange foncé pour contraste suffisant */}
         <Link
           href="https://kalorix-nine.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
           style={{
-            background: "#E07A3A",
-            color: "#fff",
+            background: "#fff",
+            color: "#B85C1A",
             padding: "8px 18px",
             borderRadius: "9999px",
             fontSize: "14px",
-            fontWeight: 600,
+            fontWeight: 700,
             textDecoration: "none",
             marginLeft: "12px",
             whiteSpace: "nowrap",
@@ -133,10 +133,10 @@ export default function Navbar() {
             style={{
               display: "inline-block",
               marginTop: "14px",
-              backgroundColor: "#E07A3A",
-              color: "#fff",
+              backgroundColor: "#fff",
+              color: "#B85C1A",
               fontSize: "15px",
-              fontWeight: 600,
+              fontWeight: 700,
               padding: "10px 20px",
               borderRadius: "9999px",
               textDecoration: "none",
