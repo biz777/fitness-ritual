@@ -101,6 +101,7 @@ export default function HomePage() {
             overflow: "hidden",
             alignSelf: "stretch",
             lineHeight: 0,
+            maxHeight: "420px",
           }}>
             <img
               src="/banniere.webp"
