@@ -69,7 +69,7 @@ export default function HomePage() {
 
             <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
               <Link href="/blog" style={{
-                background: "#E07A3A",
+                background: "#B85C1A",
                 color: "#fff",
                 padding: "15px 34px",
                 borderRadius: "8px",
@@ -77,7 +77,7 @@ export default function HomePage() {
                 fontWeight: 600,
                 fontFamily: "Inter, sans-serif",
                 textDecoration: "none",
-                boxShadow: "0 4px 16px rgba(224,122,58,0.30)",
+                boxShadow: "0 4px 16px rgba(184,92,26,0.30)",
               }}>
                 Start reading →
               </Link>
@@ -97,7 +97,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* DROITE : bannière — priority car c'est le LCP */}
+          {/* DROITE : bannière */}
           <div style={{
             overflow: "hidden",
             alignSelf: "stretch",
@@ -204,7 +204,7 @@ export default function HomePage() {
             {
               img: "/nutrition-bowl.jpg",
               category: "Nutrition & Diet",
-              categoryColor: "#2D6A4F",
+              categoryColor: "#1B6B3A",
               title: "Best protein sources for muscle retention after 50",
               desc: "Why protein needs increase with age and which foods deliver the most without excess calories.",
               href: "/blog/best-protein-sources-after-50",
@@ -212,7 +212,7 @@ export default function HomePage() {
             {
               img: "/hero-running.jpg",
               category: "Exercise & Fitness",
-              categoryColor: "#E07A3A",
+              categoryColor: "#B85C1A",
               title: "The 20-minute morning routine that actually works",
               desc: "A low-impact daily routine designed for joints, balance, and energy — no gym required.",
               href: "/blog/20-minute-morning-routine",
@@ -220,7 +220,7 @@ export default function HomePage() {
             {
               img: "/recipes-salad.jpg",
               category: "Healthy Recipes",
-              categoryColor: "#2D6A4F",
+              categoryColor: "#1B6B3A",
               title: "5 high-fiber dinner recipes under 500 calories",
               desc: "Quick, satisfying meals that support digestion and help manage weight without feeling deprived.",
               href: "/blog/high-fiber-dinner-recipes",
@@ -328,7 +328,7 @@ export default function HomePage() {
                   />
                 </div>
                 <div style={{ padding: "22px" }}>
-                  <div style={{ color: "#E07A3A", fontSize: "18px", marginBottom: "12px" }}>★★★★★</div>
+                  <div style={{ color: "#B85C1A", fontSize: "18px", marginBottom: "12px" }}>★★★★★</div>
                   <p style={{
                     fontSize: "16px", lineHeight: 1.8,
                     fontStyle: "italic", color: "#3D4F58", marginBottom: "16px",
@@ -369,9 +369,9 @@ export default function HomePage() {
           className="cards-grid"
         >
           {[
-            { href: "/nutrition", color: "#2D6A4F", label: "Nutrition & Diet",   count: `${getArticlesByCategory("nutrition").length} articles`, desc: "Protein, fiber, hydration, supplements — everything about eating well after 50.", img: "/nutrition-bowl.jpg" },
-            { href: "/exercise",  color: "#E07A3A", label: "Exercise & Fitness", count: `${getArticlesByCategory("exercise").length} articles`,  desc: "Low-impact routines, strength training, balance, and flexibility for the 50+ body.", img: "/hero-nordic.jpg" },
-            { href: "/recipes",   color: "#2D6A4F", label: "Healthy Recipes",    count: `${getArticlesByCategory("recipes").length} articles`,   desc: "Quick, nutritious meals with full macro breakdowns — designed for real kitchens.", img: "/recipes-salad.jpg" },
+            { href: "/nutrition", color: "#1B6B3A", label: "Nutrition & Diet",   count: `${getArticlesByCategory("nutrition").length} articles`, desc: "Protein, fiber, hydration, supplements — everything about eating well after 50.", img: "/nutrition-bowl.jpg" },
+            { href: "/exercise",  color: "#B85C1A", label: "Exercise & Fitness", count: `${getArticlesByCategory("exercise").length} articles`,  desc: "Low-impact routines, strength training, balance, and flexibility for the 50+ body.", img: "/hero-nordic.jpg" },
+            { href: "/recipes",   color: "#1B6B3A", label: "Healthy Recipes",    count: `${getArticlesByCategory("recipes").length} articles`,   desc: "Quick, nutritious meals with full macro breakdowns — designed for real kitchens.", img: "/recipes-salad.jpg" },
           ].map((cat) => (
             <Link key={cat.href} href={cat.href} style={{ textDecoration: "none", display: "flex" }}>
               <div style={{
@@ -438,13 +438,13 @@ export default function HomePage() {
           </p>
         </div>
         <Link href="https://kalorix-nine.vercel.app" target="_blank" style={{
-          background: "#E07A3A",
-          color: "#fff",
+          background: "#fff",
+          color: "#B85C1A",
           padding: "15px 32px",
           borderRadius: "8px",
           fontSize: "17px",
           fontFamily: "Inter, sans-serif",
-          fontWeight: 600,
+          fontWeight: 700,
           textDecoration: "none",
           whiteSpace: "nowrap",
         }}>
