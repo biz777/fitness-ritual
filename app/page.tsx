@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 import { articles, getArticlesByCategory } from "@/lib/articles";
 
 export default function HomePage() {
@@ -8,7 +9,7 @@ export default function HomePage() {
     <div style={{ background: "#F8FAF9", minHeight: "100vh" }}>
       <Navbar />
 
-      {/* ── HERO : texte gauche + bannière droite ── */}
+      {/* ── HERO ── */}
       <section style={{
         background: "#fff",
         borderBottom: "1px solid #C8E6D8",
@@ -96,22 +97,20 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* DROITE : bannière */}
+          {/* DROITE : bannière — priority car c'est le LCP */}
           <div style={{
             overflow: "hidden",
             alignSelf: "stretch",
             lineHeight: 0,
+            position: "relative",
+            minHeight: "300px",
           }}>
-            <img
+            <Image
               src="/banniere.webp"
               alt="Eat Good Feel Good — Fitness Ritual"
-              style={{
-                width: "100%",
-                height: "100%",
-                display: "block",
-                objectFit: "cover",
-                objectPosition: "center center",
-              }}
+              fill
+              priority
+              style={{ objectFit: "cover", objectPosition: "center center" }}
             />
           </div>
         </div>
@@ -235,11 +234,13 @@ export default function HomePage() {
                 boxShadow: "0 1px 3px rgba(45,106,79,0.08)",
                 display: "flex", flexDirection: "column", width: "100%",
               }}>
-                <div style={{ height: "180px", overflow: "hidden", background: "#C8E6D8" }}>
-                  <img
+                <div style={{ height: "180px", overflow: "hidden", background: "#C8E6D8", position: "relative" }}>
+                  <Image
                     src={card.img}
                     alt={card.title}
-                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    style={{ objectFit: "cover" }}
                   />
                 </div>
                 <div style={{ padding: "18px 20px 20px", display: "flex", flexDirection: "column", flex: 1 }}>
@@ -317,10 +318,13 @@ export default function HomePage() {
                 boxShadow: "0 1px 3px rgba(45,106,79,0.08)",
                 fontFamily: "Inter, sans-serif",
               }}>
-                <div style={{ height: "170px", overflow: "hidden" }}>
-                  <img
-                    src={t.img} alt={t.name}
-                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 25%" }}
+                <div style={{ height: "170px", overflow: "hidden", position: "relative" }}>
+                  <Image
+                    src={t.img}
+                    alt={t.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    style={{ objectFit: "cover", objectPosition: "center 25%" }}
                   />
                 </div>
                 <div style={{ padding: "22px" }}>
@@ -378,7 +382,13 @@ export default function HomePage() {
                 display: "flex", flexDirection: "column", width: "100%",
               }}>
                 <div style={{ height: "155px", overflow: "hidden", position: "relative" }}>
-                  <img src={cat.img} alt={cat.label} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  <Image
+                    src={cat.img}
+                    alt={cat.label}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    style={{ objectFit: "cover" }}
+                  />
                   <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(27,67,50,0.35) 0%, transparent 55%)" }} />
                 </div>
                 <div style={{ padding: "20px", fontFamily: "Inter, sans-serif", display: "flex", flexDirection: "column", flex: 1 }}>
