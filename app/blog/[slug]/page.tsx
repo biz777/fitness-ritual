@@ -53,9 +53,20 @@ export default async function ArticlePageSlug({
     day: "numeric",
   });
 
+  // ── CONTENEUR GLOBAL ──────────────────────────────────────────
+  // 1100px → 1200px : réduit les marges excessives sur grands écrans
+  // sans étirer la colonne de texte au-delà du confortable.
+  const CONTAINER_MAX_WIDTH = "1200px";
+
+  // ── LARGEUR DE TEXTE PROTÉGÉE ─────────────────────────────────
+  // Indépendante du conteneur global : garantit une longueur de
+  // ligne lisible (~65-75 caractères) même si CONTAINER_MAX_WIDTH
+  // change plus tard. Appliquée sur l'intro + le corps d'article.
+  const TEXT_MAX_WIDTH = "680px";
+
   // Responsive grid : 2 colonnes desktop, 1 colonne mobile
   const layoutStyle: React.CSSProperties = {
-    maxWidth: "1100px",
+    maxWidth: CONTAINER_MAX_WIDTH,
     margin: "0 auto",
     padding: "48px 24px",
     display: "grid",
@@ -78,7 +89,7 @@ export default async function ArticlePageSlug({
           padding: "0 0 32px 0",
         }}
       >
-        <div style={{ width: "100%", maxWidth: "1100px", margin: "0 auto", padding: "0 24px" }}>
+        <div style={{ width: "100%", maxWidth: CONTAINER_MAX_WIDTH, margin: "0 auto", padding: "0 24px" }}>
 
           {/* Breadcrumb */}
           <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "16px" }}>
@@ -130,13 +141,14 @@ export default async function ArticlePageSlug({
         {/* ── ARTICLE ── */}
         <article>
 
-          {/* Description intro */}
+          {/* Description intro — largeur protégée pour la lisibilité */}
           <p style={{
             fontFamily: "Inter, ui-sans-serif, sans-serif",
             fontSize: "20px",
             fontWeight: 400,
             color: "#3D4F58",
             lineHeight: 1.7,
+            maxWidth: TEXT_MAX_WIDTH,
             margin: "0 0 40px 0",
             paddingBottom: "32px",
             borderBottom: "1px solid #C8E6D8",
@@ -144,10 +156,14 @@ export default async function ArticlePageSlug({
             {article.description}
           </p>
 
-          {/* Placeholder contenu */}
+          {/* Placeholder contenu — largeur protégée, même logique que l'intro.
+              ⚠️ Quand le vrai contenu d'article sera injecté ici, conserver
+              ce même maxWidth (ou l'appliquer au wrapper du contenu Markdown/HTML)
+              pour garder des lignes de texte confortables à lire. */}
           <div style={{
             background: "#F0FAF5", border: "1px solid #C8E6D8",
             borderRadius: "10px", padding: "40px 32px",
+            maxWidth: TEXT_MAX_WIDTH,
             textAlign: "center", marginBottom: "48px",
           }}>
             <p style={{ fontFamily: "Inter, sans-serif", fontSize: "17px", color: "#2D6A4F", marginBottom: "8px", fontWeight: 500 }}>
@@ -159,6 +175,9 @@ export default async function ArticlePageSlug({
           </div>
 
           {/* ── CTA KALORIX ── */}
+          {/* Volontairement PAS limité par TEXT_MAX_WIDTH : c'est un bloc
+              promotionnel, pas du texte de lecture — il peut occuper toute
+              la largeur de la colonne 1fr pour rester visuellement impactant. */}
           <div style={{
             background: "linear-gradient(135deg, #1B4332 0%, #2D6A4F 100%)",
             borderRadius: "12px", padding: "32px",
