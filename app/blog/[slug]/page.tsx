@@ -156,23 +156,29 @@ export default async function ArticlePageSlug({
             {article.description}
           </p>
 
-          {/* Placeholder contenu — largeur protégée, même logique que l'intro.
-              ⚠️ Quand le vrai contenu d'article sera injecté ici, conserver
-              ce même maxWidth (ou l'appliquer au wrapper du contenu Markdown/HTML)
-              pour garder des lignes de texte confortables à lire. */}
-          <div style={{
-            background: "#F0FAF5", border: "1px solid #C8E6D8",
-            borderRadius: "10px", padding: "40px 32px",
-            maxWidth: TEXT_MAX_WIDTH,
-            textAlign: "center", marginBottom: "48px",
-          }}>
-            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "17px", color: "#2D6A4F", marginBottom: "8px", fontWeight: 500 }}>
-              ✍️ Full article coming soon.
-            </p>
-            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "15px", color: "#4A6572", margin: 0 }}>
-              This page is live and ready to receive the complete content.
-            </p>
-          </div>
+          {/* Contenu de l'article : rendu du HTML réel si présent,
+              sinon placeholder "coming soon" pour les articles pas encore rédigés. */}
+          {article.content ? (
+            <div
+              className="article-content"
+              style={{ maxWidth: TEXT_MAX_WIDTH, marginBottom: "48px" }}
+              dangerouslySetInnerHTML={{ __html: article.content }}
+            />
+          ) : (
+            <div style={{
+              background: "#F0FAF5", border: "1px solid #C8E6D8",
+              borderRadius: "10px", padding: "40px 32px",
+              maxWidth: TEXT_MAX_WIDTH,
+              textAlign: "center", marginBottom: "48px",
+            }}>
+              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "17px", color: "#2D6A4F", marginBottom: "8px", fontWeight: 500 }}>
+                ✍️ Full article coming soon.
+              </p>
+              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "15px", color: "#4A6572", margin: 0 }}>
+                This page is live and ready to receive the complete content.
+              </p>
+            </div>
+          )}
 
           {/* ── CTA KALORIX ── */}
           {/* Volontairement PAS limité par TEXT_MAX_WIDTH : c'est un bloc
