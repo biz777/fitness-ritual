@@ -272,6 +272,82 @@ export const articles: Article[] = [
 
     `,
   },
+  {
+    slug: "safe-exercise-type-2-diabetes-over-50",
+    title: "Safe, Effective Exercise for Adults 50+ Living with Type 2 Diabetes",
+    description: "A practical guide to exercising safely with type 2 diabetes after 50 — blood sugar basics, safe routines, and precautions to know before you start.",
+    category: "exercise",
+    categoryLabel: "Exercise & Fitness",
+    publishedAt: "2026-07-24",
+    readTime: 9,
+    content: `
+<p>Living with type 2 diabetes doesn't mean stepping back from an active life — in many ways, movement becomes one of your most powerful tools. Regular exercise helps your body use insulin more efficiently, supports steadier blood sugar levels, and protects the heart, joints, and mood all at once. For adults over 50, the right approach also needs to account for recovery, joint health, and any diabetes-related complications — which is exactly what this guide walks through.</p>
+
+<p><em>This article is for general educational purposes and isn't a substitute for personalized medical advice. If you have diabetes or any related complications, talk with your doctor before starting or changing an exercise routine.</em></p>
+
+<h2>How Exercise Affects Blood Sugar</h2>
+
+<p>When your muscles work, they pull glucose from your bloodstream for fuel — which is part of why physical activity tends to lower blood sugar. Regular movement also improves insulin sensitivity over time, meaning your cells respond better to the insulin your body produces or that you inject. That said, responses vary: aerobic exercise like walking tends to lower glucose fairly reliably, while very intense or anaerobic effort can sometimes cause a temporary rise. Getting familiar with how your own body responds — through regular monitoring — is one of the most useful things you can do early on.</p>
+
+<h2>Building a Balanced Routine</h2>
+
+<p>A well-rounded weekly plan for managing type 2 diabetes includes a mix of:</p>
+
+<ul>
+<li><strong>Aerobic activity</strong> — walking, cycling, swimming — aiming for at least 150 minutes per week of moderate intensity, spread across at least three days, with no more than two consecutive days off</li>
+<li><strong>Resistance training</strong> — bodyweight exercises, resistance bands, or light weights, two to three times per week, targeting major muscle groups</li>
+<li><strong>Flexibility and balance work</strong> — stretching, yoga, or tai chi, which won't move the needle on blood sugar directly but matter a great deal for mobility and fall prevention as we age</li>
+</ul>
+
+<p>Combining aerobic and resistance training tends to produce the best results for glucose control — better than either alone.</p>
+
+<h2>Preventing Hypoglycemia Around Exercise</h2>
+
+<p>This is the piece that makes exercising with diabetes a little different from exercising without it, and it's worth taking seriously:</p>
+
+<ul>
+<li>Check your blood sugar before exercising, and during longer sessions if needed</li>
+<li>If your reading is low (many guidelines use under 100 mg/dL as a caution point), have a quick-acting carbohydrate before starting</li>
+<li>If you're on insulin or certain oral medications, ask your doctor whether your dose needs adjusting on exercise days</li>
+<li>Keep fast-acting carbs on hand, and consider wearing a medical ID</li>
+</ul>
+
+<h2>Special Precautions for Diabetes-Related Complications</h2>
+
+<p>Diabetes can affect the feet, eyes, and cardiovascular system over time, so a few adjustments matter:</p>
+
+<ul>
+<li><strong>Peripheral neuropathy</strong> — favor low-impact activities and check your feet daily for any cuts or pressure points you might not feel</li>
+<li><strong>Retinopathy</strong> — avoid heavy lifting or straining that increases pressure in the eyes</li>
+<li><strong>Cardiovascular disease</strong> — ask your doctor about supervised exercise testing before starting anything vigorous</li>
+</ul>
+
+<h2>Type 1 vs. Type 2: Does It Change the Approach?</h2>
+
+<p>The core principles — aerobic plus resistance training — apply to both. The main difference is that type 1 diabetes requires closer attention to insulin dosing and hypoglycemia risk around exercise, since insulin production isn't a factor to adjust for the way it can be with some type 2 medications. Either way, working with your healthcare team to individualize the plan is worth the effort.</p>
+
+<h2>When to Talk to Your Doctor First</h2>
+
+<p>Check in with your healthcare provider before starting if you have cardiovascular disease, nerve damage affecting your heart rate (autonomic neuropathy), advanced eye complications, severe neuropathy in your feet, or a recent episode of serious low blood sugar. For most people, though, starting gently and paying attention to your body's signals is a safe way to begin.</p>
+
+<h2>Tracking What Matters</h2>
+
+<p>Beyond the scale, useful signs that your routine is working include steadier daily glucose readings, improving A1C at your regular checkups, better endurance and strength, and simply feeling more energetic day to day. A tool like <a href="https://kalorix-nine.vercel.app" target="_blank" rel="noopener noreferrer">Kalorix</a> can help you keep an eye on how your nutrition and activity fit together over time, without turning tracking into a chore.</p>
+
+<h2>Common Questions</h2>
+
+<h3>Can exercise reduce the need for diabetes medication?</h3>
+<p>For some people with type 2 diabetes, better insulin sensitivity from regular exercise can reduce medication needs over time — but any change should only happen under your doctor's supervision.</p>
+
+<h3>Is high-intensity exercise ever appropriate?</h3>
+<p>It can be, once you have a good fitness base and your doctor has cleared you, particularly if you don't have uncontrolled heart disease. Start with moderate intervals and build up gradually.</p>
+
+<h3>What's the single most important habit to build?</h3>
+<p>Consistency. Even modest, regular activity — three to five sessions a week — tends to produce more reliable blood sugar benefits than sporadic intense workouts.</p>
+
+<p><em><strong>Medical Disclaimer:</strong> This content is for informational purposes only and is not intended as medical advice. Always consult a qualified healthcare provider before making changes to your exercise routine, especially if you have diabetes or a related complication. See our full <a href="/disclaimer">medical disclaimer</a> for details.</em></p>
+    `,
+  },
 ];
 
 export function getArticlesByCategory(category: Category) {
