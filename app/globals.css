@@ -2,6 +2,12 @@
    FITNESS-RITUAL.COM — globals.css
    Tailwind v4 + Next.js 16 + React 19
    À placer dans : app/globals.css
+
+   ⚠️ MODIFICATIONS APPORTÉES (lisibilité texte 50+) :
+   1. --color-text-muted assombri : #4A6572 → #3D4F58 (5.9:1 → 8.15:1)
+   2. font-weight: 500 ajouté sur body, p, .article-content p et li
+      (Inter en 400 a des traits trop fins pour un rendu "affirmé",
+      même avec un bon contraste de couleur)
    ============================================================ */
 
 @import "tailwindcss";
@@ -29,7 +35,7 @@
 
   --color-text-heading:      #2D3436;
   --color-text-body:         #3D4F58;
-  --color-text-muted:        #4A6572;
+  --color-text-muted:        #3D4F58; /* MODIFIÉ : était #4A6572 (5.9:1) → aligné sur text-body (8.15:1) */
   --color-text-on-dark:      #FFFFFF;
   --color-text-accent:       #E07A3A;
   --color-text-green:        #2D6A4F;
@@ -72,7 +78,7 @@
   --color-bg-affiliate:      #FDF6F0;
   --color-text-heading:      #2D3436;
   --color-text-body:         #3D4F58;
-  --color-text-muted:        #4A6572;
+  --color-text-muted:        #3D4F58; /* MODIFIÉ : était #4A6572 */
   --color-text-on-dark:      #FFFFFF;
   --color-text-accent:       #E07A3A;
   --color-text-primary:      #2D6A4F;
@@ -104,6 +110,7 @@
   body {
     font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
     font-size: 1.125rem; /* 18px — remonté depuis 1rem (16px) pour lisibilité 50+ */
+    font-weight: 500; /* AJOUTÉ : 400 par défaut donne un rendu trop fin/pâle */
     color: var(--color-text-body);
     background-color: var(--color-bg-page);
     line-height: 1.85;
@@ -134,6 +141,7 @@
   /* Règle d'or 50+ : jamais en dessous de 18px pour le corps de texte */
   p {
     font-size: 1.125rem; /* 18px — remonté depuis 1rem (16px) */
+    font-weight: 500; /* AJOUTÉ : trait plus affirmé qu'en 400 */
     line-height: 1.85;
     color: var(--color-text-body);
   }
@@ -337,6 +345,7 @@
 
 .article-content p {
   font-size: 1.125rem; /* 18px — explicite, au lieu d'hériter du body */
+  font-weight: 500; /* AJOUTÉ : cohérence avec body/p, trait plus affirmé */
   margin: 0 0 1.25rem 0;
   line-height: 1.85;
 }
@@ -349,13 +358,14 @@
 
 .article-content li {
   font-size: 1.125rem; /* 18px — ajouté pour cohérence avec les paragraphes */
+  font-weight: 500; /* AJOUTÉ : cohérence avec les paragraphes */
   margin-bottom: 0.6rem;
   line-height: 1.75;
 }
 
 .article-content strong {
   color: var(--color-text-heading);
-  font-weight: 600;
+  font-weight: 700; /* MODIFIÉ : était 600, renforcé pour bien se détacher du texte 500 */
 }
 
 .article-content em {
