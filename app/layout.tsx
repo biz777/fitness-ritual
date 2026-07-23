@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -20,6 +20,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+};
+
+// AJOUTÉ : sans cet export, les navigateurs mobiles rendent la page
+// en largeur "desktop" (~980px) puis la décalent/zooment — d'où le
+// texte coupé sur téléphone, corrigé uniquement en forçant le mode "ordinateur".
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
