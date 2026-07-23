@@ -103,7 +103,7 @@
 
   body {
     font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
-    font-size: 1rem;
+    font-size: 1.125rem; /* 18px — remonté depuis 1rem (16px) pour lisibilité 50+ */
     color: var(--color-text-body);
     background-color: var(--color-bg-page);
     line-height: 1.85;
@@ -131,9 +131,9 @@
     line-height: 1.25;
   }
 
-  /* Règle d'or 50+ : jamais en dessous de 16px */
+  /* Règle d'or 50+ : jamais en dessous de 18px pour le corps de texte */
   p {
-    font-size: 1rem;
+    font-size: 1.125rem; /* 18px — remonté depuis 1rem (16px) */
     line-height: 1.85;
     color: var(--color-text-body);
   }
@@ -212,7 +212,7 @@
   border-radius: 0 8px 8px 0;
   padding: 1rem 1.25rem;
   margin-bottom: 1.5rem;
-  font-size: 1rem;
+  font-size: 1.125rem; /* 18px — remonté depuis 1rem (16px) */
   font-style: italic;
   color: var(--color-text-heading);
   line-height: 1.75;
@@ -320,7 +320,7 @@
    ============================================================ */
 
 .article-content h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem; /* 28px — remonté depuis 1.5rem (24px) */
   font-weight: 600;
   color: var(--color-text-heading);
   margin: 2.5rem 0 1rem 0;
@@ -328,7 +328,7 @@
 }
 
 .article-content h3 {
-  font-size: 1.2rem;
+  font-size: 1.375rem; /* 22px — remonté depuis 1.2rem (19.2px) */
   font-weight: 600;
   color: var(--color-text-heading);
   margin: 2rem 0 0.75rem 0;
@@ -336,6 +336,7 @@
 }
 
 .article-content p {
+  font-size: 1.125rem; /* 18px — explicite, au lieu d'hériter du body */
   margin: 0 0 1.25rem 0;
   line-height: 1.85;
 }
@@ -347,6 +348,7 @@
 }
 
 .article-content li {
+  font-size: 1.125rem; /* 18px — ajouté pour cohérence avec les paragraphes */
   margin-bottom: 0.6rem;
   line-height: 1.75;
 }
@@ -382,7 +384,7 @@
   width: 100%;
   border-collapse: collapse;
   margin: 1.5rem 0 2rem 0;
-  font-size: 0.9rem;
+  font-size: 1rem; /* 16px — remonté depuis 0.9rem (14.4px) ; reste plus petit que le corps car les tableaux ont besoin de compacité */
 }
 
 .article-content th {
@@ -406,7 +408,7 @@
 
 @media (max-width: 640px) {
   .article-content table {
-    font-size: 0.8rem;
+    font-size: 0.9rem; /* 14.4px sur mobile — remonté depuis 0.8rem (12.8px) */
   }
   .article-content th,
   .article-content td {
