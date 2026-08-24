@@ -299,7 +299,7 @@ export const articles: Article[] = [
 <li><strong>Flexibility and balance work</strong> — stretching, yoga, or tai chi, which won't move the needle on blood sugar directly but matter a great deal for mobility and fall prevention as we age</li>
 </ul>
 
-<p>Combining aerobic and resistance training tends to produce the best results for glucose control — better than either alone.</p>
+<p>Combining aerobic and resistance training tends to produce the best results for glucose control — better than either alone. If you're looking for a simpler starting point built specifically around walking and basic strength moves, our guide on <a href="/blog/fitness-for-diabetics">exercise for diabetics over 60</a> covers a gentler, beginner-friendly routine.</p>
 
 <h2>Preventing Hypoglycemia Around Exercise</h2>
 
