@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { getArticleBySlug, articles, getArticlesByCategory } from "@/lib/articles";
+import { getArticleBySlug, articles, getArticlesByCategory, categoryColors } from "@/lib/articles";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -42,6 +42,11 @@ export default async function ArticlePageSlug({
   if (!article) notFound();
 
   const cat = categoryConfig[article.category];
+  // Couleur de la catégorie — même palette que categoryColors dans lib/articles.ts
+  // (nutrition/recipes en vert, exercise en orange terracotta), pour que le
+  // titre de l'article et ses badges restent cohérents avec le reste du site,
+  // dans le même esprit épuré que les pages Disclaimer / Terms.
+  const catColor = categoryColors[article.category];
 
   const related = getArticlesByCategory(article.category)
     .filter((a) => a.slug !== slug)
@@ -79,39 +84,39 @@ export default async function ArticlePageSlug({
     <div style={{ background: "#F8FAF9", minHeight: "100vh" }}>
       <Navbar />
 
-      {/* ── HERO BANNIÈRE ── */}
+      {/* ── HERO — fond blanc, titre coloré par catégorie ──
+          Même esprit que les pages légales (Disclaimer / Terms) :
+          typographie forte en couleur sur fond clair, plutôt qu'un
+          bandeau gradient. Séparé du contenu par une fine bordure. */}
       <div
         style={{
-          background: "linear-gradient(135deg, #1B4332 0%, #2D6A4F 60%, #3D8B6A 100%)",
-          minHeight: "220px",
-          display: "flex",
-          alignItems: "flex-end",
-          padding: "0 0 32px 0",
+          background: "#FFFFFF",
+          borderBottom: "1px solid #C8E6D8",
+          padding: "56px 0 32px 0",
         }}
       >
         <div style={{ width: "100%", maxWidth: CONTAINER_MAX_WIDTH, margin: "0 auto", padding: "0 24px" }}>
 
           {/* Breadcrumb */}
-          <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "16px" }}>
-            <Link href="/" style={{ color: "rgba(255,255,255,0.60)", fontSize: "13px", textDecoration: "none", fontFamily: "Inter, sans-serif" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "20px" }}>
+            <Link href="/" style={{ color: "#8A9A96", fontSize: "13px", textDecoration: "none", fontFamily: "Inter, sans-serif" }}>
               Home
             </Link>
-            <span style={{ color: "rgba(255,255,255,0.35)", fontSize: "13px" }}>/</span>
-            <Link href={cat.href} style={{ color: "rgba(255,255,255,0.60)", fontSize: "13px", textDecoration: "none", fontFamily: "Inter, sans-serif" }}>
+            <span style={{ color: "#C3D0CC", fontSize: "13px" }}>/</span>
+            <Link href={cat.href} style={{ color: "#8A9A96", fontSize: "13px", textDecoration: "none", fontFamily: "Inter, sans-serif" }}>
               {cat.label}
             </Link>
           </div>
 
-          {/* Titre */}
+          {/* Titre — couleur de catégorie */}
           <h1 style={{
             fontFamily: "Inter, ui-sans-serif, sans-serif",
-            fontSize: "clamp(22px, 3.5vw, 38px)",
-            fontWeight: 600,
-            color: "#FFFFFF",
-            lineHeight: 1.25,
+            fontSize: "clamp(26px, 4vw, 42px)",
+            fontWeight: 700,
+            color: catColor,
+            lineHeight: 1.2,
             maxWidth: "760px",
-            margin: "0 0 16px 0",
-            textShadow: "0 1px 4px rgba(0,0,0,0.20)",
+            margin: "0 0 18px 0",
           }}>
             {article.title}
           </h1>
@@ -119,16 +124,17 @@ export default async function ArticlePageSlug({
           {/* Meta */}
           <div style={{ display: "flex", alignItems: "center", gap: "14px", flexWrap: "wrap" }}>
             <span style={{
-              background: "#E07A3A", color: "#fff", fontSize: "11px", fontWeight: 600,
+              background: "#F0FAF5", color: catColor, fontSize: "11px", fontWeight: 600,
               padding: "4px 12px", borderRadius: "9999px", fontFamily: "Inter, sans-serif",
               letterSpacing: "0.5px", textTransform: "uppercase" as const,
+              border: `1px solid ${catColor}33`,
             }}>
               {cat.label}
             </span>
-            <span style={{ color: "rgba(255,255,255,0.70)", fontSize: "13px", fontFamily: "Inter, sans-serif" }}>
+            <span style={{ color: "#6B7B77", fontSize: "13px", fontFamily: "Inter, sans-serif" }}>
               {publishDate}
             </span>
-            <span style={{ color: "rgba(255,255,255,0.70)", fontSize: "13px", fontFamily: "Inter, sans-serif" }}>
+            <span style={{ color: "#6B7B77", fontSize: "13px", fontFamily: "Inter, sans-serif" }}>
               · {article.readTime} min read
             </span>
           </div>
@@ -216,13 +222,13 @@ export default async function ArticlePageSlug({
             </Link>
           </div>
 
-          {/* Tag catégorie */}
+          {/* Tag catégorie — couleur dynamique par catégorie */}
           <div style={{ paddingTop: "24px", borderTop: "1px solid #C8E6D8", display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
             <span style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "#4A6572" }}>
               Filed under:
             </span>
             <Link href={cat.href} style={{
-              background: "#F0FAF5", color: "#2D6A4F", border: "1px solid #C8E6D8",
+              background: "#F0FAF5", color: catColor, border: `1px solid ${catColor}33`,
               padding: "5px 14px", borderRadius: "9999px", fontSize: "13px",
               fontWeight: 500, textDecoration: "none", fontFamily: "Inter, sans-serif",
             }}>
@@ -244,7 +250,7 @@ export default async function ArticlePageSlug({
                 {related.map((rel, i) => (
                   <Link key={rel.slug} href={`/blog/${rel.slug}`} style={{ textDecoration: "none" }}>
                     <div style={{ padding: "14px 0", borderBottom: i < related.length - 1 ? "1px solid #C8E6D8" : "none" }}>
-                      <span style={{ fontFamily: "Inter, sans-serif", fontSize: "10px", fontWeight: 700, color: "#E07A3A", letterSpacing: "0.5px", textTransform: "uppercase" as const, display: "block", marginBottom: "5px" }}>
+                      <span style={{ fontFamily: "Inter, sans-serif", fontSize: "10px", fontWeight: 700, color: categoryColors[rel.category], letterSpacing: "0.5px", textTransform: "uppercase" as const, display: "block", marginBottom: "5px" }}>
                         {categoryConfig[rel.category].label}
                       </span>
                       <p style={{ fontFamily: "Inter, sans-serif", fontSize: "14px", color: "#2D3436", lineHeight: 1.45, margin: 0 }}>
