@@ -46,15 +46,6 @@ export const articles: Article[] = [
     readTime: 5,
   },
   {
-    slug: "strength-training-beginners-50",
-    title: "Strength training for beginners over 50: where to start",
-    description: "A practical, no-intimidation guide to building muscle safely after 50 — at home or at the gym.",
-    category: "exercise",
-    categoryLabel: "Exercise & Fitness",
-    publishedAt: "2026-06-12",
-    readTime: 8,
-  },
-  {
     slug: "anti-inflammatory-breakfast",
     title: "7 anti-inflammatory breakfast ideas for people over 50",
     description: "Start your day with foods that reduce inflammation, support joints, and keep energy stable all morning.",
