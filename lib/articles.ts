@@ -241,6 +241,7 @@ export const articles: Article[] = [
     readTime: 9,
     content: `
 <p>Living with type 2 diabetes doesn't mean stepping back from an active life — in many ways, movement becomes one of your most powerful tools. Regular exercise helps your body use insulin more efficiently, supports steadier blood sugar levels, and protects the heart, joints, and mood all at once. For adults over 50, the right approach also needs to account for recovery, joint health, and any diabetes-related complications — which is exactly what this guide walks through.</p>
+<img src="/images/safe-exercise-type-2-diabetes-over-50-hero.webp" alt="Woman over 50 checking her blood glucose meter before exercising at home" width="1200" height="800" loading="lazy" />
 
 <h2>How Exercise Affects Blood Sugar</h2>
 
@@ -257,6 +258,7 @@ export const articles: Article[] = [
 </ul>
 
 <p>Combining aerobic and resistance training tends to produce the best results for glucose control — better than either alone. If you're looking for a simpler starting point built specifically around walking and basic strength moves, our guide on <a href="/blog/fitness-for-diabetics">exercise for diabetics over 60</a> covers a gentler, beginner-friendly routine.</p>
+<img src="/images/safe-exercise-type-2-diabetes-over-50-mid.webp" alt="Woman over 50 jogging outdoors in a park as part of a safe diabetes exercise routine" width="1200" height="800" loading="lazy" />
 
 <h2>Preventing Hypoglycemia Around Exercise</h2>
 
@@ -290,6 +292,7 @@ export const articles: Article[] = [
 <h2>Tracking What Matters</h2>
 
 <p>Beyond the scale, useful signs that your routine is working include steadier daily glucose readings, improving A1C at your regular checkups, better endurance and strength, and simply feeling more energetic day to day. A tool like <a href="https://kalorix-nine.vercel.app" target="_blank" rel="noopener noreferrer">Kalorix</a> can help you keep an eye on how your nutrition and activity fit together over time, without turning tracking into a chore.</p>
+<img src="/images/safe-exercise-type-2-diabetes-over-50-recap.webp" alt="Man over 50 resting on a park bench and drinking water after exercising safely" width="1200" height="800" loading="lazy" />
 
 <h2>Common Questions</h2>
 
