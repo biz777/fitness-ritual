@@ -1011,6 +1011,8 @@ export const articles: Article[] = [
 <p><em>By The fitness-ritual.com Editorial Team</em></p>
 <h2>Why Mornings Feel Stiffer After 50</h2>
 <p>If the first ten minutes out of bed feel like your joints need convincing before they'll cooperate, you're far from alone. Morning stiffness is one of the most common complaints among adults over 50, and it has a straightforward explanation: while you sleep, movement slows way down, synovial fluid (the natural lubricant inside your joints) stops circulating as freely, and muscles that support those joints settle into a shortened, resting position. When you finally get up, everything needs a few minutes to "wake up" along with you.</p>
+<img src="/images/morning-stiffness-relief-for-seniors-hero.webp" alt="Senior stretching gently in bed before getting up to ease morning joint stiffness" width="1200" height="800" loading="lazy" />
+
 <p>For most people, this kind of stiffness eases within 30 minutes of moving around. When it lingers much longer, or comes with swelling and warmth in a joint, that's usually a sign to loop in your doctor rather than push through it.</p>
 <h2>What's Actually Causing the Stiffness</h2>
 <p>A few overlapping factors tend to be at play. Cartilage naturally thins with age, giving joints less cushioning. Muscles and connective tissue lose some elasticity over time, so they resist a full range of motion first thing in the morning. Inactivity overnight reduces blood flow to the joints. And for people with osteoarthritis or rheumatoid arthritis, inflammation itself is often at its peak in the early hours, which is why stiffness tends to be worse then than later in the day.</p>
@@ -1025,12 +1027,14 @@ export const articles: Article[] = [
 <h3>Stay Hydrated</h3>
 <p>Joint cartilage is largely water, and mild dehydration overnight can make stiffness more noticeable. A glass of water first thing in the morning, before coffee, is a simple habit worth building.</p>
 <!-- AFFILIATE_LINK_MID -->
+<img src="/images/morning-stiffness-relief-for-seniors-mid.webp" alt="Senior stretching gently in bed before getting up to ease morning joint stiffness - supporting image" width="1200" height="800" loading="lazy" />
 <h2>Building a Daily Anti-Stiffness Routine</h2>
 <p>Consistency tends to matter more than intensity here. A short daily routine, even five to ten minutes of gentle movement before breakfast, tends to reduce next-morning stiffness more reliably than an occasional longer session. Many people pair morning stretching with light strength work a few times a week, since stronger muscles around a joint generally mean less strain on the joint itself.</p>
 <p>Regular, moderate exercise throughout the week, such as walking, swimming, or a gentle class, is also associated with less morning stiffness overall. It sounds counterintuitive when you're stiff and sore, but staying sedentary tends to make stiffness worse, not better.</p>
 <h2>When to Check In With a Doctor</h2>
 <p>Occasional morning stiffness that eases within half an hour is a normal part of getting older for many people. It's worth mentioning to your doctor if stiffness lasts longer than an hour, is paired with visible joint swelling or redness, keeps getting worse over a period of weeks, or is limiting how you use your hands, hips, or knees during the day. These can be signs of a condition like rheumatoid arthritis, where earlier treatment tends to make a meaningful difference.</p>
 <!-- AFFILIATE_LINK_END -->
+<img src="/images/morning-stiffness-relief-for-seniors-recap.webp" alt="Senior stretching gently in bed before getting up to ease morning joint stiffness - summary image" width="1200" height="800" loading="lazy" />
 <p>If you're working on building steadier daily habits around movement and nutrition, <a href="https://kalorix-nine.vercel.app" target="_blank" rel="noopener noreferrer">Kalorix</a> can help you track how your energy, meals, and activity connect over time, so you can see what actually helps your mornings feel easier.</p>
 <h2>Frequently Asked Questions</h2>
 <h3>Why are older adults so stiff in the morning?</h3>
@@ -1060,6 +1064,8 @@ export const articles: Article[] = [
 <p><em>By The fitness-ritual.com Editorial Team</em></p>
 <h2>Why Low-Impact Cardio Matters After 65</h2>
 <p>Cardio doesn't have to mean running or high-intensity classes to be effective. Low-impact cardio exercise, movement that raises your heart rate without jarring your joints, is one of the most reliable ways to support heart health, maintain mobility, and stay independent as you age. The CDC recommends adults aim for at least 150 minutes of moderate-intensity activity a week, and low-impact options make that target realistic even with joint pain, past injuries, or limited balance.</p>
+<img src="/images/low-impact-cardio-for-seniors-over-65-hero.webp" alt="Active senior doing low-impact cardio exercise, walking outdoors with good form" width="1200" height="800" loading="lazy" />
+
 <p>Unlike high-impact workouts that involve jumping or hard landings, low-impact cardio keeps one foot on the ground (or uses supportive surfaces like water) at all times, which meaningfully reduces stress on hips, knees, and ankles while still delivering real cardiovascular benefit.</p>
 <h2>10 Low-Impact Cardio Exercises Worth Trying</h2>
 <h3>1. Walking</h3>
@@ -1083,11 +1089,13 @@ export const articles: Article[] = [
 <h3>10. Rowing Machine (Light Resistance)</h3>
 <p>At a gentle pace, rowing works the legs, core, and arms together in a seated, supported position that's easy on the joints.</p>
 <!-- AFFILIATE_LINK_MID -->
+<img src="/images/low-impact-cardio-for-seniors-over-65-mid.webp" alt="Active senior doing low-impact cardio exercise, walking outdoors with good form - supporting image" width="1200" height="800" loading="lazy" />
 <h2>Building a Weekly Routine</h2>
 <p>Most people do well starting with 3 to 5 sessions a week of 20 to 30 minutes, working up toward the 150-minutes-a-week target at a pace that feels sustainable. Mixing two or three of the exercises above keeps things interesting and works different muscle groups, which can help with long-term motivation. Pairing cardio days with light strength training on alternate days rounds out a well-balanced routine that supports both heart health and everyday strength.</p>
 <h2>Staying Safe While You Build Cardio Fitness</h2>
 <p>Start at a pace where you can still hold a conversation, and build up gradually rather than jumping straight into longer sessions. Warm up for a few minutes before increasing intensity, keep water nearby, and wear supportive, well-fitted shoes for any standing exercise. If you have a heart condition, joint replacement, or another chronic condition, check with your doctor before starting a new cardio program so it can be tailored safely to your situation.</p>
 <!-- AFFILIATE_LINK_END -->
+<img src="/images/low-impact-cardio-for-seniors-over-65-recap.webp" alt="Active senior doing low-impact cardio exercise, walking outdoors with good form - summary image" width="1200" height="800" loading="lazy" />
 <p>Curious how your activity adds up over a real week? <a href="https://kalorix-nine.vercel.app" target="_blank" rel="noopener noreferrer">Kalorix</a> can help you log your workouts alongside your meals, so you get a clearer picture of how movement and nutrition work together.</p>
 <h2>Frequently Asked Questions</h2>
 <h3>What is the best low-impact cardio exercise for seniors?</h3>
@@ -1117,6 +1125,8 @@ export const articles: Article[] = [
 <p><em>By The fitness-ritual.com Editorial Team</em></p>
 <h2>Why Walking Is the Easiest Way to Start Exercising Again</h2>
 <p>If it's been a while since you exercised regularly, walking is about the most forgiving way to start back up. It needs no equipment beyond supportive shoes, it's easy on the joints, and you can adjust the pace and distance to exactly where your fitness level is today. For older adults, a consistent walking habit is linked to better heart health, stronger bones, improved balance, and a lower risk of the kind of falls that can seriously affect independence.</p>
+<img src="/images/walking-program-for-beginners-over-50-hero.webp" alt="Beginner senior walker in supportive shoes starting a walking program outdoors" width="1200" height="800" loading="lazy" />
+
 <p>The biggest mistake beginners make isn't walking too slowly, it's starting too fast and burning out within a week. A structured, gradual program solves that.</p>
 <h2>Before You Begin</h2>
 <p>Get comfortable, supportive walking shoes with good cushioning; this matters more than almost anything else for comfort and injury prevention. If you haven't been active recently or manage a chronic condition like heart disease or diabetes, a quick check-in with your doctor before starting is a smart first step. Plan your first few walks somewhere flat and familiar, so you can focus on pace and form without worrying about terrain.</p>
@@ -1132,11 +1142,13 @@ export const articles: Article[] = [
 <h2>Getting the Form Right</h2>
 <p>Stand tall, look ahead rather than down at your feet, and let your arms swing naturally at your sides. Land gently through the heel and roll through to push off with your toes. If you notice any sharp pain in your knees, hips, or feet, that's different from normal muscle fatigue and worth mentioning to your doctor or a physical therapist.</p>
 <!-- AFFILIATE_LINK_MID -->
+<img src="/images/walking-program-for-beginners-over-50-mid.webp" alt="Beginner senior walker in supportive shoes starting a walking program outdoors - supporting image" width="1200" height="800" loading="lazy" />
 <h2>Staying Motivated Past the First Month</h2>
 <p>Walking programs tend to fall apart around week three or four, right when the initial motivation fades and it hasn't quite become a habit yet. A few things help: walking at the same time each day so it anchors into your routine, walking with a friend or in a group for accountability, and tracking your walks so you can see progress even on days that feel unremarkable. Varying your route also keeps things interesting once the basic habit is established.</p>
 <h2>When to Adjust the Program</h2>
 <p>If a week's walks consistently feel too easy, it's fine to add five more minutes or a bit more pace the following week. If they feel too hard, or you're dealing with joint soreness that lingers, stay at the current level a bit longer before progressing. There's no fixed timeline here beyond what your body can comfortably handle.</p>
 <!-- AFFILIATE_LINK_END -->
+<img src="/images/walking-program-for-beginners-over-50-recap.webp" alt="Beginner senior walker in supportive shoes starting a walking program outdoors - summary image" width="1200" height="800" loading="lazy" />
 <p>Want a simple way to see how your walking routine adds up over time? <a href="https://kalorix-nine.vercel.app" target="_blank" rel="noopener noreferrer">Kalorix</a> lets you log your activity alongside your daily nutrition, so your progress is easy to track in one place.</p>
 <h2>Frequently Asked Questions</h2>
 <h3>How many minutes should a beginner over 50 walk each day?</h3>
@@ -1166,6 +1178,8 @@ export const articles: Article[] = [
 <p><em>By The fitness-ritual.com Editorial Team</em></p>
 <h2>Why Hydration Gets Harder to Get Right After 50</h2>
 <p>Staying properly hydrated isn't just about drinking more water, it's about a system that changes with age in ways that make thirst a less reliable signal. The body's sense of thirst tends to become less sensitive over time, meaning you can be mildly dehydrated well before you actually feel thirsty. Kidneys also become somewhat less efficient at conserving water, and certain medications, like diuretics, common for managing blood pressure, increase fluid loss. Put together, it's easy to end up under-hydrated without really noticing.</p>
+<img src="/images/hydration-tips-over-50-hero.webp" alt="Senior drinking a glass of water at home as part of a daily hydration habit" width="1200" height="800" loading="lazy" />
+
 <p>Mild dehydration can show up as fatigue, headaches, dizziness, constipation, and difficulty concentrating, symptoms that are often mistaken for other causes entirely.</p>
 <h2>How Much Water Do You Actually Need?</h2>
 <p>General guidance for older adults typically lands around 6 to 8 cups (roughly 1.5 to 2 liters) of fluid a day, though the right amount varies with body size, activity level, climate, and any medical conditions you manage. Food contributes too. Fruits, vegetables, and soups all count toward daily fluid intake, not just what you drink. If you're unsure what's right for your specific situation, especially if you manage heart or kidney conditions where fluid needs may differ, it's worth asking your doctor directly.</p>
@@ -1181,11 +1195,13 @@ export const articles: Article[] = [
 <h3>Watch for Medication Interactions</h3>
 <p>If you take diuretics or other medications that affect fluid balance, ask your pharmacist or doctor whether your hydration needs differ from the general guidance, and what signs of dehydration to watch for specifically.</p>
 <!-- AFFILIATE_LINK_MID -->
+<img src="/images/hydration-tips-over-50-mid.webp" alt="Senior drinking a glass of water at home as part of a daily hydration habit - supporting image" width="1200" height="800" loading="lazy" />
 <h2>Recognizing the Early Signs</h2>
 <p>Because thirst becomes a less reliable warning system with age, it helps to know the other signals: darker urine than usual, dry mouth, unusual fatigue, dizziness when standing up, and headaches that don't have an obvious cause. Catching these early, rather than waiting to feel thirsty, is one of the most practical hydration habits you can build.</p>
 <h2>Hydration and Physical Activity</h2>
 <p>On days with exercise, warmer weather, or increased activity, fluid needs go up. Drinking a glass of water before and after a walk or workout, and having water available during longer sessions, helps prevent the kind of dehydration that can contribute to dizziness or fatigue, both of which raise fall risk in older adults.</p>
 <!-- AFFILIATE_LINK_END -->
+<img src="/images/hydration-tips-over-50-recap.webp" alt="Senior drinking a glass of water at home as part of a daily hydration habit - summary image" width="1200" height="800" loading="lazy" />
 <p>If you want an easy way to see how your daily habits, including hydration and nutrition, add up over time, <a href="https://kalorix-nine.vercel.app" target="_blank" rel="noopener noreferrer">Kalorix</a> can help you track it all in one place.</p>
 <h2>Frequently Asked Questions</h2>
 <h3>Why is staying hydrated harder after 50?</h3>
@@ -1215,6 +1231,8 @@ export const articles: Article[] = [
 <p><em>By The fitness-ritual.com Editorial Team</em></p>
 <h2>How Food and Joint Discomfort Are Connected</h2>
 <p>Chronic low-grade inflammation is one of the quieter contributors to joint discomfort as we age, and what's on your plate plays a real role in either fueling or calming it. This isn't about any single "miracle food," it's about a consistent eating pattern, similar in spirit to the well-studied Mediterranean diet, that leans on whole foods known to support the body's natural anti-inflammatory processes while limiting the foods that tend to encourage inflammation.</p>
+<img src="/images/anti-inflammatory-foods-for-joint-pain-hero.webp" alt="Colorful anti-inflammatory foods including fatty fish, berries, and leafy greens on a table" width="1200" height="800" loading="lazy" />
+
 <p>Research on diet and joint health, including studies in people with osteoarthritis and rheumatoid arthritis, suggests that dietary patterns can meaningfully influence how joints feel day to day, alongside movement, weight management, and medical care.</p>
 <h2>Foods That May Help Support Joint Comfort</h2>
 <h3>Fatty Fish</h3>
@@ -1230,11 +1248,13 @@ export const articles: Article[] = [
 <h3>Ginger</h3>
 <p>Long used in traditional practices for joint discomfort, ginger contains compounds that some studies suggest may help ease inflammation, similar in mechanism to turmeric.</p>
 <!-- AFFILIATE_LINK_MID -->
+<img src="/images/anti-inflammatory-foods-for-joint-pain-mid.webp" alt="Colorful anti-inflammatory foods including fatty fish, berries, and leafy greens on a table - supporting image" width="1200" height="800" loading="lazy" />
 <h2>Foods That May Work Against Joint Comfort</h2>
 <p>Highly processed foods, refined sugar, and fried foods are generally associated with higher inflammatory markers in research. Refined carbohydrates, like white bread and pastries, and processed meats also tend to be linked with increased inflammation when eaten frequently. This doesn't mean these foods need to disappear entirely, but shifting the balance of your plate toward whole foods most of the time tends to make the biggest difference.</p>
 <h2>Building a Joint-Friendly Day of Eating</h2>
 <p>A practical approach: build meals around vegetables, whole grains, and a lean protein or fatty fish, use olive oil as your primary fat, snack on berries or a small handful of nuts, and season generously with turmeric, ginger, and garlic where it fits the dish. Small, consistent shifts like these tend to be far more sustainable, and effective over time, than a strict short-term "anti-inflammatory diet" that's hard to maintain.</p>
 <!-- AFFILIATE_LINK_END -->
+<img src="/images/anti-inflammatory-foods-for-joint-pain-recap.webp" alt="Colorful anti-inflammatory foods including fatty fish, berries, and leafy greens on a table - summary image" width="1200" height="800" loading="lazy" />
 <p>Want help putting this into practice day to day? <a href="https://kalorix-nine.vercel.app" target="_blank" rel="noopener noreferrer">Kalorix</a> can help you log meals and see how your eating pattern shapes up over time.</p>
 <h2>Frequently Asked Questions</h2>
 <h3>What foods are best for reducing joint inflammation?</h3>
@@ -1264,6 +1284,8 @@ export const articles: Article[] = [
 <p><em>By The fitness-ritual.com Editorial Team</em></p>
 <h2>Why Movement Helps Arthritis, Even When It Feels Counterintuitive</h2>
 <p>When joints ache, resting them can feel like the obvious response. But for most people with arthritis, the opposite tends to be true over time: gentle, regular movement helps lubricate joints, strengthens the muscles that support them, and can meaningfully reduce both pain and stiffness. Staying still for long periods often makes joints feel worse, not better, which is why physical therapists and rheumatologists so often recommend movement as part of arthritis management, not despite the pain, but specifically to help ease it.</p>
+<img src="/images/arthritis-exercises-for-seniors-hero.webp" alt="Senior doing gentle range-of-motion exercise for arthritis relief at home" width="1200" height="800" loading="lazy" />
+
 <p>The key is choosing the right kind of exercise: gentle, low-impact movement that builds strength and flexibility without adding stress to already sensitive joints.</p>
 <h2>Exercises That Tend to Work Well With Arthritis</h2>
 <h3>Range-of-Motion Exercises</h3>
@@ -1279,11 +1301,13 @@ export const articles: Article[] = [
 <h3>Chair-Based Exercise</h3>
 <p>For joints that need extra support, seated exercises let you build strength and mobility while minimizing weight-bearing stress, a good option on days when standing exercise feels like too much.</p>
 <!-- AFFILIATE_LINK_MID -->
+<img src="/images/arthritis-exercises-for-seniors-mid.webp" alt="Senior doing gentle range-of-motion exercise for arthritis relief at home - supporting image" width="1200" height="800" loading="lazy" />
 <h2>Getting Started Safely</h2>
 <p>Warm up for five minutes before any session, with gentle movement or a short walk to get blood flowing to the joints. Start with shorter sessions, 10 to 15 minutes, and build up gradually as your body adapts. Move within a comfortable range, mild discomfort during exercise is common with arthritis, but sharp pain is a signal to stop and adjust. Ice or rest a joint that feels unusually swollen or hot after activity, and check in with your doctor if that becomes a pattern.</p>
 <h2>Building a Weekly Routine</h2>
 <p>A well-rounded week for arthritis management often includes daily range-of-motion exercises (they take just a few minutes), two to three sessions of gentle strength training, and three to five sessions of low-impact cardio like walking or water exercise. This combination, range of motion, strength, and cardio, tends to offer more benefit together than any single type of exercise alone.</p>
 <!-- AFFILIATE_LINK_END -->
+<img src="/images/arthritis-exercises-for-seniors-recap.webp" alt="Senior doing gentle range-of-motion exercise for arthritis relief at home - summary image" width="1200" height="800" loading="lazy" />
 <p>Tracking how your activity and nutrition affect your joints over time can be genuinely useful. <a href="https://kalorix-nine.vercel.app" target="_blank" rel="noopener noreferrer">Kalorix</a> makes that easy to log in one place.</p>
 <h2>Frequently Asked Questions</h2>
 <h3>What is the best exercise for arthritis in seniors?</h3>
@@ -1313,6 +1337,8 @@ export const articles: Article[] = [
 <p><em>By The fitness-ritual.com Editorial Team</em></p>
 <h2>What Turmeric Actually Does in the Body</h2>
 <p>Turmeric is the golden spice common in South Asian cooking. Most of its studied health effects come from one compound: curcumin. Researchers have studied curcumin for its antioxidant and anti-inflammatory effects. A good amount of research has looked at how it may help joint discomfort from osteoarthritis, and to a lesser extent, rheumatoid arthritis.</p>
+<img src="/images/turmeric-benefits-for-arthritis-seniors-hero.webp" alt="Turmeric root and powder with black pepper on a kitchen counter" width="1200" height="800" loading="lazy" />
+
 <p>It helps to set fair expectations here. Turmeric is a supportive habit, not a replacement for medical treatment. Results vary between people and between studies. Still, for many people with everyday joint discomfort, it's a reasonable, low-risk addition to try alongside other strategies.</p>
 <h2>What the Research Suggests</h2>
 <p>Several studies have compared curcumin to a placebo in people with osteoarthritis. Most found modest gains in pain and stiffness after several weeks of regular use. Some studies even compared curcumin to common over-the-counter pain relievers. They found similar relief, with a different set of side effects. That said, many of these studies are small, and turmeric products vary widely. Researchers don't view turmeric as a cure or a substitute for prescribed treatment.</p>
@@ -1328,11 +1354,13 @@ export const articles: Article[] = [
 <h3>Turmeric Supplements</h3>
 <p>For a more concentrated dose, standardized curcumin supplements (often paired with black pepper extract) are widely available, though it's worth discussing the right form and dose with your doctor, especially given the next section.</p>
 <!-- AFFILIATE_LINK_MID -->
+<img src="/images/turmeric-benefits-for-arthritis-seniors-mid.webp" alt="Turmeric root and powder with black pepper on a kitchen counter - supporting image" width="1200" height="800" loading="lazy" />
 <h2>Safety Considerations Worth Knowing</h2>
 <p>Turmeric used in cooking is generally safe for most people. Concentrated supplements are different and call for more caution. Curcumin can interact with blood-thinning medications like warfarin. High doses may also affect people with gallbladder issues, or those preparing for surgery. Talk to your doctor before starting a concentrated turmeric or curcumin supplement, especially if you take blood thinners, have had kidney stones, or manage a chronic condition.</p>
 <h2>Turmeric as Part of a Bigger Picture</h2>
 <p>Turmeric works best as one piece of a bigger approach to joint health. Pair it with gentle exercise, a broader anti-inflammatory eating pattern, and proper medical care. Expecting it to work alone, or to replace prescribed arthritis treatment, tends to lead to disappointment. As a complementary habit, though, many people find it a worthwhile, low-cost addition to their routine.</p>
 <!-- AFFILIATE_LINK_END -->
+<img src="/images/turmeric-benefits-for-arthritis-seniors-recap.webp" alt="Turmeric root and powder with black pepper on a kitchen counter - summary image" width="1200" height="800" loading="lazy" />
 <p>If you're building a broader nutrition routine around joint health, <a href="https://kalorix-nine.vercel.app" target="_blank" rel="noopener noreferrer">Kalorix</a> can help you track how these habits fit into your overall eating pattern.</p>
 <h2>Frequently Asked Questions</h2>
 <h3>Does turmeric really help with arthritis pain?</h3>
@@ -1362,6 +1390,8 @@ export const articles: Article[] = [
 <p><em>By The fitness-ritual.com Editorial Team</em></p>
 <h2>Why Mental Exercise Matters as Much as Physical Exercise</h2>
 <p>Just like muscles, the brain responds to regular use. Studies on brain aging point to one encouraging idea. Staying mentally active through learning, problem-solving, and time with others links to better memory and sharper thinking later in life. This doesn't mean brain exercises stop all decline. But they're a simple, low-cost habit. They support brain health alongside exercise, sleep, and good food.</p>
+<img src="/images/brain-exercises-for-seniors-over-60-hero.webp" alt="Senior working on a puzzle or crossword to keep the mind sharp" width="1200" height="800" loading="lazy" />
+
 <p>The best brain exercises share a few traits. They challenge you a little. They hold your interest. And you can keep doing them often without it feeling like a chore.</p>
 <h2>Effective Brain Exercises to Try</h2>
 <h3>Learn Something New</h3>
@@ -1379,11 +1409,13 @@ export const articles: Article[] = [
 <h3>Physical Exercise</h3>
 <p>It might seem out of place on a list of brain exercises, but physical activity, especially cardio, increases blood flow to the brain and is consistently linked to better cognitive outcomes in research.</p>
 <!-- AFFILIATE_LINK_MID -->
+<img src="/images/brain-exercises-for-seniors-over-60-mid.webp" alt="Senior working on a puzzle or crossword to keep the mind sharp - supporting image" width="1200" height="800" loading="lazy" />
 <h2>Building a Weekly Brain-Health Routine</h2>
 <p>A good plan mixes a few types of mental activity each week, instead of the same puzzle every day. Try a crossword or sudoku most mornings. Read a chapter most evenings. Add a weekly game night or a call with a friend. Keep moving with regular exercise too. Variety seems to matter more than doing one thing a lot.</p>
 <h2>Other Habits That Support Brain Health</h2>
 <p>Good sleep helps. So does a balanced diet with vegetables, whole grains, and healthy fats. Managing stress matters too. None of these work alone. Brain health reflects your whole lifestyle, not just how many puzzles you finish.</p>
 <!-- AFFILIATE_LINK_END -->
+<img src="/images/brain-exercises-for-seniors-over-60-recap.webp" alt="Senior working on a puzzle or crossword to keep the mind sharp - summary image" width="1200" height="800" loading="lazy" />
 <p>Nutrition plays a real role in brain health too. <a href="https://kalorix-nine.vercel.app" target="_blank" rel="noopener noreferrer">Kalorix</a> can help you keep track of how your eating pattern supports your overall wellness goals.</p>
 <h2>Frequently Asked Questions</h2>
 <h3>What are the best brain exercises for seniors?</h3>
@@ -1413,6 +1445,8 @@ export const articles: Article[] = [
 <p><em>By The fitness-ritual.com Editorial Team</em></p>
 <h2>What "Healthy Aging" Really Means</h2>
 <p>Healthy aging isn't about chasing the habits of a much younger body. It's about protecting the things that most affect quality of life after 60: strength, balance, mental sharpness, energy, and independence. The good news is that research consistently shows these are areas where daily habits make a real, measurable difference, often more than genetics alone.</p>
+<img src="/images/healthy-aging-tips-for-seniors-over-60-hero.webp" alt="Active healthy senior couple walking outdoors together, smiling" width="1200" height="800" loading="lazy" />
+
 <p>None of the tips below require dramatic lifestyle changes. Small, consistent habits tend to add up to more than the occasional big effort.</p>
 <h2>17 Habits Worth Building</h2>
 <h3>1. Move Every Day</h3>
@@ -1448,11 +1482,13 @@ export const articles: Article[] = [
 <h3>16. Get Outside</h3>
 <p>Sunlight supports vitamin D levels and mood, and time outdoors is linked to lower stress and better sleep.</p>
 <!-- AFFILIATE_LINK_MID -->
+<img src="/images/healthy-aging-tips-for-seniors-over-60-mid.webp" alt="Active healthy senior couple walking outdoors together, smiling - supporting image" width="1200" height="800" loading="lazy" />
 <h3>17. Keep a Sense of Purpose</h3>
 <p>Volunteering, hobbies, mentoring, or part-time work are all linked in research to better health outcomes and a stronger sense of well-being in later life.</p>
 <h2>Building These Habits Without Overwhelm</h2>
 <p>Trying to adopt all seventeen habits at once is a recipe for burnout. A more realistic approach: pick two or three that feel most relevant to your current situation, build them into a routine over a few weeks, then add more from there. Small, sustained changes tend to outperform ambitious short bursts that fade after a month.</p>
 <!-- AFFILIATE_LINK_END -->
+<img src="/images/healthy-aging-tips-for-seniors-over-60-recap.webp" alt="Active healthy senior couple walking outdoors together, smiling - summary image" width="1200" height="800" loading="lazy" />
 <p>Building consistent habits is easier with the right tools. <a href="https://kalorix-nine.vercel.app" target="_blank" rel="noopener noreferrer">Kalorix</a> can help you track your nutrition and activity as part of a broader healthy-aging routine.</p>
 <h2>Frequently Asked Questions</h2>
 <h3>What are the most important habits for healthy aging after 60?</h3>
@@ -1482,6 +1518,8 @@ export const articles: Article[] = [
 <p><em>By The fitness-ritual.com Editorial Team</em></p>
 <h2>Why Exercise Choice Matters With Type 2 Diabetes</h2>
 <p>Exercise is one of the most effective tools for managing type 2 diabetes, helping muscles use blood sugar more efficiently and supporting healthy weight and heart health. But not every type of exercise is equally well suited to adults over 50 managing this condition. The list below focuses on options that are low-impact, adjustable to different fitness levels, and generally well-tolerated, while still delivering the aerobic and strength benefits that matter most for blood sugar management.</p>
+<img src="/images/18-safe-exercises-for-seniors-with-type-2-diabetes-hero.webp" alt="Senior doing safe, supervised low-impact exercise while managing type 2 diabetes" width="1200" height="800" loading="lazy" />
+
 <p>As with any new routine, checking in with your doctor first is especially important here, since medication timing and blood sugar targets around exercise can vary from person to person.</p>
 <h2>18 Safe Exercises to Consider</h2>
 <h3>1. Brisk Walking</h3>
@@ -1521,11 +1559,13 @@ export const articles: Article[] = [
 <h3>18. Post-Meal Walking</h3>
 <p>A short 10 to 15 minute walk after meals has been specifically studied for its effect on post-meal blood sugar levels, often with a noticeably positive impact.</p>
 <!-- AFFILIATE_LINK_MID -->
+<img src="/images/18-safe-exercises-for-seniors-with-type-2-diabetes-mid.webp" alt="Senior doing safe, supervised low-impact exercise while managing type 2 diabetes - supporting image" width="1200" height="800" loading="lazy" />
 <h2>Building These Into a Weekly Routine</h2>
 <p>Most guidelines for type 2 diabetes recommend at least 150 minutes of moderate aerobic activity a week, spread across most days, combined with two to three sessions of strength training. Mixing several of the exercises above, rather than repeating just one, tends to keep things sustainable and works different muscle groups.</p>
 <h2>Precautions Specific to Diabetes</h2>
 <p>Check blood sugar before and after exercise, especially when starting something new, so you understand how your body responds. Carry a fast-acting source of glucose in case levels drop during activity. Inspect your feet regularly, since diabetes can affect circulation and nerve sensation, making foot injuries easier to miss. And talk to your doctor about whether medication timing needs adjusting around your exercise schedule.</p>
 <!-- AFFILIATE_LINK_END -->
+<img src="/images/18-safe-exercises-for-seniors-with-type-2-diabetes-recap.webp" alt="Senior doing safe, supervised low-impact exercise while managing type 2 diabetes - summary image" width="1200" height="800" loading="lazy" />
 <p><a href="https://kalorix-nine.vercel.app" target="_blank" rel="noopener noreferrer">Kalorix</a> can help you track your meals and activity together, which can be especially useful context to bring to conversations with your care team.</p>
 <h2>Frequently Asked Questions</h2>
 <h3>What is the safest exercise for someone with type 2 diabetes?</h3>
