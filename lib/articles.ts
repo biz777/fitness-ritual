@@ -242,8 +242,6 @@ export const articles: Article[] = [
     content: `
 <p>Living with type 2 diabetes doesn't mean stepping back from an active life — in many ways, movement becomes one of your most powerful tools. Regular exercise helps your body use insulin more efficiently, supports steadier blood sugar levels, and protects the heart, joints, and mood all at once. For adults over 50, the right approach also needs to account for recovery, joint health, and any diabetes-related complications — which is exactly what this guide walks through.</p>
 
-<p><em>This article is for general educational purposes and isn't a substitute for personalized medical advice. If you have diabetes or any related complications, talk with your doctor before starting or changing an exercise routine.</em></p>
-
 <h2>How Exercise Affects Blood Sugar</h2>
 
 <p>When your muscles work, they pull glucose from your bloodstream for fuel — which is part of why physical activity tends to lower blood sugar. Regular movement also improves insulin sensitivity over time, meaning your cells respond better to the insulin your body produces or that you inject. That said, responses vary: aerobic exercise like walking tends to lower glucose fairly reliably, while very intense or anaerobic effort can sometimes cause a temporary rise. Getting familiar with how your own body responds — through regular monitoring — is one of the most useful things you can do early on.</p>
