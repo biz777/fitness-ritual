@@ -26,6 +26,97 @@ export const articles: Article[] = [
     categoryLabel: "Nutrition & Diet",
     publishedAt: "2026-06-01",
     readTime: 7,
+    content: `
+<p>If you've noticed it takes more effort to keep your strength and shape than it did a decade ago, you're not imagining things. After 50, the body naturally becomes less efficient at using dietary protein to build muscle and maintain it, a shift researchers call anabolic resistance. The result: most people over 50 need more protein, not less, just to maintain muscle mass they already have.</p>
+<p>The good news is that closing this gap doesn't require anything drastic. It mostly comes down to choosing the right protein source, spreading intake across the day, and pairing meals with regular movement. This guide walks through why protein needs shift with age, what a typical daily target looks like for older people, and which everyday foods deliver the most without piling on excess calories.</p>
+<h2>Why Muscle Health Becomes a Bigger Priority After 50</h2>
+<p>Starting around age 30, adults gradually lose muscle mass, a process that speeds up after 50 and again after 65. Left unaddressed, this gradual decline, known as sarcopenia, can affect balance, mobility, and independence over time. It's not just about looking or feeling strong. Grip strength, the ability to rise from a chair without using your hands, and steady balance are all closely tied to how much lean tissue you're carrying.</p>
+<p>Muscle also plays a quiet metabolic role. It helps regulate blood sugar, supports bone health, and burns more calories at rest than fat does. So when strength declines, it can make weight management, energy levels, and even recovery from illness or surgery more difficult. Maintaining muscle isn't just a fitness goal, it's closely tied to everyday independence.</p>
+<p>The encouraging part: sarcopenia is not inevitable. Research consistently shows that consuming adequate protein alongside resistance training can slow, and in many cases meaningfully improve, age-related muscle loss, at any age. A steady protein intake genuinely protects muscle strength, even for people starting later in life.</p>
+<img src="/images/best-protein-sources-after-50-hero.webp" alt="Woman over 50 preparing a high-protein meal with salmon and eggs in her kitchen" width="1200" height="800" loading="lazy" />
+<h2>How Much Protein Do Older Adults Actually Need?</h2>
+<p>The standard Recommended Dietary Allowance (RDA) is 0.8 grams of protein per kilogram of body weight per day, a figure originally set to prevent deficiency in the general population. However, a growing body of research suggests this baseline protein intake is too low for many healthy older adults trying to preserve strength.</p>
+<p>Most geriatric nutrition experts now recommend closer to 1.0 to 1.2 g/kg daily for the average person over 50, and up to 1.5 g/kg for those managing a chronic illness or recovering from injury. For someone weighing 70 kilograms (about 154 pounds), that translates to roughly 70 to 105 grams a day, depending on activity level and health status. Many older adults fall short of this daily protein target without realizing it, simply because meals lean heavier on carbohydrates than on a solid source of protein.</p>
+<table>
+<thead>
+<tr>
+<th>Body Weight</th>
+<th>Moderate Target (1.0 g/kg)</th>
+<th>Higher Target (1.2 g/kg)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>60 kg (132 lb)</td>
+<td>60 g/day</td>
+<td>72 g/day</td>
+</tr>
+<tr>
+<td>70 kg (154 lb)</td>
+<td>70 g/day</td>
+<td>84 g/day</td>
+</tr>
+<tr>
+<td>80 kg (176 lb)</td>
+<td>80 g/day</td>
+<td>96 g/day</td>
+</tr>
+</tbody>
+</table>
+<p>These figures are general guidance rather than a personal prescription, and the right amount of protein for you can depend on activity level, appetite, and any existing health conditions. Grams of protein per day matters less than consistency, and both older men and older women tend to benefit from the same general range. Anyone managing kidney disease or another condition where protein consumption needs closer monitoring should talk with a doctor or registered dietitian before making significant dietary changes.</p>
+<h2>Why Timing and Distribution Matter</h2>
+<p>How you spread food sources of protein across the day can matter almost as much as the total amount. Research on muscle protein synthesis, the process your body uses to build and repair muscle tissue, suggests there's a practical ceiling to how much the body can put to use in a single sitting, generally estimated around 25 to 35 grams for older adults.</p>
+<p>Many people default to a light breakfast, a modest lunch, and a large dinner, which often leaves the first two meals short. Getting a consistent source at each meal, rather than saving it all for dinner, tends to support recovery more evenly throughout the day.</p>
+<h2>Best Animal-Based Protein Sources for Muscle Retention</h2>
+<p>Animal-based protein sources are generally considered high-quality protein, meaning they contain all nine essential amino acids your body needs but cannot produce on its own, including leucine, which plays a particularly active role in triggering muscle repair. Each of the foods below provides a slightly different mix of supporting nutrients alongside their protein content.</p>
+<ul>
+<li><strong>Eggs</strong> - About 6 grams per large egg, along with choline and vitamin B12. Affordable, versatile, and among the most complete protein options available.</li>
+<li><strong>Salmon and other fatty fish</strong> - Roughly 22 to 25 grams per 100-gram serving. This type of protein provides omega-3 fatty acids too, which may help support joint comfort and cardiovascular health.</li>
+<li><strong>Chicken breast</strong> - About 31 grams in a 100-gram cooked serving, with relatively little saturated fat, making it a practical option for regular meals.</li>
+<li><strong>Greek yogurt</strong> - Around 17 to 20 grams a cup, along with calcium and probiotics that support bone and digestive health.</li>
+<li><strong>Cottage cheese</strong> - Close to 25 grams a cup, rich in casein, a slow-digesting protein some research links to steadier overnight recovery.</li>
+<li><strong>Milk and dairy foods</strong> - A convenient, budget-friendly way to get protein, calcium, and vitamin D, three nutrients that work together to support both muscle and bone health.</li>
+</ul>
+<!-- AFFILIATE_LINK_MID -->
+<img src="/images/best-protein-sources-after-50-mid.webp" alt="Active woman over 50 holding resistance bands and a glass of water after a workout" width="1200" height="800" loading="lazy" />
+<h2>Best Plant-Based Protein Sources for Muscle Retention</h2>
+<p>Plant protein can absolutely support muscle health after 50, though most plant-based foods, aside from soy, aren't complete on their own. Eating a variety of plant sources across the day is generally enough to cover all essential amino acids, without needing to pair specific foods at the same meal.</p>
+<ul>
+<li><strong>Lentils</strong> - About 18 grams in a cooked cup, along with fiber that supports digestion and steady blood sugar.</li>
+<li><strong>Tofu</strong> - Roughly 10 grams in a half-cup serving, and one of the few plant foods considered a complete protein.</li>
+<li><strong>Edamame</strong> - About 17 grams in a cooked cup, along with fiber, folate, and vitamin K.</li>
+<li><strong>Quinoa</strong> - Around 8 grams in a cooked cup, unusual among grains for containing all nine amino acids your body needs.</li>
+<li><strong>Beans and legumes</strong> - A budget-friendly source of both fiber and nutrition that also supports heart health and steady digestion.</li>
+</ul>
+<h2>What About Protein Powder?</h2>
+<p>Protein powder can be a practical way to close a gap when whole foods alone fall short, particularly for older adults with a smaller appetite or difficulty preparing meals. Whey protein, a dairy-based option, is well studied and digests quickly, making it a common choice after activity. Pea protein and rice protein are common alternatives for those who are lactose intolerant or prefer to avoid dairy, and combining the two often creates a more complete protein profile.</p>
+<p>Protein supplements aren't required to meet your needs, and unprocessed protein foods should generally come first. Every food covered above provides a mix of nutrients that a powder alone can't fully replicate. But for some people, a scoop blended into oatmeal, a smoothie, or plain yogurt is a simple way to boost a meal's content without much added effort.</p>
+<h2>Simple Ways to Get More Protein Without Overhauling Every Meal</h2>
+<ol>
+<li><strong>Add it to breakfast.</strong> Eggs, Greek yogurt, or cottage cheese turn a typically light meal into one that supports recovery from the start of the day.</li>
+<li><strong>Keep easy sources on hand.</strong> Hard-boiled ones from the fridge, a container of cottage cheese, or a can of tuna require little preparation on busy or low-energy days.</li>
+<li><strong>Pair carbs with a solid source.</strong> Adding a handful of nuts, a spoonful of nut butter, or a slice of cheese to fruit or toast rounds out the snack and helps you feel fuller longer.</li>
+<li><strong>Don't skip lunch.</strong> A midday meal built around lean poultry, fish, tofu, or legumes prevents the common pattern of loading it all into dinner alone.</li>
+<li><strong>Pair meals with movement.</strong> Combining a solid daily protein intake with regular resistance training, even simple bodyweight or chair-based exercises, is one of the most effective ways to increase muscle mass and preserve strength over time.</li>
+</ol>
+<!-- AFFILIATE_LINK_END -->
+<img src="/images/best-protein-sources-after-50-recap.webp" alt="Man over 50 enjoying a balanced high-protein plate with grilled chicken and vegetables" width="1200" height="800" loading="lazy" />
+<p>If you're working on building more consistency into your day, logging meals in <a href="https://kalorix-nine.vercel.app" target="_blank" rel="noopener noreferrer">Kalorix</a> can make it easier to see, at a glance, whether you're actually hitting your daily target rather than just estimating.</p>
+<h2>Frequently Asked Questions</h2>
+<h3>What type of protein is best for building muscle after 50?</h3>
+<p>No single source is required. A mix of high-quality foods like eggs, fish, poultry, dairy, and, if needed, whey protein tends to work well, since each offers a slightly different amino acid profile and set of supporting nutrients.</p>
+<h3>How much protein do older adults need daily for muscle health?</h3>
+<p>Most research points to roughly 1.0 to 1.2 grams per kilogram of body weight per day for the average person over 50, higher than the general RDA of 0.8 grams, with some experts recommending up to 1.5 grams per kilogram for those managing illness or recovery.</p>
+<h3>Can supplements help with muscle retention?</h3>
+<p>Yes, for many people they're a convenient way to fill gaps, particularly when appetite is smaller or meal prep is difficult. They work best alongside whole-food options, not as a replacement for them.</p>
+<h3>Are plant-based proteins as effective as animal-based ones for older adults?</h3>
+<p>They can be, as long as you eat a variety of plant sources across the day to cover all essential amino acids. Soy-based foods like tofu and edamame are complete on their own, which makes them especially useful.</p>
+<h3>What is sarcopenia, and why does it matter after 50?</h3>
+<p>Sarcopenia is a gradual, age-related loss of muscle mass and strength. This decline can affect balance, mobility, and independence if left unaddressed, but research shows that getting enough protein combined with resistance training can meaningfully slow or improve it.</p>
+<h2>In Summary</h2>
+<p>Your needs don't shrink with age, they tend to grow, even as appetite and habits often shift in the opposite direction. Building meals around high-quality sources like fish, poultry, and dairy, or a thoughtful mix of plant-based foods, along with spreading intake across the day and staying active, gives your body what it needs to hold onto strength and mobility for years to come. Start with one meal, likely breakfast, and build from there at whatever pace fits your routine.</p>
+<p><em><strong>Medical Disclaimer:</strong> This content is for informational purposes only and is not intended as medical advice. Always consult a qualified healthcare provider before making changes to your diet, especially if you have an existing health condition or take medication. See our full <a href="/disclaimer">medical disclaimer</a> for details.</em></p>
+`,
   },
   {
     slug: "20-minute-morning-routine",
