@@ -38,6 +38,7 @@ export const articles: Article[] = [
     content: `
 <p>Mornings after 50 rarely feel the same as they did at 30. This isn't about training for a sport or chasing a personal record. Aches can show up before your feet even hit the floor, energy levels take longer to climb, and yesterday's activity sometimes shows up as today's soreness. A calm, structured morning sequence can make a real difference here, not by forcing your body into a hard workout, but by easing it awake with slow, careful motion, a little strength work, and a calm finish before the day gets busy.</p>
 <p>This guide walks through a simple, senior-friendly morning fitness plan — low impact and easy to modify — plus how to adapt it if you're dealing with aches, unsteadiness, or low energy in the morning.</p>
+<img src="/images/20-minute-morning-routine-hero.webp" alt="Smiling woman over 50 getting dressed by a sunny bedroom window at the start of her morning routine" width="1200" height="800" loading="lazy" />
 <h2>Prefer to Watch? Follow the Video Along on YouTube</h2>
 <p>If you'd rather watch than read, a short follow along video can help you check your form as you go, especially for the standing and stability moves below.</p>
 <h2>Why Mornings Matter More After 50 for Healthy Aging</h2>
@@ -88,6 +89,7 @@ export const articles: Article[] = [
 <p><strong>Marching in Place</strong> Holding onto a counter if needed, lift one knee toward your chest, then switch sides, as if marching in place. Continue for 30 to 60 seconds. This is a simple way to raise your heart rate slightly and warm up the whole body without added impact.</p>
 <h2>Block 3: Balance Work, Standing Support (5 Minutes)</h2>
 <p>Steadiness naturally declines with age, and losing it is one of the leading causes of falls among people over 50. The good news is that steadiness responds well to regular practice, which can help lower that risk over time.</p>
+<img src="/images/20-minute-morning-routine-middle.webp" alt="Senior man practicing a counter-supported balance exercise, lifting one knee in his kitchen" width="1200" height="800" loading="lazy" />
 <p><strong>One-Foot Balance Hold</strong> Position yourself near a counter or wall for safety, standing tall with your weight centered. Raise one foot slightly off the floor and hold for 10 to 20 seconds, then switch sides. Over time, you can try holding for longer or closing your eyes briefly, once you feel steady enough to do so safely.</p>
 <p><strong>Heel-to-Toe Walk</strong> Walk in a straight line, placing the heel of one foot directly in front of the toes of the other, as though walking a tightrope. Stay near a wall or counter if you'd like something nearby to hold onto.</p>
 <p>These moves take very little time but offer meaningful support for fall prevention, one of the most common concerns raised by our readers who are managing arthritis or a previous fall. If this work feels unsteady at first, go slower and lean on the wall or counter nearby until it feels more natural.</p>
@@ -95,6 +97,7 @@ export const articles: Article[] = [
 <p>The final stretch of this plan is about settling your nervous system and preparing your body for the day, rather than adding more exercise.</p>
 <p><strong>Box Breath Technique</strong> Sit comfortably. Inhale for four counts, hold for four, out for four, hold for four. Repeat for two to three minutes. This slow, controlled breathing pattern can help calm a racing mind and ease the body out of that early morning cortisol spike mentioned earlier.</p>
 <p><strong>Rehydrate</strong> Finish with a full glass of water. After several hours without fluids overnight, your body is naturally a little dehydrated, and starting the day with proper hydration gives energy levels, digestion, and focus a natural boost that most people underestimate. Treat the whole thing as one daily session rather than four separate workouts.</p>
+<img src="/images/20-minute-morning-routine-end.webp" alt="Woman over 50 relaxing in a chair by the window with a glass of water after her morning routine" width="1200" height="800" loading="lazy" />
 <p>If you're also tracking your nutrition alongside exercise, logging this morning plan and breakfast in <a href="https://kalorix-nine.vercel.app" target="_blank" rel="noopener noreferrer">Kalorix</a> can help you see how consistency in both areas affects your energy levels over a few weeks, not just a single day.</p>
 <!-- AFFILIATE_LINK_MID -->
 <h2>Frequently Asked Questions</h2>
