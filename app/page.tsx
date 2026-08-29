@@ -202,7 +202,7 @@ export default function HomePage() {
         >
           {[
             {
-              img: "/nutrition-bowl.jpg",
+              img: "/nutrition-bowl.webp",
               category: "Nutrition & Diet",
               categoryColor: "#1B6B3A",
               title: "Best protein sources for muscle retention after 50",
@@ -369,7 +369,7 @@ export default function HomePage() {
           className="cards-grid"
         >
           {[
-            { href: "/nutrition", color: "#1B6B3A", label: "Nutrition & Diet",   count: `${getArticlesByCategory("nutrition").length} articles`, desc: "Protein, fiber, hydration, supplements — everything about eating well after 50.", img: "/nutrition-bowl.jpg" },
+            { href: "/nutrition", color: "#1B6B3A", label: "Nutrition & Diet",   count: `${getArticlesByCategory("nutrition").length} articles`, desc: "Protein, fiber, hydration, supplements — everything about eating well after 50.", img: "/nutrition-bowl.webp" },
             { href: "/exercise",  color: "#B85C1A", label: "Exercise & Fitness", count: `${getArticlesByCategory("exercise").length} articles`,  desc: "Low-impact routines, strength training, balance, and flexibility for the 50+ body.", img: "/hero-nordic.jpg" },
             { href: "/recipes",   color: "#1B6B3A", label: "Healthy Recipes",    count: `${getArticlesByCategory("recipes").length} articles`,   desc: "Quick, nutritious meals with full macro breakdowns — designed for real kitchens.", img: "/recipes-salad.jpg" },
           ].map((cat) => (
