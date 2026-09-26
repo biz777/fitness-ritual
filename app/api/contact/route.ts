@@ -4,7 +4,13 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
-    const { firstName, email, message } = await request.json();
+    const { firstName, email, message, website } = await request.json();
+
+    // Honeypot : un humain ne remplit jamais ce champ (invisible côté formulaire).
+    // S'il est rempli, c'est un bot — on répond "succès" sans rien envoyer.
+    if (website) {
+      return Response.json({ success: true });
+    }
 
     if (!firstName || !email || !message) {
       return Response.json(
