@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState({ firstName: "", email: "", message: "" });
+  const [formData, setFormData] = useState({ firstName: "", email: "", message: "", website: "" });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -24,7 +24,7 @@ export default function ContactForm() {
       if (!res.ok) throw new Error("Failed to send");
 
       setStatus("success");
-      setFormData({ firstName: "", email: "", message: "" });
+      setFormData({ firstName: "", email: "", message: "", website: "" });
     } catch {
       setStatus("error");
     }
@@ -84,6 +84,18 @@ export default function ContactForm() {
         value={formData.message}
         onChange={handleChange}
         style={{ ...inputStyle, resize: "vertical" as const }}
+      />
+
+      {/* Honeypot anti-spam : champ invisible pour un humain, rempli automatiquement par les bots */}
+      <input
+        type="text"
+        name="website"
+        value={formData.website}
+        onChange={handleChange}
+        tabIndex={-1}
+        autoComplete="off"
+        style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", opacity: 0 }}
+        aria-hidden="true"
       />
 
       <button
