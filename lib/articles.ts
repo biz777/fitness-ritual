@@ -8,7 +8,8 @@ export interface Article {
   categoryLabel: string;
   publishedAt: string;
   readTime: number;
-  content?: string; // HTML du corps de l'article (optionnel — absent = placeholder "coming soon")
+    content?: string; // HTML du corps de l'article (optionnel — absent = placeholder "coming soon")
+  youtubeShortId?: string; // identifiant du Short YouTube à intégrer (optionnel)
 }
 
 export const categoryColors: Record<Category, string> = {
