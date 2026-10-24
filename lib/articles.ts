@@ -1421,7 +1421,6 @@ export const articles: Article[] = [
     categoryLabel: "Nutrition & Diet",
     publishedAt: "2026-08-21",
     readTime: 4,
-   youtubeShortId: "3EoNQ2s_-90",
     content: `
 <p><em>By The fitness-ritual.com Editorial Team</em></p>
 <h2>Why Hydration Gets Harder to Get Right After 50</h2>
