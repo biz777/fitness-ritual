@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SocialIcons from "@/components/SocialIcons";
 
 const navLinks = ["Blog", "About", "Contact"];
 
@@ -59,6 +60,18 @@ export default function Footer() {
             </Link>
           ))}
         </div>
+      </div>
+
+      {/* Social icons */}
+      <div
+        style={{
+          maxWidth: "1100px",
+          margin: "24px auto 0",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <SocialIcons variant="A" />
       </div>
 
       {/* Bottom row: legal links + copyright */}
