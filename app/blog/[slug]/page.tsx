@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { getArticleBySlug, articles, getArticlesByCategory, categoryColors } from "@/lib/articles";
 import Link from "next/link";
+   import YouTubeShort from "@/components/YouTubeShort";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
@@ -162,6 +163,13 @@ export default async function ArticlePageSlug({
             {article.description}
           </p>
 
+          
+             {article.youtubeShortId && (
+     <YouTubeShort
+       videoId={article.youtubeShortId}
+       title={article.title}
+     />
+   )}
           {/* Contenu de l'article : rendu du HTML réel si présent,
               sinon placeholder "coming soon" pour les articles pas encore rédigés. */}
           {article.content ? (
