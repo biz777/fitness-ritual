@@ -71,7 +71,7 @@ export default function Footer() {
           justifyContent: "center",
         }}
       >
-        <SocialIcons variant="A" />
+        <SocialIcons variant="B" />
       </div>
 
       {/* Bottom row: legal links + copyright */}
