@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -30,6 +31,9 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
 };
+
+// AJOUTÉ (29/10/2026) : ID de mesure Google Analytics 4
+const GA_MEASUREMENT_ID = "G-R952E3JEQM";
 
 export default function RootLayout({
   children,
@@ -67,6 +71,20 @@ export default function RootLayout({
       </head>
       <body>
         <main>{children}</main>
+
+        {/* AJOUTÉ : Google Analytics 4 (chargé après l'affichage de la page) */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
       </body>
     </html>
   );
