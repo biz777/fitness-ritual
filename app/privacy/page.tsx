@@ -120,8 +120,7 @@ export default function PrivacyPolicyPage() {
         <ul className="list-disc pl-6 space-y-2">
           <li>
             <strong>Service providers</strong> who help us run the site —
-            such as our hosting provider (Vercel) and, if you subscribe, our
-            email delivery provider.
+            such as our hosting provider (Vercel), our analytics providers (Vercel Analytics and Google Analytics) and, if you subscribe, our email delivery provider..
           </li>
           <li>
             <strong>Affiliate networks and partners</strong> when you click
