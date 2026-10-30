@@ -115,7 +115,7 @@ export default function CookiePolicyPage() {
             Data
           </li>
           <li>
-            <strong>Firefox:</strong> Settings → Privacy &amp; Security →
+            <strong>Firefox: </strong>Settings → Privacy &amp; Security →
             Cookies and Site Data
           </li>
           <li>
