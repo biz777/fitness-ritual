@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
   return (
     <LegalLayout
       title="Privacy Policy"
-      lastUpdated="June 20, 2026"
+      lastUpdated="October 30, 2026"
       intro="Your privacy matters to us. This policy explains, in plain language, what information Fitness Ritual collects when you visit our site, how we use it, and the choices you have."
       toc={toc}
     >
