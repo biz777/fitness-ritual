@@ -62,8 +62,7 @@ export default function PrivacyPolicyPage() {
             <strong>Automatically collected information</strong> — such as
             your browser type, device type, approximate location (city or
             region level, based on IP address), pages visited, and how long
-            you spend on them. This is standard analytics data and isn't
-            tied to your real-world identity.
+            you spend on them. This is standard analytics data, collected through Vercel Analytics and Google Analytics 4, and isn't tied to your real-world identity.
           </li>
           <li>
             <strong>Cookies and similar technologies</strong> — small files
