@@ -21,7 +21,7 @@ export default function CookiePolicyPage() {
   return (
     <LegalLayout
       title="Cookie Policy"
-      lastUpdated="June 20, 2026"
+      lastUpdated="October 30, 2026"
       intro="This page explains what cookies are, which ones Fitness Ritual uses, and how you can control them."
       toc={toc}
     >
@@ -57,11 +57,16 @@ export default function CookiePolicyPage() {
 
         <SubSection title="Analytics cookies">
           <p>
-            We use analytics tools (such as Vercel Analytics) to understand,
-            in aggregate, how visitors use our site — which articles are
-            popular, how people navigate between pages, and so on. This
-            data is anonymized or aggregated and is not used to identify you
-            personally.
+            We use analytics tools, including Vercel Analytics and Google
+            Analytics 4 (a web analytics service provided by Google), to
+            understand how visitors use our site: which articles are popular,
+            where visitors come from, and how they navigate between pages.
+            Google Analytics sets cookies (such as _ga and _ga_*) to
+            distinguish visitors and sessions. The data is used in aggregate
+            to improve our content and is not used to identify you
+            personally. You can opt out of Google Analytics by adjusting your
+            browser settings or by installing the Google Analytics Opt-out
+            Browser Add-on.
           </p>
         </SubSection>
 
@@ -86,7 +91,7 @@ export default function CookiePolicyPage() {
       <Section id="third-party" title="3. Third-party cookies">
         <p>
           Some cookies on our site are placed by third parties we work
-          with — our hosting and analytics provider, and the affiliate
+          with — our hosting and analytics providers (Vercel and Google), and the affiliate
           partners whose products we link to. We don't control these
           third-party cookies directly; they're governed by each provider's
           own privacy and cookie policies.
