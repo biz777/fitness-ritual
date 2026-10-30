@@ -102,8 +102,7 @@ export default function PrivacyPolicyPage() {
       <Section id="cookies" title="4. Cookies & tracking">
         <p>
           We use cookies for essential site functionality, to remember your
-          preferences (like language or display settings), to understand
-          site traffic, and — when you click an affiliate link — to allow
+          preferences (like language or display settings), to understand site traffic (through Vercel Analytics and Google Analytics 4), and — when you click an affiliate link — to allow
           our affiliate partners to credit us for a referral. Full details,
           including how to manage or disable cookies, are in our{" "}
           <Link
